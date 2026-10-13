@@ -1,0 +1,2071 @@
+{
+  "metadata": {
+    "institucion": "Universidad Mayor de San Andrés (UMSA)",
+    "facultad": "Ciencias Económicas y Financieras",
+    "tema": "Trigonometría",
+    "total_preguntas": 33,
+    "descripcion": "Colección unificada de problemas UMSA de Trigonometría"
+  },
+  "preguntas": [
+    {
+      "id_pregunta": "PSA-2011-1",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2011",
+        "examen": "Dispensación",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°1"
+      },
+      "enunciado": {
+        "texto_markdown": "En un día radiante un edificio proyecta una sombra sobre el suelo formando un ángulo de 45° entre este y los rayos solares. Horas más tarde la sombra se acorta y el ángulo se incrementa a 60°. La distancia de separación entre las partes finales de la sombra es de 20 metros. Calcule la altura del edificio.",
+        "ecuacion_latex": "",
+        "condicion": ""
+      },
+      "opciones": [],
+      "respuesta_correcta": "h=30+10\\sqrt{3}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se forma un triángulo rectángulo entre la altura del edificio, la sombra sobre el suelo y el rayo solar. Si θ es el ángulo entre el suelo y el rayo solar, entonces tan θ = altura / sombra.",
+          "expresion_latex": "\\tan\\theta=\\frac{h}{L}\\quad\\Rightarrow\\quad L=\\frac{h}{\\tan\\theta}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Para el primer ángulo, θ = 45°, se calcula la longitud de la sombra inicial.",
+          "expresion_latex": "L_1=\\frac{h}{\\tan 45^\\circ}=h"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Para el segundo ángulo, θ = 60°, se calcula la longitud de la sombra final.",
+          "expresion_latex": "L_2=\\frac{h}{\\tan 60^\\circ}=\\frac{h}{\\sqrt{3}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "La sombra se acorta, por lo que la diferencia entre la sombra inicial y la final es 20 m.",
+          "expresion_latex": "L_1-L_2=20"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Sustituyendo las longitudes de las sombras se plantea la ecuación.",
+          "expresion_latex": "h-\\frac{h}{\\sqrt{3}}=20"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Se factoriza h y se despeja la altura del edificio.",
+          "expresion_latex": "h\\left(1-\\frac{1}{\\sqrt{3}}\\right)=20\\quad\\Rightarrow\\quad h=\\frac{20}{1-\\frac{1}{\\sqrt{3}}}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Se racionaliza la expresión para obtener la altura exacta.",
+          "expresion_latex": "h=\\frac{20\\sqrt{3}}{\\sqrt{3}-1}=10\\sqrt{3}(\\sqrt{3}+1)=30+10\\sqrt{3}"
+        }
+      ],
+      "resultado_final": "h=30+10\\sqrt{3}\\text{ m}\\approx 47.32\\text{ m}",
+      "observaciones": "Dificultad estimada: Media. No se detectan ambigüedades relevantes. La distancia de 20 m corresponde a la diferencia entre las longitudes de la sombra inicial y final."
+    },
+    {
+      "id_pregunta": "PSA-2011-2",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2011",
+        "examen": "Dispensación",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°2"
+      },
+      "enunciado": {
+        "texto_markdown": "Demostrar:",
+        "ecuacion_latex": "\\dfrac{\\tan x+\\cot x}{\\csc x}=\\sec x",
+        "condicion": "x \\neq \\frac{n\\pi}{2},\\; n \\in \\mathbb{Z}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "\\sec x",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se expresan todas las funciones trigonométricas en términos de seno y coseno.",
+          "expresion_latex": "\\frac{\\frac{\\sin x}{\\cos x}+\\frac{\\cos x}{\\sin x}}{\\frac{1}{\\sin x}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Se suma la expresión del numerador, obteniendo un denominador común.",
+          "expresion_latex": "\\frac{\\frac{\\sin^2 x+\\cos^2 x}{\\sin x\\cos x}}{\\frac{1}{\\sin x}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Se aplica la identidad pitagórica fundamental: \\sin^2 x+\\cos^2 x=1.",
+          "expresion_latex": "\\frac{\\frac{1}{\\sin x\\cos x}}{\\frac{1}{\\sin x}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Se simplifica la división de fracciones multiplicando en cruz.",
+          "expresion_latex": "\\frac{1}{\\sin x\\cos x}\\cdot \\sin x=\\frac{1}{\\cos x}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Se reconoce la definición de la función secante.",
+          "expresion_latex": "\\frac{1}{\\cos x}=\\sec x"
+        }
+      ],
+      "resultado_final": "\\sec x",
+      "observaciones": "Dificultad estimada: Media. La identidad es válida siempre que x no anule los denominadores, es decir, $x \\neq \\frac{n\\pi}{2} con n \\in \\mathbb{Z}$."
+    },
+    {
+      "id_pregunta": "PSA-2012-3",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2012",
+        "examen": "Dispensación",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°3"
+      },
+      "enunciado": {
+        "texto_markdown": "Verifica la siguiente identidad trigonométrica.",
+        "ecuacion_latex": "\\dfrac{\\sen x\\cdot\\sec x}{\\tan x+\\cot x}=1-\\cos^2 x",
+        "condicion": "x \\neq \\frac{n\\pi}{2},\\; n \\in \\mathbb{Z}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "Es una identidad trigonométrica",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se expresa la secante en términos de coseno: \\sec x = \\frac{1}{\\cos x}.",
+          "expresion_latex": "\\sen x\\cdot\\sec x=\\sen x\\cdot\\frac{1}{\\cos x}=\\frac{\\sen x}{\\cos x}=\\tan x"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Se simplifica el denominador usando las definiciones de tangente y cotangente.",
+          "expresion_latex": "\\tan x+\\cot x=\\frac{\\sen x}{\\cos x}+\\frac{\\cos x}{\\sen x}=\\frac{\\sen^2 x+\\cos^2 x}{\\sen x\\cos x}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Se aplica la identidad pitagórica fundamental: \\sen^2 x+\\cos^2 x=1.",
+          "expresion_latex": "\\tan x+\\cot x=\\frac{1}{\\sen x\\cos x}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Se sustituyen los resultados en el lado izquierdo de la identidad.",
+          "expresion_latex": "\\frac{\\sen x\\cdot\\sec x}{\\tan x+\\cot x}=\\frac{\\tan x}{\\frac{1}{\\sen x\\cos x}}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Se simplifica la división multiplicando en cruz.",
+          "expresion_latex": "\\frac{\\tan x}{\\frac{1}{\\sen x\\cos x}}=\\tan x\\cdot\\sen x\\cos x=\\frac{\\sen x}{\\cos x}\\cdot\\sen x\\cos x=\\sen^2 x"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Se simplifica el lado derecho usando la identidad pitagórica.",
+          "expresion_latex": "1-\\cos^2 x=\\sen^2 x"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Como ambos lados son iguales, la expresión es una identidad trigonométrica.",
+          "expresion_latex": "\\sen^2 x=\\sen^2 x"
+        }
+      ],
+      "resultado_final": "La identidad es verdadera: \\frac{\\sen x\\cdot\\sec x}{\\tan x+\\cot x}=\\sen^2 x=1-\\cos^2 x.",
+      "observaciones": "Dificultad estimada: Media. La identidad es válida siempre que x no anule los denominadores, es decir, x \\neq \\frac{n\\pi}{2} con n \\in \\mathbb{Z}."
+    },
+    {
+      "id_pregunta": "PSA-2015-4",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2015",
+        "examen": "Prefacultativo",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°4"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar la siguiente expresión.",
+        "ecuacion_latex": "E=\\sen A\\cdot\\left(1+\\cos A\\right)^{-1}+\\left(1+\\cos A\\right)\\csc A",
+        "condicion": "A \\neq n\\pi,\\; n \\in \\mathbb{Z}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E=2\\csc A",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se reescriben las funciones trigonométricas en términos de seno y coseno. Además, (1+cos A)^(-1)=1/(1+cos A) y csc A=1/sen A.",
+          "expresion_latex": "E=\\frac{\\sen A}{1+\\cos A}+\\frac{1+\\cos A}{\\sen A}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Se suman las fracciones con denominador común (1+cos A) sen A.",
+          "expresion_latex": "E=\\frac{\\sen^2 A+(1+\\cos A)^2}{(1+\\cos A)\\sen A}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Se desarrolla el cuadrado en el numerador.",
+          "expresion_latex": "E=\\frac{\\sen^2 A+1+2\\cos A+\\cos^2 A}{(1+\\cos A)\\sen A}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Se aplica la identidad pitagórica fundamental: sen^2 A + cos^2 A = 1.",
+          "expresion_latex": "E=\\frac{1+1+2\\cos A}{(1+\\cos A)\\sen A}=\\frac{2+2\\cos A}{(1+\\cos A)\\sen A}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Se factoriza 2 en el numerador.",
+          "expresion_latex": "E=\\frac{2(1+\\cos A)}{(1+\\cos A)\\sen A}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Se simplifica el factor común (1+cos A), válido porque A ≠ nπ implica 1+cos A ≠ 0.",
+          "expresion_latex": "E=\\frac{2}{\\sen A}=2\\csc A"
+        }
+      ],
+      "resultado_final": "E=2\\csc A",
+      "observaciones": "Dificultad estimada: Media. La simplificación es válida para A ≠ nπ, n ∈ ℤ, pues se requiere sen A ≠ 0 y 1+cos A ≠ 0."
+    },
+    {
+      "id_pregunta": "PSA-2015-5",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2015",
+        "examen": "Prefacultativo",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°5"
+      },
+      "enunciado": {
+        "texto_markdown": "¿Cuáles son las raíces de la ecuación trigonométrica entre 0° y 360°?",
+        "ecuacion_latex": "\\cos 2x-\\sen 2x=0",
+        "condicion": "0^\\circ \\le x < 360^\\circ"
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=22.5;\\ x=112.5",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se parte de la ecuación original.",
+          "expresion_latex": "\\cos 2x-\\sen 2x=0"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Sumamos $\\sen 2x$ a ambos miembros.",
+          "expresion_latex": "\\cos 2x=\\sen 2x"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Dividimos entre $\\cos 2x$, asumiendo $\\cos 2x\\neq 0$. Si $\\cos 2x=0$, entonces $\\sen 2x=\\pm 1$, y la igualdad no se cumpliría.",
+          "expresion_latex": "\\tan 2x=1"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "La tangente vale $1$ en $45^\\circ$ y en $225^\\circ$ dentro de una vuelta, por lo que la solución general es:",
+          "expresion_latex": "2x=45^\\circ+180^\\circ k,\\quad k\\in\\mathbb{Z}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Dividimos entre $2$.",
+          "expresion_latex": "x=22.5^\\circ+90^\\circ k"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Para $0^\\circ \\le x < 360^\\circ$, los valores de $k$ son $0,1,2,3$.",
+          "expresion_latex": "k=0:\\ x=22.5^\\circ;\\quad k=1:\\ x=112.5^\\circ;\\quad k=2:\\ x=202.5^\\circ;\\quad k=3:\\ x=292.5^\\circ"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "La respuesta oficial proporcionada indica solo $x=22.5^\\circ$ y $x=112.5^\\circ$. Si el intervalo se restringe a $0^\\circ \\le x < 180^\\circ$, coinciden. En $[0^\\circ,360^\\circ)$ también son soluciones $202.5^\\circ$ y $292.5^\\circ$.",
+          "expresion_latex": "x=22.5^\\circ,\\ 112.5^\\circ,\\ 202.5^\\circ,\\ 292.5^\\circ"
+        }
+      ],
+      "resultado_final": "x=22.5;\\ x=112.5",
+      "observaciones": "Según la respuesta oficial, se consideran solo $x=22.5^\\circ$ y $x=112.5^\\circ$. Sin embargo, en el intervalo $[0^\\circ,360^\\circ)$ la ecuación tiene cuatro soluciones: $22.5^\\circ$, $112.5^\\circ$, $202.5^\\circ$ y $292.5^\\circ$. Posible errata en el intervalo o en la respuesta. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2015-6",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2015",
+        "examen": "Prefacultativo",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°6"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar al máximo:",
+        "ecuacion_latex": "E=\\cos A(1-\\tan A)^{-1}+\\sen A(1-\\cot A)^{-1}",
+        "condicion": "\\sen A\\neq 0,\\ \\cos A\\neq 0,\\ \\tan A\\neq 1,\\ \\cot A\\neq 1"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E=\\cos A+\\sen A",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se parte de la expresión original y se escriben las potencias negativas como denominadores.",
+          "expresion_latex": "E=\\dfrac{\\cos A}{1-\\tan A}+\\dfrac{\\sen A}{1-\\cot A}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Se sustituyen las identidades $\\tan A=\\dfrac{\\sen A}{\\cos A}$ y $\\cot A=\\dfrac{\\cos A}{\\sen A}$.",
+          "expresion_latex": "E=\\dfrac{\\cos A}{1-\\dfrac{\\sen A}{\\cos A}}+\\dfrac{\\sen A}{1-\\dfrac{\\cos A}{\\sen A}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Se simplifica el primer término.",
+          "expresion_latex": "\\dfrac{\\cos A}{1-\\dfrac{\\sen A}{\\cos A}}=\\dfrac{\\cos A}{\\dfrac{\\cos A-\\sen A}{\\cos A}}=\\dfrac{\\cos^2 A}{\\cos A-\\sen A}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Se simplifica el segundo término.",
+          "expresion_latex": "\\dfrac{\\sen A}{1-\\dfrac{\\cos A}{\\sen A}}=\\dfrac{\\sen A}{\\dfrac{\\sen A-\\cos A}{\\sen A}}=\\dfrac{\\sen^2 A}{\\sen A-\\cos A}=-\\dfrac{\\sen^2 A}{\\cos A-\\sen A}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Se suman ambos términos, que ya tienen el mismo denominador.",
+          "expresion_latex": "E=\\dfrac{\\cos^2 A}{\\cos A-\\sen A}-\\dfrac{\\sen^2 A}{\\cos A-\\sen A}=\\dfrac{\\cos^2 A-\\sen^2 A}{\\cos A-\\sen A}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Se factoriza el numerador como diferencia de cuadrados.",
+          "expresion_latex": "E=\\dfrac{(\\cos A-\\sen A)(\\cos A+\\sen A)}{\\cos A-\\sen A}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Se cancela el factor $\\cos A-\\sen A$, válido porque $\\cos A\\neq\\sen A$ por las condiciones de dominio.",
+          "expresion_latex": "E=\\cos A+\\sen A"
+        }
+      ],
+      "resultado_final": "E=\\cos A+\\sen A",
+      "observaciones": "La simplificación es válida siempre que la expresión original esté definida: $\\sen A\\neq 0$, $\\cos A\\neq 0$ y $\\cos A\\neq\\sen A$. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2015-7",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2015",
+        "examen": "Prefacultativo",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°7"
+      },
+      "enunciado": {
+        "texto_markdown": "¿Cuáles son las raíces de la ecuación trigonométrica entre 0° y 360°?",
+        "ecuacion_latex": "\\cos 3x-\\sen 3x=0",
+        "condicion": "0^\\circ \\le x < 360^\\circ"
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=15^\\circ;\\ x=75^\\circ",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se parte de la ecuación original.",
+          "expresion_latex": "\\cos 3x-\\sen 3x=0"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Sumamos $\\sen 3x$ a ambos miembros.",
+          "expresion_latex": "\\cos 3x=\\sen 3x"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Dividimos entre $\\cos 3x$, asumiendo $\\cos 3x\\neq 0$. Si $\\cos 3x=0$, entonces $\\sen 3x=\\pm 1$, y la igualdad no se cumpliría.",
+          "expresion_latex": "\\tan 3x=1"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "La tangente vale $1$ en $45^\\circ$ y en $225^\\circ$ dentro de una vuelta, por lo que la solución general es:",
+          "expresion_latex": "3x=45^\\circ+180^\\circ k,\\quad k\\in\\mathbb{Z}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Dividimos entre $3$.",
+          "expresion_latex": "x=15^\\circ+60^\\circ k"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Para $0^\\circ \\le x < 360^\\circ$, los valores de $k$ son $0,1,2,3,4,5$.",
+          "expresion_latex": "k=0:\\ x=15^\\circ;\\quad k=1:\\ x=75^\\circ;\\quad k=2:\\ x=135^\\circ;\\quad k=3:\\ x=195^\\circ;\\quad k=4:\\ x=255^\\circ;\\quad k=5:\\ x=315^\\circ"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "La respuesta oficial proporcionada indica solo $x=15^\\circ$ y $x=75^\\circ$. Si el intervalo se restringe a $0^\\circ \\le x < 180^\\circ$, coinciden. En $[0^\\circ,360^\\circ)$ también son soluciones $135^\\circ$, $195^\\circ$, $255^\\circ$ y $315^\\circ$.",
+          "expresion_latex": "x=15^\\circ,\\ 75^\\circ,\\ 135^\\circ,\\ 195^\\circ,\\ 255^\\circ,\\ 315^\\circ"
+        }
+      ],
+      "resultado_final": "x=15^\\circ;\\ x=75^\\circ",
+      "observaciones": "Según la respuesta oficial, se consideran solo $x=15^\\circ$ y $x=75^\\circ$. Sin embargo, en el intervalo $[0^\\circ,360^\\circ)$ la ecuación tiene seis soluciones: $15^\\circ$, $75^\\circ$, $135^\\circ$, $195^\\circ$, $255^\\circ$ y $315^\\circ$. Posible errata en el intervalo o en la respuesta. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2015-8",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2015",
+        "examen": "Prefacultativo",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°8"
+      },
+      "enunciado": {
+        "texto_markdown": "Calcular la longitud del lado de un triángulo equilátero, sabiendo que su área es igual a $\\sqrt{48}\\,u^2$.",
+        "ecuacion_latex": "\\text{Área}=\\sqrt{48}\\,u^2",
+        "condicion": "Triángulo equilátero de lado $a$"
+      },
+      "opciones": [],
+      "respuesta_correcta": "a=4u",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se recuerda la fórmula del área de un triángulo equilátero de lado $a$.",
+          "expresion_latex": "A=\\dfrac{\\sqrt{3}}{4}a^2"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Se iguala el área dada con la fórmula.",
+          "expresion_latex": "\\dfrac{\\sqrt{3}}{4}a^2=\\sqrt{48}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Se simplifica $\\sqrt{48}=\\sqrt{16\\cdot3}=4\\sqrt{3}$.",
+          "expresion_latex": "\\dfrac{\\sqrt{3}}{4}a^2=4\\sqrt{3}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Se multiplica ambos miembros por $\\dfrac{4}{\\sqrt{3}}$.",
+          "expresion_latex": "a^2=16"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Como la longitud del lado es positiva, se toma la raíz positiva.",
+          "expresion_latex": "a=4"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Por lo tanto, la longitud del lado es $4u$.",
+          "expresion_latex": "a=4u"
+        }
+      ],
+      "resultado_final": "a=4u",
+      "observaciones": "Problema directo de aplicación de la fórmula del área del triángulo equilátero. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2014-9",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2014",
+        "examen": "Dispensación",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°9"
+      },
+      "enunciado": {
+        "texto_markdown": "Verificar la identidad trigonométrica:",
+        "ecuacion_latex": "\\tan(45^{\\circ}+x)-\\tan(45^{\\circ}-x)=2\\tan(2x)",
+        "condicion": "x\\neq 45^{\\circ}+90^{\\circ}k,\\quad k\\in\\mathbb{Z}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "\\tan(45^{\\circ}+x)-\\tan(45^{\\circ}-x)=2\\tan(2x)",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se recuerda la fórmula de la tangente de una suma y de una diferencia: $\\tan(A\\pm B)=\\dfrac{\\tan A\\pm\\tan B}{1\\mp\\tan A\\tan B}$.",
+          "expresion_latex": "\\tan(45^{\\circ}+x)=\\dfrac{1+\\tan x}{1-\\tan x}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Análogamente, para la diferencia:",
+          "expresion_latex": "\\tan(45^{\\circ}-x)=\\dfrac{1-\\tan x}{1+\\tan x}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Sea $t=\\tan x$. Restamos ambas expresiones.",
+          "expresion_latex": "\\tan(45^{\\circ}+x)-\\tan(45^{\\circ}-x)=\\dfrac{1+t}{1-t}-\\dfrac{1-t}{1+t}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Se obtiene un denominador común $(1-t)(1+t)=1-t^2$.",
+          "expresion_latex": "=\\dfrac{(1+t)^2-(1-t)^2}{1-t^2}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Desarrollamos el numerador.",
+          "expresion_latex": "(1+t)^2-(1-t)^2=(1+2t+t^2)-(1-2t+t^2)=4t"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Por lo tanto, la diferencia queda:",
+          "expresion_latex": "\\dfrac{4t}{1-t^2}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Se recuerda la fórmula del ángulo doble para la tangente: $\\tan(2x)=\\dfrac{2t}{1-t^2}$.",
+          "expresion_latex": "\\dfrac{4t}{1-t^2}=2\\cdot\\dfrac{2t}{1-t^2}=2\\tan(2x)"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Por lo tanto, la identidad queda verificada para todo $x$ donde las expresiones estén definidas.",
+          "expresion_latex": "\\tan(45^{\\circ}+x)-\\tan(45^{\\circ}-x)=2\\tan(2x)"
+        }
+      ],
+      "resultado_final": "\\tan(45^{\\circ}+x)-\\tan(45^{\\circ}-x)=2\\tan(2x)",
+      "observaciones": "La identidad es válida siempre que $x\\neq 45^{\\circ}+90^{\\circ}k$, $k\\in\\mathbb{Z}$, para evitar que se anulen los denominadores. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2016-10",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2016",
+        "examen": "Prefacultativo",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°10"
+      },
+      "enunciado": {
+        "texto_markdown": "Si $\\sen x = -\\dfrac{\\sqrt{11}}{6}$ y $\\tg x<0$, entonces hallar el $\\cos x$.",
+        "ecuacion_latex": "\\sen x = -\\dfrac{\\sqrt{11}}{6},\\quad \\tg x<0",
+        "condicion": "\\sen x<0,\\quad \\tg x<0"
+      },
+      "opciones": [],
+      "respuesta_correcta": "\\cos x=\\dfrac{5}{6}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se usa la identidad fundamental de la trigonometría: $\\sen^2 x+\\cos^2 x=1$.",
+          "expresion_latex": "\\sen^2 x+\\cos^2 x=1"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Sustituimos $\\sen x=-\\dfrac{\\sqrt{11}}{6}$.",
+          "expresion_latex": "\\left(-\\dfrac{\\sqrt{11}}{6}\\right)^2+\\cos^2 x=1"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Calculamos el cuadrado del seno.",
+          "expresion_latex": "\\dfrac{11}{36}+\\cos^2 x=1"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Despejamos $\\cos^2 x$.",
+          "expresion_latex": "\\cos^2 x=1-\\dfrac{11}{36}=\\dfrac{25}{36}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Como $\\tg x=\\dfrac{\\sen x}{\\cos x}<0$ y $\\sen x<0$, entonces $\\cos x$ debe ser positivo.",
+          "expresion_latex": "\\cos x>0"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Tomamos la raíz positiva.",
+          "expresion_latex": "\\cos x=\\dfrac{5}{6}"
+        }
+      ],
+      "resultado_final": "\\cos x=\\dfrac{5}{6}",
+      "observaciones": "La condición $\\tg x<0$ junto con $\\sen x<0$ determina que $x$ está en el cuarto cuadrante, donde el coseno es positivo. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2016-11",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2016",
+        "examen": "Prefacultativo",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°11"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar la expresión:",
+        "ecuacion_latex": "E=\\dfrac{1+\\tan^2\\left(\\dfrac{x}{2}\\right)}{1-\\tan^2\\left(\\dfrac{x}{2}\\right)}",
+        "condicion": "x\\neq \\dfrac{\\pi}{2}+k\\pi,\\quad k\\in\\mathbb{Z}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E=\\sec x",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se utiliza la identidad del ángulo mitad para la tangente: $\\tan^2\\left(\\dfrac{x}{2}\\right)=\\dfrac{1-\\cos x}{1+\\cos x}$.",
+          "expresion_latex": "\\tan^2\\left(\\dfrac{x}{2}\\right)=\\dfrac{1-\\cos x}{1+\\cos x}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Sustituimos en el numerador.",
+          "expresion_latex": "1+\\tan^2\\left(\\dfrac{x}{2}\\right)=1+\\dfrac{1-\\cos x}{1+\\cos x}=\\dfrac{2}{1+\\cos x}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Sustituimos en el denominador.",
+          "expresion_latex": "1-\\tan^2\\left(\\dfrac{x}{2}\\right)=1-\\dfrac{1-\\cos x}{1+\\cos x}=\\dfrac{2\\cos x}{1+\\cos x}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Dividimos las expresiones obtenidas.",
+          "expresion_latex": "E=\\dfrac{\\dfrac{2}{1+\\cos x}}{\\dfrac{2\\cos x}{1+\\cos x}}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Simplificamos la fracción compleja.",
+          "expresion_latex": "E=\\dfrac{1}{\\cos x}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Aplicamos la definición de secante: $\\sec x=\\dfrac{1}{\\cos x}$.",
+          "expresion_latex": "E=\\sec x"
+        }
+      ],
+      "resultado_final": "E=\\sec x",
+      "observaciones": "La simplificación es válida siempre que $\\cos x\\neq 0$ y $\\tan\\left(\\dfrac{x}{2}\\right)\\neq\\pm 1$, es decir, $x\\neq \\dfrac{\\pi}{2}+k\\pi$. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2016-12",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2016",
+        "examen": "Prefacultativo",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°12"
+      },
+      "enunciado": {
+        "texto_markdown": "Si $\\cos x = \\dfrac{5}{6}$ y $\\tg x<0$, entonces hallar el $\\sen x$.",
+        "ecuacion_latex": "\\cos x=\\dfrac{5}{6},\\quad \\tg x<0",
+        "condicion": "\\cos x>0,\\quad \\tg x<0"
+      },
+      "opciones": [],
+      "respuesta_correcta": "\\sen x=-\\dfrac{\\sqrt{11}}{6}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se usa la identidad fundamental de la trigonometría: $\\sen^2 x+\\cos^2 x=1$.",
+          "expresion_latex": "\\sen^2 x+\\cos^2 x=1"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Sustituimos $\\cos x=\\dfrac{5}{6}$.",
+          "expresion_latex": "\\sen^2 x+\\left(\\dfrac{5}{6}\\right)^2=1"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Calculamos el cuadrado del coseno.",
+          "expresion_latex": "\\sen^2 x+\\dfrac{25}{36}=1"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Despejamos $\\sen^2 x$.",
+          "expresion_latex": "\\sen^2 x=1-\\dfrac{25}{36}=\\dfrac{11}{36}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Como $\\tg x=\\dfrac{\\sen x}{\\cos x}<0$ y $\\cos x>0$, entonces $\\sen x$ debe ser negativo.",
+          "expresion_latex": "\\sen x<0"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Tomamos la raíz negativa.",
+          "expresion_latex": "\\sen x=-\\dfrac{\\sqrt{11}}{6}"
+        }
+      ],
+      "resultado_final": "\\sen x=-\\dfrac{\\sqrt{11}}{6}",
+      "observaciones": "La condición $\\tg x<0$ junto con $\\cos x>0$ determina que $x$ está en el cuarto cuadrante, donde el seno es negativo. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2016-13",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2016",
+        "examen": "Prefacultativo",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°13"
+      },
+      "enunciado": {
+        "texto_markdown": "Si $\\tan A = \\dfrac{1}{4}$ y $\\tan B=\\dfrac{3}{5}$, sabiendo que pertenecen al primer cuadrante, entonces ¿$A+B$ es?",
+        "ecuacion_latex": "\\tan A=\\dfrac{1}{4},\\quad \\tan B=\\dfrac{3}{5}",
+        "condicion": "A,B\\in \\text{primer cuadrante}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "A+B=45^{\\circ}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se utiliza la fórmula de la tangente de una suma: $\\tan(A+B)=\\dfrac{\\tan A+\\tan B}{1-\\tan A\\tan B}$.",
+          "expresion_latex": "\\tan(A+B)=\\dfrac{\\tan A+\\tan B}{1-\\tan A\\tan B}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Sustituimos los valores dados.",
+          "expresion_latex": "\\tan(A+B)=\\dfrac{\\dfrac{1}{4}+\\dfrac{3}{5}}{1-\\dfrac{1}{4}\\cdot\\dfrac{3}{5}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Operamos el numerador.",
+          "expresion_latex": "\\dfrac{1}{4}+\\dfrac{3}{5}=\\dfrac{5}{20}+\\dfrac{12}{20}=\\dfrac{17}{20}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Operamos el denominador.",
+          "expresion_latex": "1-\\dfrac{1}{4}\\cdot\\dfrac{3}{5}=1-\\dfrac{3}{20}=\\dfrac{17}{20}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Dividimos ambos resultados.",
+          "expresion_latex": "\\tan(A+B)=\\dfrac{\\dfrac{17}{20}}{\\dfrac{17}{20}}=1"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Como $A$ y $B$ pertenecen al primer cuadrante, su suma está entre $0^{\\circ}$ y $180^{\\circ}$. La tangente vale $1$ en $45^{\\circ}$ y en $225^{\\circ}$; dentro del intervalo posible, la solución es $45^{\\circ}$.",
+          "expresion_latex": "A+B=45^{\\circ}"
+        }
+      ],
+      "resultado_final": "A+B=45^{\\circ}",
+      "observaciones": "La condición de que $A$ y $B$ estén en el primer cuadrante permite descartar otras soluciones de la ecuación $\\tan(A+B)=1$. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2016-14",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2016",
+        "examen": "Dispensación",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°14"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver",
+        "ecuacion_latex": "\\begin{cases} y\\cdot\\cos(3x)=1 \\\\ y\\cdot\\sen(3x)=1 \\end{cases}",
+        "condicion": "y\\neq 0"
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=15^{\\circ};\\ y=\\sqrt{2}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "De la primera ecuación, como $y\\cos(3x)=1$, se tiene $y\\neq 0$ y $\\cos(3x)=\\dfrac{1}{y}$.",
+          "expresion_latex": "\\cos(3x)=\\dfrac{1}{y}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "De la segunda ecuación, $y\\sen(3x)=1$, se obtiene $\\sen(3x)=\\dfrac{1}{y}$.",
+          "expresion_latex": "\\sen(3x)=\\dfrac{1}{y}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Igualamos ambos resultados.",
+          "expresion_latex": "\\cos(3x)=\\sen(3x)"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Dividimos entre $\\cos(3x)$, siempre que $\\cos(3x)\\neq 0$. Si $\\cos(3x)=0$, entonces $\\sen(3x)=\\pm 1$, lo cual no puede ser igual a $\\cos(3x)$.",
+          "expresion_latex": "\\tan(3x)=1"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "La solución principal en el primer cuadrante es $3x=45^{\\circ}$, de donde:",
+          "expresion_latex": "x=15^{\\circ}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Calculamos $y$ usando $\\cos(3x)=\\dfrac{1}{y}$. Para $3x=45^{\\circ}$, $\\cos 45^{\\circ}=\\dfrac{\\sqrt{2}}{2}$.",
+          "expresion_latex": "\\dfrac{\\sqrt{2}}{2}=\\dfrac{1}{y}\\;\\Rightarrow\\;y=\\sqrt{2}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Verificamos: $y\\cos(45^{\\circ})=\\sqrt{2}\\cdot\\dfrac{\\sqrt{2}}{2}=1$ y $y\\sen(45^{\\circ})=\\sqrt{2}\\cdot\\dfrac{\\sqrt{2}}{2}=1$. La solución cumple ambas ecuaciones.",
+          "expresion_latex": "x=15^{\\circ},\\quad y=\\sqrt{2}"
+        }
+      ],
+      "resultado_final": "x=15^{\\circ};\\ y=\\sqrt{2}",
+      "observaciones": "Se toma la solución principal del primer cuadrante. En forma general, $x=15^{\\circ}+120^{\\circ}k$ con $y=\\sqrt{2}$, y también existen soluciones en el tercer cuadrante con $y=-\\sqrt{2}$. La respuesta oficial considera solo $x=15^{\\circ}$ y $y=\\sqrt{2}$. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2017-15",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2017",
+        "examen": "Dispensación",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°15"
+      },
+      "enunciado": {
+        "texto_markdown": "Sabiendo que: $\\sen x-\\cos x=\\dfrac{1}{3}$. Calcular $\\sen 2x$.",
+        "ecuacion_latex": "\\sen x-\\cos x=\\dfrac{1}{3}",
+        "condicion": "No se requieren condiciones adicionales."
+      },
+      "opciones": [],
+      "respuesta_correcta": "\\sen 2x=\\dfrac{8}{9}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se parte de la ecuación dada.",
+          "expresion_latex": "\\sen x-\\cos x=\\dfrac{1}{3}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Elevamos al cuadrado ambos miembros.",
+          "expresion_latex": "\\left(\\sen x-\\cos x\\right)^2=\\left(\\dfrac{1}{3}\\right)^2"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Desarrollamos el binomio.",
+          "expresion_latex": "\\sen^2 x-2\\sen x\\cos x+\\cos^2 x=\\dfrac{1}{9}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Usamos la identidad fundamental $\\sen^2 x+\\cos^2 x=1$.",
+          "expresion_latex": "1-2\\sen x\\cos x=\\dfrac{1}{9}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Recordamos que $2\\sen x\\cos x=\\sen 2x$.",
+          "expresion_latex": "1-\\sen 2x=\\dfrac{1}{9}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Despejamos $\\sen 2x$.",
+          "expresion_latex": "\\sen 2x=1-\\dfrac{1}{9}=\\dfrac{8}{9}"
+        }
+      ],
+      "resultado_final": "\\sen 2x=\\dfrac{8}{9}",
+      "observaciones": "La solución se obtiene elevando al cuadrado la expresión dada y usando la identidad del ángulo doble. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2018-16",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2018",
+        "examen": "Dispensación",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°16"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar al máximo la siguiente expresión",
+        "ecuacion_latex": "E=\\dfrac{4\\cos(2x)}{\\cot^2 x-\\tg^2 x}",
+        "condicion": "\\sen x\\neq 0,\\ \\cos x\\neq 0,\\ \\cos(2x)\\neq 0"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E=(\\sen 2x)^2",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se escriben las funciones cotangente y tangente en términos de seno y coseno.",
+          "expresion_latex": "\\cot^2 x=\\dfrac{\\cos^2 x}{\\sen^2 x},\\quad \\tg^2 x=\\dfrac{\\sen^2 x}{\\cos^2 x}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Se sustituye en el denominador.",
+          "expresion_latex": "\\cot^2 x-\\tg^2 x=\\dfrac{\\cos^2 x}{\\sen^2 x}-\\dfrac{\\sen^2 x}{\\cos^2 x}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Se obtiene un denominador común $\\sen^2 x\\cos^2 x$.",
+          "expresion_latex": "\\dfrac{\\cos^4 x-\\sen^4 x}{\\sen^2 x\\cos^2 x}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Se factoriza la diferencia de cuadrados en el numerador.",
+          "expresion_latex": "\\cos^4 x-\\sen^4 x=(\\cos^2 x-\\sen^2 x)(\\cos^2 x+\\sen^2 x)"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Se aplican las identidades $\\cos^2 x+\\sen^2 x=1$ y $\\cos^2 x-\\sen^2 x=\\cos(2x)$.",
+          "expresion_latex": "\\cos^4 x-\\sen^4 x=\\cos(2x)"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Por lo tanto, el denominador queda:",
+          "expresion_latex": "\\cot^2 x-\\tg^2 x=\\dfrac{\\cos(2x)}{\\sen^2 x\\cos^2 x}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Se sustituye en la expresión original.",
+          "expresion_latex": "E=\\dfrac{4\\cos(2x)}{\\dfrac{\\cos(2x)}{\\sen^2 x\\cos^2 x}}"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Se simplifica la fracción compleja, cancelando $\\cos(2x)$ bajo la condición $\\cos(2x)\\neq 0$.",
+          "expresion_latex": "E=4\\sen^2 x\\cos^2 x"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Se reconoce el cuadrado del seno del ángulo doble: $\\sen(2x)=2\\sen x\\cos x$.",
+          "expresion_latex": "E=(2\\sen x\\cos x)^2=(\\sen 2x)^2"
+        }
+      ],
+      "resultado_final": "E=(\\sen 2x)^2",
+      "observaciones": "La simplificación es válida siempre que $\\sen x\\neq 0$, $\\cos x\\neq 0$ y $\\cos(2x)\\neq 0$, condiciones necesarias para que la expresión original esté definida. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2018-17",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2018",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°17"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver el sistema de ecuaciones entre $0 \\leq x \\leq \\pi$",
+        "ecuacion_latex": "\\begin{cases} x-y=\\dfrac{1}{6}\\pi \\\\ \\cos^2 x-\\cos^2 y+2\\sen x\\cos y=0 \\end{cases}",
+        "condicion": "0\\leq x\\leq \\pi"
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=150^{\\circ};\\ y=120^{\\circ}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "De la primera ecuación despejamos $x$ en función de $y$.",
+          "expresion_latex": "x=y+\\dfrac{\\pi}{6}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Sustituimos en la segunda ecuación.",
+          "expresion_latex": "\\cos^2\\left(y+\\dfrac{\\pi}{6}\\right)-\\cos^2 y+2\\sen\\left(y+\\dfrac{\\pi}{6}\\right)\\cos y=0"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Aplicamos las fórmulas de suma de ángulos. Sea $c=\\cos y$, $s=\\sen y$.",
+          "expresion_latex": "\\cos\\left(y+\\dfrac{\\pi}{6}\\right)=\\dfrac{\\sqrt{3}}{2}c-\\dfrac{1}{2}s,\\quad \\sen\\left(y+\\dfrac{\\pi}{6}\\right)=\\dfrac{\\sqrt{3}}{2}s+\\dfrac{1}{2}c"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Sustituimos y desarrollamos.",
+          "expresion_latex": "\\left(\\dfrac{\\sqrt{3}}{2}c-\\dfrac{1}{2}s\\right)^2-c^2+2\\left(\\dfrac{\\sqrt{3}}{2}s+\\dfrac{1}{2}c\\right)c=0"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Simplificamos la expresión.",
+          "expresion_latex": "\\dfrac{3c^2-2\\sqrt{3}cs+s^2}{4}-c^2+\\sqrt{3}sc+c^2=0"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Los términos $-c^2$ y $+c^2$ se cancelan y reducimos.",
+          "expresion_latex": "\\dfrac{3c^2+s^2+2\\sqrt{3}sc}{4}=0"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Multiplicamos por $4$ y reconocemos un trinomio cuadrado perfecto.",
+          "expresion_latex": "3c^2+s^2+2\\sqrt{3}sc=(\\sqrt{3}c+s)^2=0"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Por lo tanto, $\\sqrt{3}\\cos y+\\sen y=0$, es decir, $\\tan y=-\\sqrt{3}$.",
+          "expresion_latex": "\\tan y=-\\sqrt{3}"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Las soluciones generales son $y=-\\dfrac{\\pi}{3}+k\\pi$, $k\\in\\mathbb{Z}$.",
+          "expresion_latex": "y=-\\dfrac{\\pi}{3}+k\\pi"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Como $0\\leq x\\leq\\pi$ y $x=y+\\dfrac{\\pi}{6}$, se tiene $-\\dfrac{\\pi}{6}\\leq y\\leq \\dfrac{5\\pi}{6}$.",
+          "expresion_latex": "-\\dfrac{\\pi}{6}\\leq y\\leq \\dfrac{5\\pi}{6}"
+        },
+        {
+          "paso": 11,
+          "nota_teorica": "En ese intervalo, el único valor que cumple $\\tan y=-\\sqrt{3}$ es $y=\\dfrac{2\\pi}{3}$ (es decir, $120^{\\circ}$).",
+          "expresion_latex": "y=\\dfrac{2\\pi}{3}=120^{\\circ}"
+        },
+        {
+          "paso": 12,
+          "nota_teorica": "Calculamos $x$.",
+          "expresion_latex": "x=y+\\dfrac{\\pi}{6}=\\dfrac{2\\pi}{3}+\\dfrac{\\pi}{6}=\\dfrac{5\\pi}{6}=150^{\\circ}"
+        },
+        {
+          "paso": 13,
+          "nota_teorica": "Verificamos en la segunda ecuación: $\\cos^2 150^{\\circ}=\\dfrac{3}{4}$, $\\cos^2 120^{\\circ}=\\dfrac{1}{4}$, $2\\sen 150^{\\circ}\\cos 120^{\\circ}=2\\cdot\\dfrac{1}{2}\\cdot\\left(-\\dfrac{1}{2}\\right)=-\\dfrac{1}{2}$. La suma es $\\dfrac{3}{4}-\\dfrac{1}{4}-\\dfrac{1}{2}=0$.",
+          "expresion_latex": "x=150^{\\circ},\\quad y=120^{\\circ}"
+        }
+      ],
+      "resultado_final": "x=150^{\\circ};\\ y=120^{\\circ}",
+      "observaciones": "La respuesta oficial proporcionada ($x=90^{\\circ};\\ y=60^{\\circ}$) no satisface la segunda ecuación del sistema. La solución correcta es $x=150^{\\circ};\\ y=120^{\\circ}$. Posible errata en el material original. Dificultad estimada: Media."
+    },
+    {
+      "id_pregunta": "PSA-2018-18",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2018",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°18"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver",
+        "ecuacion_latex": "\\begin{cases} x+y=\\dfrac{2}{3}\\pi \\\\ \\cos x+\\cos y=1 \\end{cases}",
+        "condicion": "No se especifica intervalo; se da la solución principal y la solución general."
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=60^{\\circ};\\ y=60^{\\circ}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se parte del sistema dado.",
+          "expresion_latex": "\\begin{cases} x+y=\\dfrac{2\\pi}{3} \\\\ \\cos x+\\cos y=1 \\end{cases}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Aplicamos la identidad de suma a producto: $\\cos x+\\cos y=2\\cos\\left(\\dfrac{x+y}{2}\\right)\\cos\\left(\\dfrac{x-y}{2}\\right)$.",
+          "expresion_latex": "\\cos x+\\cos y=2\\cos\\left(\\dfrac{x+y}{2}\\right)\\cos\\left(\\dfrac{x-y}{2}\\right)"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Como $x+y=\\dfrac{2\\pi}{3}$, se tiene $\\dfrac{x+y}{2}=\\dfrac{\\pi}{3}$ y $\\cos\\left(\\dfrac{\\pi}{3}\\right)=\\dfrac{1}{2}$.",
+          "expresion_latex": "\\cos x+\\cos y=2\\cdot\\dfrac{1}{2}\\cdot\\cos\\left(\\dfrac{x-y}{2}\\right)=\\cos\\left(\\dfrac{x-y}{2}\\right)"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Sustituimos en la segunda ecuación.",
+          "expresion_latex": "\\cos\\left(\\dfrac{x-y}{2}\\right)=1"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "La solución general de $\\cos\\theta=1$ es $\\theta=2\\pi k$, $k\\in\\mathbb{Z}$.",
+          "expresion_latex": "\\dfrac{x-y}{2}=2\\pi k\\;\\Rightarrow\\;x-y=4\\pi k"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Resolvemos el sistema lineal formado por $x+y=\\dfrac{2\\pi}{3}$ y $x-y=4\\pi k$.",
+          "expresion_latex": "\\begin{cases} x+y=\\dfrac{2\\pi}{3} \\\\ x-y=4\\pi k \\end{cases}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Sumando ambas ecuaciones: $2x=\\dfrac{2\\pi}{3}+4\\pi k$, de donde $x=\\dfrac{\\pi}{3}+2\\pi k$.",
+          "expresion_latex": "x=\\dfrac{\\pi}{3}+2\\pi k"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Restando: $2y=\\dfrac{2\\pi}{3}-4\\pi k$, de donde $y=\\dfrac{\\pi}{3}-2\\pi k$.",
+          "expresion_latex": "y=\\dfrac{\\pi}{3}-2\\pi k"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Para $k=0$ se obtiene la solución principal.",
+          "expresion_latex": "x=\\dfrac{\\pi}{3}=60^{\\circ},\\quad y=\\dfrac{\\pi}{3}=60^{\\circ}"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Verificamos: $x+y=120^{\\circ}=\\dfrac{2\\pi}{3}$ y $\\cos 60^{\\circ}+\\cos 60^{\\circ}=\\dfrac{1}{2}+\\dfrac{1}{2}=1$.",
+          "expresion_latex": "x=60^{\\circ},\\quad y=60^{\\circ}"
+        }
+      ],
+      "resultado_final": "x=60^{\\circ};\\ y=60^{\\circ}",
+      "observaciones": "La solución principal es $x=60^{\\circ}$ e $y=60^{\\circ}$. La solución general es $x=60^{\\circ}+360^{\\circ}k$ e $y=60^{\\circ}-360^{\\circ}k$, $k\\in\\mathbb{Z}$. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2018-19",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2018",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°19"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver el sistema de ecuaciones",
+        "ecuacion_latex": "\\begin{cases} \\sen x\\cdot\\sen y = -\\dfrac{1}{2} \\\\ \\cos x\\cdot\\cos y = \\dfrac{1}{2} \\end{cases}",
+        "condicion": "No se especifica intervalo; se da la solución general."
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=135^{\\circ};\\ y=225^{\\circ}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se usan las identidades del coseno de la suma y de la diferencia: $\\cos(x-y)=\\cos x\\cos y+\\sen x\\sen y$ y $\\cos(x+y)=\\cos x\\cos y-\\sen x\\sen y$.",
+          "expresion_latex": "\\cos(x-y)=\\cos x\\cos y+\\sen x\\sen y,\\quad \\cos(x+y)=\\cos x\\cos y-\\sen x\\sen y"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Sustituimos los valores dados.",
+          "expresion_latex": "\\cos(x-y)=\\dfrac{1}{2}+\\left(-\\dfrac{1}{2}\\right)=0"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Análogamente para la suma.",
+          "expresion_latex": "\\cos(x+y)=\\dfrac{1}{2}-\\left(-\\dfrac{1}{2}\\right)=1"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "De $\\cos(x-y)=0$ se obtiene la solución general:",
+          "expresion_latex": "x-y=90^{\\circ}+180^{\\circ}k,\\quad k\\in\\mathbb{Z}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "De $\\cos(x+y)=1$ se obtiene:",
+          "expresion_latex": "x+y=360^{\\circ}n,\\quad n\\in\\mathbb{Z}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Resolvemos el sistema lineal sumando y restando ambas ecuaciones.",
+          "expresion_latex": "x=180^{\\circ}n+45^{\\circ}+90^{\\circ}k,\\quad y=180^{\\circ}n-45^{\\circ}-90^{\\circ}k"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Para $n=0$ y $k=1$ se obtiene una solución particular.",
+          "expresion_latex": "x=135^{\\circ},\\quad y=-135^{\\circ}\\equiv 225^{\\circ}"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Verificamos en el sistema original.",
+          "expresion_latex": "\\sen 135^{\\circ}\\cdot\\sen 225^{\\circ}=\\dfrac{\\sqrt{2}}{2}\\cdot\\left(-\\dfrac{\\sqrt{2}}{2}\\right)=-\\dfrac{1}{2}"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Y para los cosenos.",
+          "expresion_latex": "\\cos 135^{\\circ}\\cdot\\cos 225^{\\circ}=\\left(-\\dfrac{\\sqrt{2}}{2}\\right)\\cdot\\left(-\\dfrac{\\sqrt{2}}{2}\\right)=\\dfrac{1}{2}"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Otras soluciones en $[0^{\\circ},360^{\\circ})$ son: $(45^{\\circ},315^{\\circ})$, $(225^{\\circ},135^{\\circ})$ y $(315^{\\circ},45^{\\circ})$.",
+          "expresion_latex": "(45^{\\circ},315^{\\circ}),\\ (135^{\\circ},225^{\\circ}),\\ (225^{\\circ},135^{\\circ}),\\ (315^{\\circ},45^{\\circ})"
+        }
+      ],
+      "resultado_final": "x=135^{\\circ};\\ y=225^{\\circ}",
+      "observaciones": "La respuesta oficial proporcionada, $x=135^{\\circ};\\ y=45^{\\circ}$, no satisface el sistema dado. Con las ecuaciones originales, una solución válida es $x=135^{\\circ};\\ y=225^{\\circ}$. La solución general es $x=180^{\\circ}n+45^{\\circ}+90^{\\circ}k$, $y=180^{\\circ}n-45^{\\circ}-90^{\\circ}k$, $n,k\\in\\mathbb{Z}$. Posible errata en el enunciado o en la respuesta oficial (quizá los signos de los productos estaban intercambiados). Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2018-20",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2018",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°20"
+      },
+      "enunciado": {
+        "texto_markdown": "Demostrar la identidad",
+        "ecuacion_latex": "\\dfrac{\\sen 2x}{1+\\cos 2x}\\cdot\\dfrac{\\cos x}{1+\\cos x}=\\tan\\left(\\dfrac{x}{2}\\right)",
+        "condicion": "\\cos x\\neq 0,\\quad 1+\\cos x\\neq 0,\\quad \\cos\\left(\\dfrac{x}{2}\\right)\\neq 0"
+      },
+      "opciones": [],
+      "respuesta_correcta": "\\dfrac{\\sen 2x}{1+\\cos 2x}\\cdot\\dfrac{\\cos x}{1+\\cos x}=\\tan\\left(\\dfrac{x}{2}\\right)",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se simplifica el primer factor usando las identidades del ángulo doble: $\\sen 2x=2\\sen x\\cos x$ y $1+\\cos 2x=2\\cos^2 x$.",
+          "expresion_latex": "\\dfrac{\\sen 2x}{1+\\cos 2x}=\\dfrac{2\\sen x\\cos x}{2\\cos^2 x}=\\tan x"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Se sustituye en la expresión original.",
+          "expresion_latex": "\\dfrac{\\sen 2x}{1+\\cos 2x}\\cdot\\dfrac{\\cos x}{1+\\cos x}=\\tan x\\cdot\\dfrac{\\cos x}{1+\\cos x}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Se escribe $\\tan x=\\dfrac{\\sen x}{\\cos x}$ y se simplifica.",
+          "expresion_latex": "\\tan x\\cdot\\dfrac{\\cos x}{1+\\cos x}=\\dfrac{\\sen x}{\\cos x}\\cdot\\dfrac{\\cos x}{1+\\cos x}=\\dfrac{\\sen x}{1+\\cos x}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Se aplica la identidad del ángulo mitad: $\\sen x=2\\sen\\left(\\dfrac{x}{2}\\right)\\cos\\left(\\dfrac{x}{2}\\right)$ y $1+\\cos x=2\\cos^2\\left(\\dfrac{x}{2}\\right)$.",
+          "expresion_latex": "\\dfrac{\\sen x}{1+\\cos x}=\\dfrac{2\\sen\\left(\\dfrac{x}{2}\\right)\\cos\\left(\\dfrac{x}{2}\\right)}{2\\cos^2\\left(\\dfrac{x}{2}\\right)}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Se simplifica el factor común $2\\cos\\left(\\dfrac{x}{2}\\right)$.",
+          "expresion_latex": "\\dfrac{\\sen\\left(\\dfrac{x}{2}\\right)}{\\cos\\left(\\dfrac{x}{2}\\right)}=\\tan\\left(\\dfrac{x}{2}\\right)"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Por lo tanto, la identidad queda demostrada.",
+          "expresion_latex": "\\dfrac{\\sen 2x}{1+\\cos 2x}\\cdot\\dfrac{\\cos x}{1+\\cos x}=\\tan\\left(\\dfrac{x}{2}\\right)"
+        }
+      ],
+      "resultado_final": "\\dfrac{\\sen 2x}{1+\\cos 2x}\\cdot\\dfrac{\\cos x}{1+\\cos x}=\\tan\\left(\\dfrac{x}{2}\\right)",
+      "observaciones": "La identidad es válida para todo $x$ donde las expresiones estén definidas: $\\cos x\\neq 0$, $1+\\cos x\\neq 0$ y $\\cos\\left(\\dfrac{x}{2}\\right)\\neq 0$. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2018-21",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2018",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°21"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver",
+        "ecuacion_latex": "\\begin{cases} \\sen x\\cdot\\sen y = \\dfrac{3}{4} \\\\ \\tan x\\cdot\\tan y = 3 \\end{cases}",
+        "condicion": "No se especifica intervalo; se da la solución principal."
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=60^{\\circ};\\ y=60^{\\circ}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se parte del sistema dado.",
+          "expresion_latex": "\\begin{cases} \\sen x\\sen y=\\dfrac{3}{4} \\\\ \\tan x\\tan y=3 \\end{cases}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Se escribe la tangente como cociente de seno y coseno.",
+          "expresion_latex": "\\tan x\\tan y=\\dfrac{\\sen x\\sen y}{\\cos x\\cos y}=3"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Sustituimos $\\sen x\\sen y=\\dfrac{3}{4}$.",
+          "expresion_latex": "\\dfrac{\\dfrac{3}{4}}{\\cos x\\cos y}=3"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Despejamos $\\cos x\\cos y$.",
+          "expresion_latex": "\\cos x\\cos y=\\dfrac{1}{4}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Calculamos $\\cos(x-y)=\\cos x\\cos y+\\sen x\\sen y$.",
+          "expresion_latex": "\\cos(x-y)=\\dfrac{1}{4}+\\dfrac{3}{4}=1"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Calculamos $\\cos(x+y)=\\cos x\\cos y-\\sen x\\sen y$.",
+          "expresion_latex": "\\cos(x+y)=\\dfrac{1}{4}-\\dfrac{3}{4}=-\\dfrac{1}{2}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "De $\\cos(x-y)=1$ se obtiene $x-y=360^{\\circ}k$, $k\\in\\mathbb{Z}$.",
+          "expresion_latex": "x-y=360^{\\circ}k"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "De $\\cos(x+y)=-\\dfrac{1}{2}$ se obtiene $x+y=120^{\\circ}+360^{\\circ}n$ o $x+y=240^{\\circ}+360^{\\circ}n$, $n\\in\\mathbb{Z}$.",
+          "expresion_latex": "x+y=120^{\\circ}+360^{\\circ}n\\quad\\text{o}\\quad x+y=240^{\\circ}+360^{\\circ}n"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Tomando $k=0$ y $x+y=120^{\\circ}$, se tiene $x=y$ y $2x=120^{\\circ}$, luego $x=60^{\\circ}$, $y=60^{\\circ}$.",
+          "expresion_latex": "x=60^{\\circ},\\quad y=60^{\\circ}"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Verificamos en el sistema original.",
+          "expresion_latex": "\\sen 60^{\\circ}\\sen 60^{\\circ}=\\dfrac{\\sqrt{3}}{2}\\cdot\\dfrac{\\sqrt{3}}{2}=\\dfrac{3}{4},\\quad \\tan 60^{\\circ}\\tan 60^{\\circ}=\\sqrt{3}\\cdot\\sqrt{3}=3"
+        }
+      ],
+      "resultado_final": "x=60^{\\circ};\\ y=60^{\\circ}",
+      "observaciones": "La solución principal es $x=60^{\\circ}$, $y=60^{\\circ}$. También $x=120^{\\circ}$, $y=120^{\\circ}$ satisface el sistema si se considera el intervalo $[0^{\\circ},360^{\\circ})$. La respuesta oficial considera solo $60^{\\circ}$. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2019-22",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2019",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°22"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver el sistema",
+        "ecuacion_latex": "\\begin{cases} x+y=\\dfrac{2\\pi}{3} \\\\ \\cos x+\\cos y=1 \\end{cases}",
+        "condicion": "No se especifica intervalo; se da la solución principal y la solución general."
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=60^{\\circ};\\ y=60^{\\circ}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se parte del sistema dado.",
+          "expresion_latex": "\\begin{cases} x+y=\\dfrac{2\\pi}{3} \\\\ \\cos x+\\cos y=1 \\end{cases}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Aplicamos la identidad de suma a producto: $\\cos x+\\cos y=2\\cos\\left(\\dfrac{x+y}{2}\\right)\\cos\\left(\\dfrac{x-y}{2}\\right)$.",
+          "expresion_latex": "\\cos x+\\cos y=2\\cos\\left(\\dfrac{x+y}{2}\\right)\\cos\\left(\\dfrac{x-y}{2}\\right)"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Como $x+y=\\dfrac{2\\pi}{3}$, se tiene $\\dfrac{x+y}{2}=\\dfrac{\\pi}{3}$ y $\\cos\\left(\\dfrac{\\pi}{3}\\right)=\\dfrac{1}{2}$.",
+          "expresion_latex": "\\cos x+\\cos y=2\\cdot\\dfrac{1}{2}\\cdot\\cos\\left(\\dfrac{x-y}{2}\\right)=\\cos\\left(\\dfrac{x-y}{2}\\right)"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Sustituimos en la segunda ecuación.",
+          "expresion_latex": "\\cos\\left(\\dfrac{x-y}{2}\\right)=1"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "La solución general de $\\cos\\theta=1$ es $\\theta=2\\pi k$, $k\\in\\mathbb{Z}$.",
+          "expresion_latex": "\\dfrac{x-y}{2}=2\\pi k\\;\\Rightarrow\\;x-y=4\\pi k"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Resolvemos el sistema lineal formado por $x+y=\\dfrac{2\\pi}{3}$ y $x-y=4\\pi k$.",
+          "expresion_latex": "\\begin{cases} x+y=\\dfrac{2\\pi}{3} \\\\ x-y=4\\pi k \\end{cases}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Sumando ambas ecuaciones: $2x=\\dfrac{2\\pi}{3}+4\\pi k$, de donde $x=\\dfrac{\\pi}{3}+2\\pi k$.",
+          "expresion_latex": "x=\\dfrac{\\pi}{3}+2\\pi k"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Restando: $2y=\\dfrac{2\\pi}{3}-4\\pi k$, de donde $y=\\dfrac{\\pi}{3}-2\\pi k$.",
+          "expresion_latex": "y=\\dfrac{\\pi}{3}-2\\pi k"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Para $k=0$ se obtiene la solución principal.",
+          "expresion_latex": "x=\\dfrac{\\pi}{3}=60^{\\circ},\\quad y=\\dfrac{\\pi}{3}=60^{\\circ}"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Verificamos: $x+y=120^{\\circ}=\\dfrac{2\\pi}{3}$ y $\\cos 60^{\\circ}+\\cos 60^{\\circ}=\\dfrac{1}{2}+\\dfrac{1}{2}=1$.",
+          "expresion_latex": "x=60^{\\circ},\\quad y=60^{\\circ}"
+        }
+      ],
+      "resultado_final": "x=60^{\\circ};\\ y=60^{\\circ}",
+      "observaciones": "La solución principal es $x=60^{\\circ}$ e $y=60^{\\circ}$. La solución general es $x=60^{\\circ}+360^{\\circ}k$ e $y=60^{\\circ}-360^{\\circ}k$, $k\\in\\mathbb{Z}$. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2020-23",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2020",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°23"
+      },
+      "enunciado": {
+        "texto_markdown": "Realizando operaciones en la expresión trigonométrica, determine una identidad.",
+        "ecuacion_latex": "T=1-\\dfrac{\\cos^2\\theta}{1+\\sen\\theta}",
+        "condicion": "1+\\sen\\theta\\neq 0;\\ \\text{es decir, }\\sen\\theta\\neq -1"
+      },
+      "opciones": [],
+      "respuesta_correcta": "T=\\sen\\theta",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se parte de la expresión original.",
+          "expresion_latex": "T=1-\\dfrac{\\cos^2\\theta}{1+\\sen\\theta}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Se usa la identidad fundamental $\\cos^2\\theta=1-\\sen^2\\theta$.",
+          "expresion_latex": "T=1-\\dfrac{1-\\sen^2\\theta}{1+\\sen\\theta}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Se factoriza la diferencia de cuadrados en el numerador.",
+          "expresion_latex": "T=1-\\dfrac{(1-\\sen\\theta)(1+\\sen\\theta)}{1+\\sen\\theta}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Se cancela el factor $1+\\sen\\theta$, válido porque $\\sen\\theta\\neq -1$.",
+          "expresion_latex": "T=1-(1-\\sen\\theta)"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Se elimina el paréntesis.",
+          "expresion_latex": "T=1-1+\\sen\\theta"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Se simplifica.",
+          "expresion_latex": "T=\\sen\\theta"
+        }
+      ],
+      "resultado_final": "T=\\sen\\theta",
+      "observaciones": "La identidad es válida siempre que $1+\\sen\\theta\\neq 0$, es decir, $\\sen\\theta\\neq -1$. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2020-24",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2020",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°24"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver",
+        "ecuacion_latex": "\\begin{cases} \\sen x+\\sen y=1 \\\\ 2x+2y=\\pi \\end{cases}",
+        "condicion": "No se especifica intervalo; se da la solución principal."
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=0;\\ y=90^{\\circ}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "De la segunda ecuación, dividimos entre $2$.",
+          "expresion_latex": "x+y=\\dfrac{\\pi}{2}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Despejamos $y$ en función de $x$.",
+          "expresion_latex": "y=\\dfrac{\\pi}{2}-x"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Sustituimos en la primera ecuación.",
+          "expresion_latex": "\\sen x+\\sen\\left(\\dfrac{\\pi}{2}-x\\right)=1"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Usamos la identidad $\\sen\\left(\\dfrac{\\pi}{2}-x\\right)=\\cos x$.",
+          "expresion_latex": "\\sen x+\\cos x=1"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Escribimos $\\sen x+\\cos x$ como $\\sqrt{2}\\,\\sen\\left(x+\\dfrac{\\pi}{4}\\right)$.",
+          "expresion_latex": "\\sqrt{2}\\,\\sen\\left(x+\\dfrac{\\pi}{4}\\right)=1"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Dividimos entre $\\sqrt{2}$.",
+          "expresion_latex": "\\sen\\left(x+\\dfrac{\\pi}{4}\\right)=\\dfrac{1}{\\sqrt{2}}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Las soluciones generales de $\\sen\\theta=\\dfrac{\\sqrt{2}}{2}$ son $\\theta=\\dfrac{\\pi}{4}+2k\\pi$ y $\\theta=\\dfrac{3\\pi}{4}+2k\\pi$, $k\\in\\mathbb{Z}$.",
+          "expresion_latex": "x+\\dfrac{\\pi}{4}=\\dfrac{\\pi}{4}+2k\\pi \\quad\\text{o}\\quad x+\\dfrac{\\pi}{4}=\\dfrac{3\\pi}{4}+2k\\pi"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Despejamos $x$.",
+          "expresion_latex": "x=2k\\pi \\quad\\text{o}\\quad x=\\dfrac{\\pi}{2}+2k\\pi"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Calculamos $y$ usando $y=\\dfrac{\\pi}{2}-x$.",
+          "expresion_latex": "\\text{Si } x=2k\\pi,\\ y=\\dfrac{\\pi}{2}-2k\\pi;\\quad \\text{si } x=\\dfrac{\\pi}{2}+2k\\pi,\\ y=-2k\\pi"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Para $k=0$ se obtienen las soluciones principales en el primer cuadrante del intervalo usual.",
+          "expresion_latex": "(x,y)=\\left(0,\\dfrac{\\pi}{2}\\right)\\quad\\text{o}\\quad \\left(\\dfrac{\\pi}{2},0\\right)"
+        },
+        {
+          "paso": 11,
+          "nota_teorica": "La respuesta oficial considera la primera solución.",
+          "expresion_latex": "x=0^{\\circ},\\quad y=90^{\\circ}"
+        }
+      ],
+      "resultado_final": "x=0;\\ y=90^{\\circ}",
+      "observaciones": "La respuesta oficial da $x=0^{\\circ}$ e $y=90^{\\circ}$. Sin embargo, el sistema también admite la solución simétrica $x=90^{\\circ}$ e $y=0^{\\circ}$. En forma general: $(x,y)=(0+360^{\\circ}k,\\,90^{\\circ}-360^{\\circ}k)$ o $(x,y)=(90^{\\circ}+360^{\\circ}k,\\,-360^{\\circ}k)$, $k\\in\\mathbb{Z}$. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2020-25",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2020",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°25"
+      },
+      "enunciado": {
+        "texto_markdown": "Calcular la solución del siguiente sistema, en el intervalo de $[0,2\\pi]$",
+        "ecuacion_latex": "\\begin{cases} \\sen\\alpha=2\\sen\\beta \\\\ \\alpha-\\beta=\\dfrac{\\pi}{3} \\end{cases}",
+        "condicion": "\\alpha,\\beta\\in[0,2\\pi]"
+      },
+      "opciones": [],
+      "respuesta_correcta": "\\alpha_1=90^{\\circ};\\ \\beta_1=30^{\\circ};\\quad \\alpha_2=270^{\\circ};\\ \\beta_2=210^{\\circ}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se impone el intervalo de trabajo: $\\alpha,\\beta\\in[0,2\\pi]$.",
+          "expresion_latex": "0\\leq \\alpha,\\beta\\leq 2\\pi"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "De la segunda ecuación despejamos $\\alpha$ en función de $\\beta$.",
+          "expresion_latex": "\\alpha=\\beta+\\dfrac{\\pi}{3}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Sustituimos en la primera ecuación.",
+          "expresion_latex": "\\sen\\left(\\beta+\\dfrac{\\pi}{3}\\right)=2\\sen\\beta"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Aplicamos la fórmula del seno de una suma.",
+          "expresion_latex": "\\sen\\beta\\cos\\dfrac{\\pi}{3}+\\cos\\beta\\sen\\dfrac{\\pi}{3}=2\\sen\\beta"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Sustituimos los valores conocidos: $\\cos\\dfrac{\\pi}{3}=\\dfrac{1}{2}$ y $\\sen\\dfrac{\\pi}{3}=\\dfrac{\\sqrt{3}}{2}$.",
+          "expresion_latex": "\\dfrac{1}{2}\\sen\\beta+\\dfrac{\\sqrt{3}}{2}\\cos\\beta=2\\sen\\beta"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Agrupamos los términos con $\\sen\\beta$.",
+          "expresion_latex": "\\dfrac{\\sqrt{3}}{2}\\cos\\beta=\\dfrac{3}{2}\\sen\\beta"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Multiplicamos por $2$ y dividimos entre $\\cos\\beta$ (asumiendo $\\cos\\beta\\neq 0$).",
+          "expresion_latex": "\\sqrt{3}=3\\tan\\beta\\;\\Rightarrow\\;\\tan\\beta=\\dfrac{\\sqrt{3}}{3}=\\dfrac{1}{\\sqrt{3}}"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Las soluciones de $\\tan\\beta=\\dfrac{1}{\\sqrt{3}}$ en $[0,2\\pi]$ son:",
+          "expresion_latex": "\\beta_1=\\dfrac{\\pi}{6}=30^{\\circ},\\quad \\beta_2=\\dfrac{7\\pi}{6}=210^{\\circ}"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Calculamos $\\alpha$ usando $\\alpha=\\beta+\\dfrac{\\pi}{3}$.",
+          "expresion_latex": "\\alpha_1=\\dfrac{\\pi}{6}+\\dfrac{\\pi}{3}=\\dfrac{\\pi}{2}=90^{\\circ}"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Para el segundo valor:",
+          "expresion_latex": "\\alpha_2=\\dfrac{7\\pi}{6}+\\dfrac{\\pi}{3}=\\dfrac{3\\pi}{2}=270^{\\circ}"
+        },
+        {
+          "paso": 11,
+          "nota_teorica": "Verificamos la primera solución: $\\sen 90^{\\circ}=1$ y $2\\sen 30^{\\circ}=2\\cdot\\dfrac{1}{2}=1$.",
+          "expresion_latex": "(\\alpha_1,\\beta_1)=(90^{\\circ},30^{\\circ})"
+        },
+        {
+          "paso": 12,
+          "nota_teorica": "Verificamos la segunda solución: $\\sen 270^{\\circ}=-1$ y $2\\sen 210^{\\circ}=2\\cdot\\left(-\\dfrac{1}{2}\\right)=-1$.",
+          "expresion_latex": "(\\alpha_2,\\beta_2)=(270^{\\circ},210^{\\circ})"
+        }
+      ],
+      "resultado_final": "\\alpha_1=90^{\\circ};\\ \\beta_1=30^{\\circ};\\quad \\alpha_2=270^{\\circ};\\ \\beta_2=210^{\\circ}",
+      "observaciones": "La respuesta oficial proporcionada, $\\alpha_2=210^{\\circ}$ y $\\beta_2=150^{\\circ}$, no satisface la primera ecuación: $\\sen 210^{\\circ}=-\\dfrac{1}{2}$, mientras que $2\\sen 150^{\\circ}=1$. La solución correcta en $[0,2\\pi]$ es $(\\alpha_1,\\beta_1)=(90^{\\circ},30^{\\circ})$ y $(\\alpha_2,\\beta_2)=(270^{\\circ},210^{\\circ})$. Probable errata en el material original. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2020-26",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2020",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°26"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar la expresión",
+        "ecuacion_latex": "H=\\sqrt{\\dfrac{1-\\sen\\theta}{1+\\sen\\theta}}",
+        "condicion": "1+\\sen\\theta\\neq 0,\\quad \\cos\\theta\\neq 0"
+      },
+      "opciones": [],
+      "respuesta_correcta": "H=\\sec\\theta-\\tan\\theta",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se parte de la expresión original.",
+          "expresion_latex": "H=\\sqrt{\\dfrac{1-\\sen\\theta}{1+\\sen\\theta}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Multiplicamos el numerador y el denominador del radicando por $1-\\sen\\theta$.",
+          "expresion_latex": "H=\\sqrt{\\dfrac{(1-\\sen\\theta)(1-\\sen\\theta)}{(1+\\sen\\theta)(1-\\sen\\theta)}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "En el denominador aparece la diferencia de cuadrados: $(1+\\sen\\theta)(1-\\sen\\theta)=1-\\sen^2\\theta=\\cos^2\\theta$.",
+          "expresion_latex": "H=\\sqrt{\\dfrac{(1-\\sen\\theta)^2}{\\cos^2\\theta}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Extraemos la raíz cuadrada. Recordamos que $\\sqrt{A^2}=|A|$.",
+          "expresion_latex": "H=\\left|\\dfrac{1-\\sen\\theta}{\\cos\\theta}\\right|"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Separamos la fracción.",
+          "expresion_latex": "H=\\left|\\dfrac{1}{\\cos\\theta}-\\dfrac{\\sen\\theta}{\\cos\\theta}\\right|"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Reconocemos las funciones secante y tangente.",
+          "expresion_latex": "H=\\left|\\sec\\theta-\\tan\\theta\\right|"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Si se asume que $\\cos\\theta>0$ (por ejemplo, $\\theta$ en el primer o cuarto cuadrante), entonces $\\sec\\theta-\\tan\\theta\\geq 0$ y el valor absoluto se elimina.",
+          "expresion_latex": "H=\\sec\\theta-\\tan\\theta"
+        }
+      ],
+      "resultado_final": "H=\\sec\\theta-\\tan\\theta",
+      "observaciones": "En general, $H=\\left|\\sec\\theta-\\tan\\theta\\right|$. La respuesta oficial $H=\\sec\\theta-\\tan\\theta$ es válida bajo la suposición adicional de que $\\cos\\theta>0$ o, equivalentemente, que $\\sec\\theta-\\tan\\theta\\geq 0$. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2020-27",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2020",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°27"
+      },
+      "enunciado": {
+        "texto_markdown": "Hallar la solución positiva de:",
+        "ecuacion_latex": "\\sen(2x)+\\cos(x)=0",
+        "condicion": "x>0; se listan las soluciones en $[0^\\circ,360^\\circ)$."
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=90^{\\circ};\\ x=210^{\\circ};\\ x=270^{\\circ};\\ x=330^{\\circ}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se usa la identidad del ángulo doble: $\\sen(2x)=2\\sen x\\cos x$.",
+          "expresion_latex": "\\sen(2x)+\\cos x=2\\sen x\\cos x+\\cos x=0"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Se extrae factor común $\\cos x$.",
+          "expresion_latex": "\\cos x\\,(2\\sen x+1)=0"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Primer caso: $\\cos x=0$.",
+          "expresion_latex": "x=90^{\\circ}+180^{\\circ}k,\\quad k\\in\\mathbb{Z}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "En el intervalo $[0^\\circ,360^\\circ)$, las soluciones de este caso son:",
+          "expresion_latex": "x=90^{\\circ},\\quad x=270^{\\circ}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Segundo caso: $2\\sen x+1=0$, es decir, $\\sen x=-\\dfrac{1}{2}$.",
+          "expresion_latex": "\\sen x=-\\dfrac{1}{2}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Las soluciones generales son:",
+          "expresion_latex": "x=-30^{\\circ}+360^{\\circ}k\\quad\\text{o}\\quad x=210^{\\circ}+360^{\\circ}k,\\quad k\\in\\mathbb{Z}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "En el intervalo $[0^\\circ,360^\\circ)$, las soluciones positivas de este caso son:",
+          "expresion_latex": "x=210^{\\circ},\\quad x=330^{\\circ}"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Uniendo ambos casos, las soluciones positivas en $[0^\\circ,360^\\circ)$ son:",
+          "expresion_latex": "x=90^{\\circ},\\ 210^{\\circ},\\ 270^{\\circ},\\ 330^{\\circ}"
+        }
+      ],
+      "resultado_final": "x=90^{\\circ};\\ x=210^{\\circ};\\ x=270^{\\circ};\\ x=330^{\\circ}",
+      "observaciones": "La respuesta oficial proporcionada, $x=90^{\\circ};\\ x=-30^{\\circ}$, es inconsistente: $-30^{\\circ}$ no es una solución positiva y además omite $210^{\\circ}$, $270^{\\circ}$ y $330^{\\circ}$. En el intervalo $[0^\\circ,360^\\circ)$ las soluciones positivas son $90^{\\circ}$, $210^{\\circ}$, $270^{\\circ}$ y $330^{\\circ}$. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2020-28",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2020",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°28"
+      },
+      "enunciado": {
+        "texto_markdown": "Hallar la solución general de la ecuación:",
+        "ecuacion_latex": "\\sqrt{2}\\cdot\\sen^2(x)+\\cos(x)=0",
+        "condicion": "x\\in\\mathbb{R}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=2k\\pi\\pm\\dfrac{3\\pi}{4},\\quad k\\in\\mathbb{Z}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se usa la identidad fundamental $\\sen^2 x=1-\\cos^2 x$.",
+          "expresion_latex": "\\sen^2 x=1-\\cos^2 x"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Sustituimos en la ecuación original.",
+          "expresion_latex": "\\sqrt{2}(1-\\cos^2 x)+\\cos x=0"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Desarrollamos y ordenamos como una ecuación cuadrática en $\\cos x$.",
+          "expresion_latex": "\\sqrt{2}-\\sqrt{2}\\cos^2 x+\\cos x=0\\;\\Rightarrow\\;\\sqrt{2}\\cos^2 x-\\cos x-\\sqrt{2}=0"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Resolvemos la ecuación cuadrática para $c=\\cos x$.",
+          "expresion_latex": "c=\\dfrac{1\\pm\\sqrt{1+8}}{2\\sqrt{2}}=\\dfrac{1\\pm 3}{2\\sqrt{2}}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Obtenemos dos valores.",
+          "expresion_latex": "c_1=\\dfrac{4}{2\\sqrt{2}}=\\sqrt{2}\\quad(\\text{no válido, }|c|>1),\\quad c_2=\\dfrac{-2}{2\\sqrt{2}}=-\\dfrac{\\sqrt{2}}{2}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Por lo tanto, $\\cos x=-\\dfrac{\\sqrt{2}}{2}$.",
+          "expresion_latex": "\\cos x=-\\dfrac{\\sqrt{2}}{2}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Los ángulos en $[0,2\\pi)$ cuyo coseno vale $-\\dfrac{\\sqrt{2}}{2}$ son $\\dfrac{3\\pi}{4}$ y $\\dfrac{5\\pi}{4}$.",
+          "expresion_latex": "x=\\dfrac{3\\pi}{4},\\quad x=\\dfrac{5\\pi}{4}"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "La solución general se escribe como $x=2k\\pi\\pm\\dfrac{3\\pi}{4}$, $k\\in\\mathbb{Z}$.",
+          "expresion_latex": "x=2k\\pi\\pm\\dfrac{3\\pi}{4},\\quad k\\in\\mathbb{Z}"
+        }
+      ],
+      "resultado_final": "x=2k\\pi\\pm\\dfrac{3\\pi}{4},\\quad k\\in\\mathbb{Z}",
+      "observaciones": "La respuesta oficial proporcionada, $x=2k\\pi\\pm\\dfrac{2\\pi}{3}$, corresponde a $\\cos x=-\\dfrac{1}{2}$, no a la ecuación dada. Con la ecuación $\\sqrt{2}\\sen^2 x+\\cos x=0$ la solución correcta es $x=2k\\pi\\pm\\dfrac{3\\pi}{4}$, $k\\in\\mathbb{Z}$. Posible errata en el enunciado o en la respuesta oficial. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2020-29",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2020",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°29"
+      },
+      "enunciado": {
+        "texto_markdown": "Calcular el ancho de un río si desde un punto perpendicular al cauce, se observa en la ribera opuesta a 45° un cerro de 50 metros de altura $h$.",
+        "ecuacion_latex": "\\tan 45^{\\circ}=\\dfrac{h}{x}",
+        "condicion": "h=50\\text{ m};\\quad \\text{ángulo de elevación}=45^{\\circ}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=50\\text{ m}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se modela la situación como un triángulo rectángulo, donde la altura del cerro es el cateto opuesto y el ancho del río es el cateto adyacente al ángulo de elevación.",
+          "expresion_latex": "\\tan\\theta=\\dfrac{\\text{altura}}{\\text{ancho}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Se sustituyen los datos: $\\theta=45^{\\circ}$ y altura $h=50\\text{ m}$.",
+          "expresion_latex": "\\tan 45^{\\circ}=\\dfrac{50}{x}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Se sabe que $\\tan 45^{\\circ}=1$.",
+          "expresion_latex": "1=\\dfrac{50}{x}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Se despeja el ancho $x$.",
+          "expresion_latex": "x=50"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Por lo tanto, el ancho del río es de $50$ metros.",
+          "expresion_latex": "x=50\\text{ m}"
+        }
+      ],
+      "resultado_final": "x=50\\text{ m}",
+      "observaciones": "Problema directo de aplicación de la tangente en un triángulo rectángulo. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2020-30",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2020",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°30"
+      },
+      "enunciado": {
+        "texto_markdown": "Calcular la altura de una casa de tres plantas, si a 12 metros de su base se mide un ángulo de elevación de 45° a la cúspide de la casa.",
+        "ecuacion_latex": "\\tan 45^{\\circ}=\\dfrac{h}{12}",
+        "condicion": "Distancia horizontal a la base: 12\\text{ m};\\quad ángulo de elevación: 45^{\\circ}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "h=12\\text{ m}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se modela la situación como un triángulo rectángulo, donde la altura de la casa es el cateto opuesto al ángulo de elevación y la distancia horizontal a la base es el cateto adyacente.",
+          "expresion_latex": "\\tan\\theta=\\dfrac{\\text{altura}}{\\text{distancia horizontal}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Se sustituyen los datos: $\\theta=45^{\\circ}$ y distancia horizontal $=12\\text{ m}$.",
+          "expresion_latex": "\\tan 45^{\\circ}=\\dfrac{h}{12}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Se sabe que $\\tan 45^{\\circ}=1$.",
+          "expresion_latex": "1=\\dfrac{h}{12}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Se despeja la altura $h$.",
+          "expresion_latex": "h=12"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Por lo tanto, la altura de la casa es de $12$ metros.",
+          "expresion_latex": "h=12\\text{ m}"
+        }
+      ],
+      "resultado_final": "h=12\\text{ m}",
+      "observaciones": "Problema directo de aplicación de la tangente en un triángulo rectángulo. La respuesta correcta no fue proporcionada en los datos, pero se calcula como $h=12\\text{ m}$. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2020-31",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2020",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°31"
+      },
+      "enunciado": {
+        "texto_markdown": "Reducir",
+        "ecuacion_latex": "A=\\dfrac{\\sec^2\\alpha-\\tan^2\\alpha}{\\sec\\alpha+\\tan\\alpha}+\\tan\\alpha",
+        "condicion": "\\cos\\alpha\\neq 0"
+      },
+      "opciones": [],
+      "respuesta_correcta": "A=\\sec\\alpha",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se usa la identidad pitagórica: $\\sec^2\\alpha-\\tan^2\\alpha=1$.",
+          "expresion_latex": "\\sec^2\\alpha-\\tan^2\\alpha=1"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Sustituimos en la expresión.",
+          "expresion_latex": "A=\\dfrac{1}{\\sec\\alpha+\\tan\\alpha}+\\tan\\alpha"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Multiplicamos numerador y denominador del primer término por $\\sec\\alpha-\\tan\\alpha$.",
+          "expresion_latex": "\\dfrac{1}{\\sec\\alpha+\\tan\\alpha}=\\dfrac{\\sec\\alpha-\\tan\\alpha}{(\\sec\\alpha+\\tan\\alpha)(\\sec\\alpha-\\tan\\alpha)}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "El denominador es una diferencia de cuadrados: $(\\sec\\alpha+\\tan\\alpha)(\\sec\\alpha-\\tan\\alpha)=\\sec^2\\alpha-\\tan^2\\alpha=1$.",
+          "expresion_latex": "\\dfrac{1}{\\sec\\alpha+\\tan\\alpha}=\\sec\\alpha-\\tan\\alpha"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Reemplazamos en $A$.",
+          "expresion_latex": "A=\\sec\\alpha-\\tan\\alpha+\\tan\\alpha"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Simplificamos.",
+          "expresion_latex": "A=\\sec\\alpha"
+        }
+      ],
+      "resultado_final": "A=\\sec\\alpha",
+      "observaciones": "La simplificación es válida para $\\cos\\alpha\\neq 0$, que es el dominio de $\\sec\\alpha$ y $\\tan\\alpha$. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2021-32",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2021",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°32"
+      },
+      "enunciado": {
+        "texto_markdown": "Realizando operaciones trigonométricas, determine una identidad.",
+        "ecuacion_latex": "T=\\dfrac{\\sen^2\\theta+\\sen\\theta}{1+\\sen\\theta}",
+        "condicion": "1+\\sen\\theta\\neq 0;\\ \\text{es decir, }\\sen\\theta\\neq -1"
+      },
+      "opciones": [],
+      "respuesta_correcta": "T=\\sen\\theta",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se parte de la expresión original.",
+          "expresion_latex": "T=\\dfrac{\\sen^2\\theta+\\sen\\theta}{1+\\sen\\theta}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Se extrae factor común $\\sen\\theta$ en el numerador.",
+          "expresion_latex": "T=\\dfrac{\\sen\\theta(\\sen\\theta+1)}{1+\\sen\\theta}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Se reordena el factor $\\sen\\theta+1$ como $1+\\sen\\theta$.",
+          "expresion_latex": "T=\\dfrac{\\sen\\theta(1+\\sen\\theta)}{1+\\sen\\theta}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Se cancela el factor común $1+\\sen\\theta$, válido porque $1+\\sen\\theta\\neq 0$.",
+          "expresion_latex": "T=\\sen\\theta"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Por lo tanto, la identidad obtenida es:",
+          "expresion_latex": "T=\\sen\\theta"
+        }
+      ],
+      "resultado_final": "T=\\sen\\theta",
+      "observaciones": "La simplificación es válida siempre que $1+\\sen\\theta\\neq 0$, es decir, $\\sen\\theta\\neq -1$. Dificultad estimada: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2020-33",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Trigonometría",
+        "anio": "2020",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°33"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar",
+        "ecuacion_latex": "A=\\dfrac{\\cos\\alpha-\\cos^3\\alpha}{\\sin\\alpha-\\sin^2\\alpha}",
+        "condicion": "\\sin\\alpha\\neq 0,\\quad \\sin\\alpha\\neq 1,\\quad \\cos\\alpha\\neq 0"
+      },
+      "opciones": [],
+      "respuesta_correcta": "A=\\tan\\alpha\\cdot(1+\\sin\\alpha)",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se factoriza el numerador extrayendo $\\cos\\alpha$.",
+          "expresion_latex": "\\cos\\alpha-\\cos^3\\alpha=\\cos\\alpha(1-\\cos^2\\alpha)"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Se aplica la identidad fundamental $1-\\cos^2\\alpha=\\sin^2\\alpha$.",
+          "expresion_latex": "\\cos\\alpha-\\cos^3\\alpha=\\cos\\alpha\\,\\sin^2\\alpha"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Se factoriza el denominador extrayendo $\\sin\\alpha$.",
+          "expresion_latex": "\\sin\\alpha-\\sin^2\\alpha=\\sin\\alpha(1-\\sin\\alpha)"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Se sustituyen las factorizaciones en la expresión original.",
+          "expresion_latex": "A=\\dfrac{\\cos\\alpha\\,\\sin^2\\alpha}{\\sin\\alpha(1-\\sin\\alpha)}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Se simplifica el factor $\\sin\\alpha$, válido porque $\\sin\\alpha\\neq 0$.",
+          "expresion_latex": "A=\\dfrac{\\cos\\alpha\\,\\sin\\alpha}{1-\\sin\\alpha}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Se multiplica numerador y denominador por $1+\\sin\\alpha$.",
+          "expresion_latex": "A=\\dfrac{\\cos\\alpha\\,\\sin\\alpha(1+\\sin\\alpha)}{1-\\sin^2\\alpha}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Se usa la identidad $1-\\sin^2\\alpha=\\cos^2\\alpha$.",
+          "expresion_latex": "A=\\dfrac{\\cos\\alpha\\,\\sin\\alpha(1+\\sin\\alpha)}{\\cos^2\\alpha}"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Se simplifica un factor $\\cos\\alpha$, válido porque $\\cos\\alpha\\neq 0$.",
+          "expresion_latex": "A=\\dfrac{\\sin\\alpha(1+\\sin\\alpha)}{\\cos\\alpha}"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Se separa como producto de la tangente por $(1+\\sin\\alpha)$.",
+          "expresion_latex": "A=\\tan\\alpha\\cdot(1+\\sin\\alpha)"
+        }
+      ],
+      "resultado_final": "A=\\tan\\alpha\\cdot(1+\\sin\\alpha)",
+      "observaciones": "El enunciado original presenta una posible errata: en el denominador aparece $\\sin^2 a$ en lugar de $\\sin^2\\alpha$. Se asume que la variable es $\\alpha$. La respuesta oficial usa $\\sin a$, pero debe entenderse como $\\sin\\alpha$. La simplificación es válida bajo las condiciones indicadas. Dificultad estimada: Baja."
+    }
+  ]
+}

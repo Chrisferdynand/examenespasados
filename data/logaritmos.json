@@ -1,0 +1,1551 @@
+{
+  "metadata": {
+    "institucion": "Universidad Mayor de San Andrés (UMSA)",
+    "facultad": "Ciencias Económicas y Financieras",
+    "tema": "Logaritmos",
+    "total_preguntas": 20,
+    "descripcion": "Colección unificada de problemas UMSA de Logaritmos"
+  },
+  "preguntas": [
+    {
+      "id_pregunta": "PSA-2020-1",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2020",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "media",
+        "problema": "PROBLEMA N°1"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver",
+        "ecuacion_latex": "\\dfrac{120}{\\log_{x}256}+\\dfrac{160}{\\log_{2x}64}+\\dfrac{40}{\\log_{4x}32}=291",
+        "condicion": "x>0,\\ x\\neq 1,\\ x\\neq \\dfrac12,\\ x\\neq \\dfrac14; además los denominadores no se anulan."
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=32",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se impone el dominio: $x>0$ y las bases de los logaritmos deben ser positivas y distintas de 1. También los denominadores deben ser no nulos.",
+          "expresion_latex": "x>0,\\; x\\neq 1,\\; x\\neq \\dfrac12,\\; x\\neq \\dfrac14"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Hacemos el cambio de variable $t=\\log_2 x$, de donde $x=2^t$. Así, $2x=2^{1+t}$ y $4x=2^{2+t}$.",
+          "expresion_latex": "t=\\log_2 x,\\quad x=2^t"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Transformamos cada logaritmo usando cambio de base a base 2.",
+          "expresion_latex": "\\log_x 256=\\dfrac{\\log_2 256}{\\log_2 x}=\\dfrac{8}{t},\\quad \\log_{2x}64=\\dfrac{6}{1+t},\\quad \\log_{4x}32=\\dfrac{5}{2+t}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Sustituimos en la ecuación original.",
+          "expresion_latex": "\\dfrac{120}{8/t}+\\dfrac{160}{6/(1+t)}+\\dfrac{40}{5/(2+t)}=291"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Simplificamos cada término.",
+          "expresion_latex": "15t+\\dfrac{80}{3}(1+t)+8(2+t)=291"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Desarrollamos y reducimos términos semejantes.",
+          "expresion_latex": "15t+\\dfrac{80}{3}+\\dfrac{80}{3}t+16+8t=291"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Agrupamos los términos con $t$ y las constantes.",
+          "expresion_latex": "\\left(15+8+\\dfrac{80}{3}\\right)t+\\left(16+\\dfrac{80}{3}\\right)=291"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Operamos.",
+          "expresion_latex": "\\dfrac{149}{3}t+\\dfrac{128}{3}=291"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Multiplicamos por 3 y despejamos $t$.",
+          "expresion_latex": "149t+128=873\\;\\Rightarrow\\;149t=745\\;\\Rightarrow\\;t=5"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Volvemos a la variable original: $t=\\log_2 x=5$, por lo que $x=2^5=32$.",
+          "expresion_latex": "x=2^5=32"
+        }
+      ],
+      "resultado_final": "x=32",
+      "observaciones": "La solución cumple el dominio: x=32>0 y no anula bases ni denominadores. Dificultad estimada: baja-media por el cambio de base y el cambio de variable."
+    },
+    {
+      "id_pregunta": "PSA-2011-2",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2011",
+        "examen": "Dispensación",
+        "dificultad": "media",
+        "problema": "PROBLEMA N°2"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver",
+        "ecuacion_latex": "x^{\\frac{3\\log_{5}x+1}{2}}=25^{\\frac{7\\log_{5}x+9}{\\log_{5}x+1}}",
+        "condicion": "x>0,\\ x\\neq 1,\\ \\log_5 x+1\\neq 0"
+      },
+      "opciones": [],
+      "respuesta_correcta": "x_1=\\frac{1}{125};\\ x_2=125;\\ x_3=\\frac{1}{\\sqrt[3]{5^4}}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se impone el dominio: $x>0$, $x\\neq 1$ y $\\log_5 x+1\\neq 0$ para que los logaritmos y denominadores estén bien definidos.",
+          "expresion_latex": "x>0,\\quad x\\neq 1,\\quad \\log_5 x\\neq -1"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Hacemos el cambio de variable $t=\\log_5 x$, de donde $x=5^t$.",
+          "expresion_latex": "t=\\log_5 x,\\quad x=5^t"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Sustituimos en el lado izquierdo de la ecuación.",
+          "expresion_latex": "x^{\\frac{3t+1}{2}}=\\left(5^t\\right)^{\\frac{3t+1}{2}}=5^{\\frac{t(3t+1)}{2}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Sustituimos en el lado derecho, usando $25=5^2$.",
+          "expresion_latex": "25^{\\frac{7t+9}{t+1}}=\\left(5^2\\right)^{\\frac{7t+9}{t+1}}=5^{\\frac{2(7t+9)}{t+1}}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Como las bases son iguales, igualamos los exponentes.",
+          "expresion_latex": "\\frac{t(3t+1)}{2}=\\frac{2(7t+9)}{t+1}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Multiplicamos en cruz por $2(t+1)$.",
+          "expresion_latex": "t(3t+1)(t+1)=4(7t+9)"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Desarrollamos y reducimos todos los términos a un miembro.",
+          "expresion_latex": "3t^3+4t^2+t=28t+36"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Igualamos a cero.",
+          "expresion_latex": "3t^3+4t^2-27t-36=0"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Factorizamos por agrupación.",
+          "expresion_latex": "3t^3+4t^2-27t-36=(3t+4)(t^2-9)=(3t+4)(t-3)(t+3)"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Obtenemos las raíces para $t$.",
+          "expresion_latex": "t_1=-\\frac{4}{3},\\quad t_2=3,\\quad t_3=-3"
+        },
+        {
+          "paso": 11,
+          "nota_teorica": "Volvemos a la variable original usando $x=5^t$.",
+          "expresion_latex": "x_1=5^{-4/3}=\\frac{1}{\\sqrt[3]{5^4}},\\quad x_2=5^3=125,\\quad x_3=5^{-3}=\\frac{1}{125}"
+        },
+        {
+          "paso": 12,
+          "nota_teorica": "Verificamos que las soluciones cumplen el dominio: $x>0$, $x\\neq 1$ y $t\\neq -1$.",
+          "expresion_latex": "x_1=\\frac{1}{\\sqrt[3]{5^4}},\\quad x_2=125,\\quad x_3=\\frac{1}{125}"
+        }
+      ],
+      "resultado_final": "x_1=\\frac{1}{125};\\ x_2=125;\\ x_3=\\frac{1}{\\sqrt[3]{5^4}}",
+      "observaciones": "La ecuación se reduce a una ecuación polinómica cúbica en $t=\\log_5 x$. Todas las soluciones obtenidas cumplen el dominio. Dificultad estimada: media."
+    },
+    {
+      "id_pregunta": "PSA-2007-3",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2007",
+        "examen": "Dispensación",
+        "dificultad": "baja",
+        "problema": "PROBLEMA N°3"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver la ecuación logarítmica",
+        "ecuacion_latex": "\\log_{a}x-\\log_{a^2}x+\\log_{a^4}x=\\dfrac{3}{4}",
+        "condicion": "a>0,\\ a\\neq 1,\\ x>0"
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=a",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se impone el dominio: la base $a$ debe ser positiva y distinta de $1$, y el argumento $x$ debe ser positivo.",
+          "expresion_latex": "a>0,\\quad a\\neq 1,\\quad x>0"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Hacemos el cambio de variable $t=\\log_a x$.",
+          "expresion_latex": "t=\\log_a x"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Aplicamos cambio de base para expresar todos los logaritmos en base $a$.",
+          "expresion_latex": "\\log_{a^2}x=\\dfrac{\\log_a x}{\\log_a a^2}=\\dfrac{t}{2}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "De forma análoga, para la base $a^4$.",
+          "expresion_latex": "\\log_{a^4}x=\\dfrac{\\log_a x}{\\log_a a^4}=\\dfrac{t}{4}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Sustituimos en la ecuación original.",
+          "expresion_latex": "t-\\dfrac{t}{2}+\\dfrac{t}{4}=\\dfrac{3}{4}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Operamos los términos semejantes.",
+          "expresion_latex": "\\dfrac{4t-2t+t}{4}=\\dfrac{3}{4}\\;\\Rightarrow\\;\\dfrac{3t}{4}=\\dfrac{3}{4}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Despejamos $t$.",
+          "expresion_latex": "3t=3\\;\\Rightarrow\\;t=1"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Volvemos a la variable original: $t=\\log_a x=1$.",
+          "expresion_latex": "\\log_a x=1"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Aplicamos la definición de logaritmo: $\\log_a x=1 \\iff x=a^1=a$.",
+          "expresion_latex": "x=a"
+        }
+      ],
+      "resultado_final": "x=a",
+      "observaciones": "La solución $x=a$ cumple el dominio siempre que $a>0$ y $a\\neq 1$. Dificultad estimada: baja."
+    },
+    {
+      "id_pregunta": "PSA-2009-4",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2009",
+        "examen": "Dispensación",
+        "dificultad": "baja",
+        "problema": "PROBLEMA N°4"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar",
+        "ecuacion_latex": "E = \\left(b^{\\frac{\\log_{100}a}{\\log a}}\\cdot a^{\\frac{\\log_{100}b}{\\log b}}\\right)^{2\\cdot\\log_{ab}(a+b)}",
+        "condicion": "a>0,\\ b>0,\\ a\\neq 1,\\ b\\neq 1,\\ ab\\neq 1"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E=a+b",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se impone el dominio: los logaritmos requieren argumentos positivos y bases positivas distintas de 1. Además, $\\log a$ y $\\log b$ aparecen en denominadores, por lo que $a\\neq 1$ y $b\\neq 1$. La base $ab$ del último logaritmo debe cumplir $ab\\neq 1$.",
+          "expresion_latex": "a>0,\\ b>0,\\ a\\neq 1,\\ b\\neq 1,\\ ab\\neq 1"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Se asume que $\\log$ denota logaritmo decimal, es decir, base $10$. Entonces $\\log 100 = 2$.",
+          "expresion_latex": "\\log 100 = 2"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Aplicamos cambio de base en $\\log_{100}a$: $\\log_{100}a=\\dfrac{\\log a}{\\log 100}=\\dfrac{\\log a}{2}$.",
+          "expresion_latex": "\\log_{100}a=\\dfrac{\\log a}{2}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Por lo tanto, el exponente de $b$ es $\\dfrac{\\log_{100}a}{\\log a}=\\dfrac{1}{2}$.",
+          "expresion_latex": "\\dfrac{\\log_{100}a}{\\log a}=\\dfrac{1}{2}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Análogamente, $\\log_{100}b=\\dfrac{\\log b}{2}$, de modo que el exponente de $a$ también es $\\dfrac{1}{2}$.",
+          "expresion_latex": "\\dfrac{\\log_{100}b}{\\log b}=\\dfrac{1}{2}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Sustituimos dentro del paréntesis.",
+          "expresion_latex": "b^{\\frac{1}{2}}\\cdot a^{\\frac{1}{2}}=(ab)^{\\frac{1}{2}}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Reemplazamos en la expresión original y aplicamos potencia de potencia.",
+          "expresion_latex": "E=\\left((ab)^{\\frac{1}{2}}\\right)^{2\\log_{ab}(a+b)}=(ab)^{\\log_{ab}(a+b)}"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Usamos la propiedad $c^{\\log_c N}=N$, con $c=ab$ y $N=a+b$.",
+          "expresion_latex": "E=a+b"
+        }
+      ],
+      "resultado_final": "E=a+b",
+      "observaciones": "Se asume que $\\log$ es el logaritmo decimal (base 10). La solución $E=a+b$ es válida bajo las condiciones indicadas. Dificultad estimada: baja."
+    },
+    {
+      "id_pregunta": "PSA-2013-5",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2013",
+        "examen": "Dispensación",
+        "dificultad": "media",
+        "problema": "PROBLEMA N°5"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar",
+        "ecuacion_latex": "E = \\dfrac{25^{\\frac{1}{2\\log_{49}25}}+2\\log_{2}\\left\\{\\log_{2}\\left(\\log_{2}7^{2\\cdot\\log_{7}4}\\right)\\right\\}}{4^{\\frac{1}{\\log_{3}4}}+3^{-\\frac{1}{\\log_{2}3}}+\\sqrt{3}\\cdot2^{-\\frac{1}{\\log_{3}4}}}",
+        "condicion": "No hay variables; las bases y argumentos de los logaritmos son positivos y las bases distintas de 1."
+      },
+      "opciones": [],
+      "respuesta_correcta": "E=2",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Simplificamos el primer término del numerador: $25^{\\frac{1}{2\\log_{49}25}}$. Como $49=7^2$ y $25=5^2$, se tiene $\\log_{49}25=\\log_{7}5$.",
+          "expresion_latex": "\\log_{49}25=\\log_{7}5"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Entonces $2\\log_{49}25=2\\log_{7}5$. Sustituyendo y usando potencia de potencia:",
+          "expresion_latex": "25^{\\frac{1}{2\\log_{49}25}} = (5^2)^{\\frac{1}{2\\log_{7}5}} = 5^{\\frac{1}{\\log_{7}5}} = 5^{\\log_{5}7} = 7"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Simplificamos el segundo término del numerador. Primero, $7^{2\\log_{7}4} = (7^{\\log_{7}4})^2 = 4^2 = 16$.",
+          "expresion_latex": "7^{2\\log_{7}4}=16"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Luego, $\\log_{2}16=4$, $\\log_{2}4=2$ y $\\log_{2}2=1$. Por tanto:",
+          "expresion_latex": "2\\log_{2}\\left\\{\\log_{2}\\left(\\log_{2}7^{2\\log_{7}4}\\right)\\right\\} = 2\\log_{2}(\\log_{2}4)=2\\log_{2}2=2"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Sumamos los términos del numerador: $7+2=9$.",
+          "expresion_latex": "\\text{Numerador}=9"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Simplificamos el primer término del denominador: $4^{\\frac{1}{\\log_{3}4}} = 4^{\\log_{4}3}=3$.",
+          "expresion_latex": "4^{\\frac{1}{\\log_{3}4}}=3"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Simplificamos el segundo término: $3^{-\\frac{1}{\\log_{2}3}} = 3^{-\\log_{3}2} = \\left(3^{\\log_{3}2}\\right)^{-1}=2^{-1}=\\dfrac{1}{2}$.",
+          "expresion_latex": "3^{-\\frac{1}{\\log_{2}3}}=\\dfrac{1}{2}"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Simplificamos el tercer término: $2^{-\\frac{1}{\\log_{3}4}} = 2^{-\\log_{4}3} = 2^{-\\frac{1}{2}\\log_{2}3} = \\left(2^{\\log_{2}3}\\right)^{-1/2}=3^{-1/2}=\\dfrac{1}{\\sqrt{3}}$. Entonces:",
+          "expresion_latex": "\\sqrt{3}\\cdot2^{-\\frac{1}{\\log_{3}4}} = \\sqrt{3}\\cdot\\dfrac{1}{\\sqrt{3}}=1"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Sumamos los términos del denominador:",
+          "expresion_latex": "\\text{Denominador}=3+\\dfrac{1}{2}+1=\\dfrac{9}{2}"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Finalmente, dividimos numerador entre denominador:",
+          "expresion_latex": "E=\\dfrac{9}{\\frac{9}{2}}=2"
+        }
+      ],
+      "resultado_final": "E=2",
+      "observaciones": "La expresión corregida, con exponentes negativos en el segundo y tercer término del denominador, coincide con la respuesta oficial $E=2$. Dificultad estimada: media."
+    },
+    {
+      "id_pregunta": "PSA-2009-6",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2009",
+        "examen": "Prefacultativo",
+        "dificultad": "baja",
+        "problema": "PROBLEMA N°6"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver la ecuación logarítmica",
+        "ecuacion_latex": "\\log_{4}x^{\\frac{1}{2}}-\\log_{2}x+\\log_{\\sqrt{2}}x^2=13",
+        "condicion": "x>0"
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=16",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se impone el dominio: el argumento de todos los logaritmos debe ser positivo, por lo que $x>0$.",
+          "expresion_latex": "x>0"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Hacemos el cambio de variable $t=\\log_{2}x$, de donde $x=2^t$.",
+          "expresion_latex": "t=\\log_{2}x,\\quad x=2^t"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Transformamos el primer término usando cambio de base: $\\log_{4}x^{\\frac{1}{2}}=\\dfrac{1}{2}\\log_{4}x=\\dfrac{1}{2}\\cdot\\dfrac{\\log_{2}x}{\\log_{2}4}=\\dfrac{1}{2}\\cdot\\dfrac{t}{2}=\\dfrac{t}{4}$.",
+          "expresion_latex": "\\log_{4}x^{\\frac{1}{2}}=\\dfrac{t}{4}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "El segundo término ya está en base 2: $-\\log_{2}x=-t$.",
+          "expresion_latex": "-\\log_{2}x=-t"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Transformamos el tercer término. Como $\\sqrt{2}=2^{1/2}$, se tiene $\\log_{\\sqrt{2}}x=\\dfrac{\\log_{2}x}{\\log_{2}\\sqrt{2}}=\\dfrac{t}{1/2}=2t$. Entonces $\\log_{\\sqrt{2}}x^2=2\\log_{\\sqrt{2}}x=2(2t)=4t$.",
+          "expresion_latex": "\\log_{\\sqrt{2}}x^2=4t"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Sustituimos en la ecuación original.",
+          "expresion_latex": "\\dfrac{t}{4}-t+4t=13"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Reducimos términos semejantes.",
+          "expresion_latex": "\\dfrac{t}{4}+3t=13\\;\\Rightarrow\\;\\dfrac{t+12t}{4}=13\\;\\Rightarrow\\;\\dfrac{13t}{4}=13"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Despejamos $t$.",
+          "expresion_latex": "13t=52\\;\\Rightarrow\\;t=4"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Volvemos a la variable original: $t=\\log_{2}x=4$, por lo que $x=2^4=16$.",
+          "expresion_latex": "x=16"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Verificamos que la solución cumple el dominio $x>0$.",
+          "expresion_latex": "16>0"
+        }
+      ],
+      "resultado_final": "x=16",
+      "observaciones": "La ecuación se simplifica directamente mediante cambio de base a base 2 y un cambio de variable. Dificultad estimada: baja."
+    },
+    {
+      "id_pregunta": "PSA-2013-7",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2013",
+        "examen": "Prefacultativo",
+        "dificultad": "baja",
+        "problema": "PROBLEMA N°7"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver",
+        "ecuacion_latex": "\\left(\\dfrac{4}{9}\\right)^x\\cdot\\left(\\dfrac{27}{8}\\right)^{x-1}=\\dfrac{\\log 4}{\\log 8}",
+        "condicion": "x\\in\\mathbb{R};\\ \\log\\ denota logaritmo decimal."
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=2",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Simplificamos el lado derecho usando cambio de base: $\\dfrac{\\log 4}{\\log 8}=\\log_8 4$.",
+          "expresion_latex": "\\dfrac{\\log 4}{\\log 8}=\\log_8 4"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Como $8=2^3$ y $4=2^2$, se tiene $\\log_8 4=\\dfrac{\\log_2 4}{\\log_2 8}=\\dfrac{2}{3}$.",
+          "expresion_latex": "\\dfrac{\\log 4}{\\log 8}=\\dfrac{2}{3}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Expresamos las bases de las potencias en función de $\\dfrac{2}{3}$: $\\dfrac{4}{9}=\\left(\\dfrac{2}{3}\\right)^2$ y $\\dfrac{27}{8}=\\left(\\dfrac{3}{2}\\right)^3=\\left(\\dfrac{2}{3}\\right)^{-3}$.",
+          "expresion_latex": "\\dfrac{4}{9}=\\left(\\dfrac{2}{3}\\right)^2,\\quad \\dfrac{27}{8}=\\left(\\dfrac{2}{3}\\right)^{-3}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Sustituimos en el lado izquierdo de la ecuación.",
+          "expresion_latex": "\\left(\\dfrac{2}{3}\\right)^{2x}\\cdot\\left(\\left(\\dfrac{2}{3}\\right)^{-3}\\right)^{x-1}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Aplicamos potencia de potencia y multiplicación de potencias de igual base.",
+          "expresion_latex": "\\left(\\dfrac{2}{3}\\right)^{2x}\\cdot\\left(\\dfrac{2}{3}\\right)^{-3(x-1)}=\\left(\\dfrac{2}{3}\\right)^{2x-3x+3}=\\left(\\dfrac{2}{3}\\right)^{3-x}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Igualamos con el lado derecho ya simplificado.",
+          "expresion_latex": "\\left(\\dfrac{2}{3}\\right)^{3-x}=\\dfrac{2}{3}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Escribimos $\\dfrac{2}{3}$ como $\\left(\\dfrac{2}{3}\\right)^1$ e igualamos exponentes.",
+          "expresion_latex": "3-x=1"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Despejamos $x$.",
+          "expresion_latex": "x=2"
+        }
+      ],
+      "resultado_final": "x=2",
+      "observaciones": "La ecuación se resuelve igualando potencias de la misma base después de simplificar el cociente de logaritmos. Dificultad estimada: baja."
+    },
+    {
+      "id_pregunta": "PSA-2009-8",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2009",
+        "examen": "Admisión",
+        "dificultad": "baja",
+        "problema": "PROBLEMA N°8"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver el sistema",
+        "ecuacion_latex": "\\begin{cases} \\log(a^2+b^2)-1=\\log 13 \\\\ \\log(a+b)-\\log(a-b)=3\\log 2 \\end{cases}",
+        "condicion": "a+b>0,\\ a-b>0;\\ \\log\\ denota logaritmo decimal."
+      },
+      "opciones": [],
+      "respuesta_correcta": "a=9;\\ b=7",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se impone el dominio de los logaritmos: los argumentos deben ser positivos. Además, $a-b$ aparece en un denominador implícito, por lo que $a-b\\neq 0$.",
+          "expresion_latex": "a+b>0,\\quad a-b>0"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "En la segunda ecuación aplicamos la propiedad $\\log M-\\log N=\\log\\dfrac{M}{N}$.",
+          "expresion_latex": "\\log\\left(\\dfrac{a+b}{a-b}\\right)=3\\log 2"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Usamos $3\\log 2=\\log 2^3=\\log 8$.",
+          "expresion_latex": "\\log\\left(\\dfrac{a+b}{a-b}\\right)=\\log 8"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Como el logaritmo decimal es inyectivo, igualamos los argumentos.",
+          "expresion_latex": "\\dfrac{a+b}{a-b}=8"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Despejamos la relación entre $a$ y $b$.",
+          "expresion_latex": "a+b=8(a-b)\\;\\Rightarrow\\;a+b=8a-8b\\;\\Rightarrow\\;9b=7a\\;\\Rightarrow\\;a=\\dfrac{9b}{7}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "En la primera ecuación, usamos $1=\\log 10$.",
+          "expresion_latex": "\\log(a^2+b^2)-\\log 10=\\log 13"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Pasamos $\\log 10$ al otro miembro y aplicamos $\\log M+\\log N=\\log(MN)$.",
+          "expresion_latex": "\\log(a^2+b^2)=\\log 13+\\log 10=\\log 130"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Igualamos argumentos.",
+          "expresion_latex": "a^2+b^2=130"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Sustituimos $a=\\dfrac{9b}{7}$ en $a^2+b^2=130$.",
+          "expresion_latex": "\\left(\\dfrac{9b}{7}\\right)^2+b^2=130"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Operamos.",
+          "expresion_latex": "\\dfrac{81b^2}{49}+b^2=130\\;\\Rightarrow\\;\\dfrac{81b^2+49b^2}{49}=130\\;\\Rightarrow\\;\\dfrac{130b^2}{49}=130"
+        },
+        {
+          "paso": 11,
+          "nota_teorica": "Despejamos $b^2$.",
+          "expresion_latex": "b^2=49\\;\\Rightarrow\\;b=\\pm 7"
+        },
+        {
+          "paso": 12,
+          "nota_teorica": "Aplicamos la condición $a-b>0$. Si $b=7$, entonces $a=\\dfrac{9(7)}{7}=9$ y $a-b=2>0$. Si $b=-7$, entonces $a=-9$ y $a-b=-2<0$, lo cual no es válido.",
+          "expresion_latex": "b=7,\\quad a=9"
+        }
+      ],
+      "resultado_final": "a=9;\\ b=7",
+      "observaciones": "El sistema se resuelve aplicando propiedades de logaritmos y descartando la solución negativa por las condiciones de dominio. Dificultad estimada: baja."
+    },
+    {
+      "id_pregunta": "PSA-2009-9",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Contaduría",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2009",
+        "examen": "Admisión",
+        "dificultad": "media",
+        "problema": "PROBLEMA N°9"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver la siguiente ecuación",
+        "ecuacion_latex": "\\log_{x}\\sqrt{5}+\\log_{x}(5x)-\\dfrac{9}{4}=\\left(\\log_{x}\\sqrt{5}\\right)^2",
+        "condicion": "x>0,\\ x\\neq 1"
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=\\sqrt[5]{5};\\ x=5",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se impone el dominio: la base del logaritmo debe ser positiva y distinta de $1$. Además, los argumentos deben ser positivos.",
+          "expresion_latex": "x>0,\\quad x\\neq 1"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Hacemos el cambio de variable $t=\\log_{x}\\sqrt{5}$.",
+          "expresion_latex": "t=\\log_{x}\\sqrt{5}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Como $\\sqrt{5}=5^{1/2}$, se tiene $t=\\dfrac{1}{2}\\log_{x}5$, de donde $\\log_{x}5=2t$.",
+          "expresion_latex": "\\log_{x}5=2t"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Descomponemos el segundo logaritmo: $\\log_{x}(5x)=\\log_{x}5+\\log_{x}x=2t+1$.",
+          "expresion_latex": "\\log_{x}(5x)=2t+1"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Sustituimos en la ecuación original.",
+          "expresion_latex": "t+(2t+1)-\\dfrac{9}{4}=t^2"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Reducimos términos semejantes.",
+          "expresion_latex": "3t+1-\\dfrac{9}{4}=t^2\\;\\Rightarrow\\;3t-\\dfrac{5}{4}=t^2"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Ordenamos e igualamos a cero.",
+          "expresion_latex": "t^2-3t+\\dfrac{5}{4}=0"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Multiplicamos por $4$ para eliminar denominadores.",
+          "expresion_latex": "4t^2-12t+5=0"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Resolvemos la ecuación cuadrática.",
+          "expresion_latex": "t=\\dfrac{12\\pm\\sqrt{144-80}}{8}=\\dfrac{12\\pm 8}{8}"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Obtenemos dos valores para $t$.",
+          "expresion_latex": "t_1=\\dfrac{5}{2},\\quad t_2=\\dfrac{1}{2}"
+        },
+        {
+          "paso": 11,
+          "nota_teorica": "Volvemos a la variable original. Para $t_1=\\dfrac{5}{2}$: $\\log_{x}\\sqrt{5}=\\dfrac{5}{2}$, es decir, $x^{5/2}=5^{1/2}$. Elevando al cuadrado: $x^5=5$, luego $x=\\sqrt[5]{5}$.",
+          "expresion_latex": "x=\\sqrt[5]{5}"
+        },
+        {
+          "paso": 12,
+          "nota_teorica": "Para $t_2=\\dfrac{1}{2}$: $\\log_{x}\\sqrt{5}=\\dfrac{1}{2}$, es decir, $x^{1/2}=5^{1/2}$, luego $x=5$.",
+          "expresion_latex": "x=5"
+        },
+        {
+          "paso": 13,
+          "nota_teorica": "Ambas soluciones cumplen el dominio $x>0$ y $x\\neq 1$.",
+          "expresion_latex": "x=\\sqrt[5]{5};\\quad x=5"
+        }
+      ],
+      "resultado_final": "x=\\sqrt[5]{5};\\ x=5",
+      "observaciones": "La ecuación se reduce a una cuadrática mediante el cambio de variable $t=\\log_{x}\\sqrt{5}$. Ambas soluciones son válidas. Dificultad estimada: media."
+    },
+    {
+      "id_pregunta": "PSA-2011-10",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Contaduría",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2011",
+        "examen": "Admisión",
+        "dificultad": "media",
+        "problema": "PROBLEMA N°10"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver",
+        "ecuacion_latex": "\\begin{cases} \\left(\\log_{2}x^2\\right)^2+\\left(\\log_{2}y\\right)^2=1 \\\\ x^2=2y \\end{cases}",
+        "condicion": "x\\neq 0,\\quad y>0"
+      },
+      "opciones": [],
+      "respuesta_correcta": "x_1=\\pm \\sqrt{2};\\ x_2=\\pm 1;\\ y_1=1;\\ y_2=\\dfrac{1}{2}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se impone el dominio: $x^2>0$ y $y>0$. Como $x^2=2y$, basta exigir $x\\neq 0$ y $y>0$.",
+          "expresion_latex": "x\\neq 0,\\quad y>0"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "De la segunda ecuación, $x^2=2y$, despejamos $y=\\dfrac{x^2}{2}$.",
+          "expresion_latex": "y=\\dfrac{x^2}{2}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Hacemos el cambio de variable $u=\\log_{2}x^2$.",
+          "expresion_latex": "u=\\log_{2}x^2"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Entonces, $\\log_{2}y=\\log_{2}\\left(\\dfrac{x^2}{2}\\right)=\\log_{2}x^2-\\log_{2}2=u-1$.",
+          "expresion_latex": "\\log_{2}y=u-1"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Sustituimos en la primera ecuación.",
+          "expresion_latex": "u^2+(u-1)^2=1"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Desarrollamos y reducimos.",
+          "expresion_latex": "u^2+u^2-2u+1=1\\;\\Rightarrow\\;2u^2-2u=0"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Factorizamos.",
+          "expresion_latex": "2u(u-1)=0"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Obtenemos los valores de $u$.",
+          "expresion_latex": "u=0\\quad\\text{o}\\quad u=1"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Caso $u=0$: $\\log_{2}x^2=0$, entonces $x^2=1$, de donde $x=\\pm 1$. Luego, $y=\\dfrac{1}{2}$.",
+          "expresion_latex": "x=\\pm 1,\\quad y=\\dfrac{1}{2}"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Caso $u=1$: $\\log_{2}x^2=1$, entonces $x^2=2$, de donde $x=\\pm\\sqrt{2}$. Luego, $y=1$.",
+          "expresion_latex": "x=\\pm\\sqrt{2},\\quad y=1"
+        },
+        {
+          "paso": 11,
+          "nota_teorica": "Ambos casos cumplen el dominio $x\\neq 0$ y $y>0$.",
+          "expresion_latex": "x_1=\\pm\\sqrt{2},\\ y_1=1;\\quad x_2=\\pm 1,\\ y_2=\\dfrac{1}{2}"
+        }
+      ],
+      "resultado_final": "x_1=\\pm \\sqrt{2};\\ x_2=\\pm 1;\\ y_1=1;\\ y_2=\\dfrac{1}{2}",
+      "observaciones": "El sistema se resuelve mediante el cambio de variable $u=\\log_2 x^2$ y el uso de la relación $x^2=2y$. Las cuatro soluciones para $x$ se agrupan según el valor correspondiente de $y$. Dificultad estimada: media."
+    },
+    {
+      "id_pregunta": "PSA-2012-11",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Contaduría",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2012",
+        "examen": "Admisión",
+        "dificultad": "media",
+        "problema": "PROBLEMA N°11"
+      },
+      "enunciado": {
+        "texto_markdown": "Hallar el valor de $E=p\\cdot q\\cdot r$",
+        "ecuacion_latex": "\\begin{cases} \\log_{2}p+\\log_{4}q+\\log_{4}r=2 \\\\ \\log_{9}p+\\log_{3}q+\\log_{9}r=2 \\\\ \\log_{16}p+\\log_{16}q+\\log_{4}r=2 \\end{cases}",
+        "condicion": "p>0,\\ q>0,\\ r>0"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E=24",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se impone el dominio: los argumentos de todos los logaritmos deben ser positivos.",
+          "expresion_latex": "p>0,\\quad q>0,\\quad r>0"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Hacemos el cambio de variable $a=\\log_{2}p$, $b=\\log_{2}q$, $c=\\log_{2}r$. Entonces $p=2^a$, $q=2^b$, $r=2^c$.",
+          "expresion_latex": "a=\\log_{2}p,\\quad b=\\log_{2}q,\\quad c=\\log_{2}r"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Transformamos la primera ecuación usando cambio de base a base 2: $\\log_{4}q=\\dfrac{b}{2}$ y $\\log_{4}r=\\dfrac{c}{2}$.",
+          "expresion_latex": "a+\\dfrac{b}{2}+\\dfrac{c}{2}=2\\;\\Rightarrow\\;2a+b+c=4"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Para la segunda ecuación, sea $k=\\log_{2}3$. Entonces $\\log_{9}p=\\dfrac{a}{2k}$, $\\log_{3}q=\\dfrac{b}{k}$ y $\\log_{9}r=\\dfrac{c}{2k}$.",
+          "expresion_latex": "\\dfrac{a}{2k}+\\dfrac{b}{k}+\\dfrac{c}{2k}=2\\;\\Rightarrow\\;a+2b+c=4k"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Transformamos la tercera ecuación: $\\log_{16}p=\\dfrac{a}{4}$, $\\log_{16}q=\\dfrac{b}{4}$ y $\\log_{4}r=\\dfrac{c}{2}$.",
+          "expresion_latex": "\\dfrac{a}{4}+\\dfrac{b}{4}+\\dfrac{c}{2}=2\\;\\Rightarrow\\;a+b+2c=8"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Resolvemos el sistema lineal formado por las ecuaciones simplificadas.",
+          "expresion_latex": "\\begin{cases} 2a+b+c=4 \\\\ a+2b+c=4k \\\\ a+b+2c=8 \\end{cases}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "De la primera ecuación, $b+c=4-2a$. Sustituimos en la tercera: $a+(b+c)+c=8$.",
+          "expresion_latex": "a+4-2a+c=8\\;\\Rightarrow\\;c-a=4\\;\\Rightarrow\\;c=a+4"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Sustituimos $c=a+4$ en $b+c=4-2a$.",
+          "expresion_latex": "b+a+4=4-2a\\;\\Rightarrow\\;b=-3a"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Sustituimos $b=-3a$ y $c=a+4$ en la segunda ecuación: $a+2(-3a)+(a+4)=4k$.",
+          "expresion_latex": "a-6a+a+4=4k\\;\\Rightarrow\\;-4a+4=4k\\;\\Rightarrow\\;1-a=k"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Despejamos $a$.",
+          "expresion_latex": "a=1-k"
+        },
+        {
+          "paso": 11,
+          "nota_teorica": "Calculamos $b$ y $c$.",
+          "expresion_latex": "b=-3(1-k)=-3+3k,\\quad c=(1-k)+4=5-k"
+        },
+        {
+          "paso": 12,
+          "nota_teorica": "El producto pedido es $E=pqr=2^a\\cdot2^b\\cdot2^c=2^{a+b+c}$.",
+          "expresion_latex": "E=2^{(1-k)+(-3+3k)+(5-k)}"
+        },
+        {
+          "paso": 13,
+          "nota_teorica": "Reducimos el exponente.",
+          "expresion_latex": "a+b+c=(1-3+5)+(-k+3k-k)=3+k"
+        },
+        {
+          "paso": 14,
+          "nota_teorica": "Sustituimos $k=\\log_{2}3$.",
+          "expresion_latex": "E=2^{3+k}=2^3\\cdot2^{\\log_{2}3}=8\\cdot3=24"
+        }
+      ],
+      "resultado_final": "E=24",
+      "observaciones": "El sistema se resuelve mediante cambio de base a base 2 y un sistema lineal. La clave es expresar el producto como $2^{a+b+c}$. Dificultad estimada: media."
+    },
+    {
+      "id_pregunta": "PSA-2012-12",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Contaduría",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2012",
+        "examen": "Admisión",
+        "dificultad": "media",
+        "problema": "PROBLEMA N°12"
+      },
+      "enunciado": {
+        "texto_markdown": "Hallar la solución de:",
+        "ecuacion_latex": "\\log_{b}\\left(x^2-2\\sqrt{a}x+2a\\right)^{\\log_{a}b}=1",
+        "condicion": "a>0,\\ a\\neq 1,\\ b>0,\\ b\\neq 1"
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=\\sqrt{a}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se impone el dominio: las bases de los logaritmos deben ser positivas y distintas de $1$. Además, $a>0$ para que $\\sqrt{a}$ sea real.",
+          "expresion_latex": "a>0,\\quad a\\neq 1,\\quad b>0,\\quad b\\neq 1"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Sea $M=x^2-2\\sqrt{a}x+2a$. La ecuación es $\\log_b\\left(M^{\\log_a b}\\right)=1$.",
+          "expresion_latex": "\\log_b\\left(M^{\\log_a b}\\right)=1"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Aplicamos la propiedad del logaritmo de una potencia: $\\log_b(M^{\\log_a b})=\\log_a b\\cdot\\log_b M$.",
+          "expresion_latex": "\\log_a b\\cdot\\log_b M=1"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Usamos cambio de base: $\\log_a b=\\dfrac{1}{\\log_b a}$.",
+          "expresion_latex": "\\dfrac{\\log_b M}{\\log_b a}=1"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "De donde $\\log_b M=\\log_b a$.",
+          "expresion_latex": "\\log_b M=\\log_b a"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Como el logaritmo en base $b$ es inyectivo, igualamos los argumentos: $M=a$.",
+          "expresion_latex": "x^2-2\\sqrt{a}x+2a=a"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Simplificamos.",
+          "expresion_latex": "x^2-2\\sqrt{a}x+a=0"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Reconocemos un trinomio cuadrado perfecto.",
+          "expresion_latex": "(x-\\sqrt{a})^2=0"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Por lo tanto, la única solución es:",
+          "expresion_latex": "x=\\sqrt{a}"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Verificamos que $x=\\sqrt{a}$ cumple el dominio y satisface la ecuación original.",
+          "expresion_latex": "x=\\sqrt{a}"
+        }
+      ],
+      "resultado_final": "x=\\sqrt{a}",
+      "observaciones": "La clave es interpretar el exponente $\\log_a b$ dentro del argumento del logaritmo en base $b$. La expresión se reduce a un cuadrado perfecto. Dificultad estimada: media."
+    },
+    {
+      "id_pregunta": "PSA-2012-13",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Contaduría",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2012",
+        "examen": "Admisión",
+        "dificultad": "media",
+        "problema": "PROBLEMA N°13"
+      },
+      "enunciado": {
+        "texto_markdown": "Hallar la solución de la ecuación",
+        "ecuacion_latex": "e^{4\\ln2}=\\log_{2012}1+16\\log_{3}\\left\\{2\\log_{4}2+\\log_{\\sqrt{7}}\\left(\\log_{3}\\sqrt{9}+2\\log_{-x}125\\right)\\right\\}",
+        "condicion": "-x>0,\\ -x\\neq 1;\\ \\text{es decir, } x<0,\\ x\\neq -1"
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=-5",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se impone el dominio: la base $-x$ del último logaritmo debe ser positiva y distinta de $1$.",
+          "expresion_latex": "-x>0,\\quad -x\\neq 1\\;\\Rightarrow\\;x<0,\\quad x\\neq -1"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Simplificamos el lado izquierdo: $e^{4\\ln2}=e^{\\ln(2^4)}=2^4=16$.",
+          "expresion_latex": "e^{4\\ln2}=16"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Simplificamos $\\log_{2012}1=0$.",
+          "expresion_latex": "\\log_{2012}1=0"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Sustituimos en la ecuación original.",
+          "expresion_latex": "16=0+16\\log_{3}\\left\\{2\\log_{4}2+\\log_{\\sqrt{7}}\\left(\\log_{3}\\sqrt{9}+2\\log_{-x}125\\right)\\right\\}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Dividimos entre $16$.",
+          "expresion_latex": "\\log_{3}\\left\\{2\\log_{4}2+\\log_{\\sqrt{7}}\\left(\\log_{3}\\sqrt{9}+2\\log_{-x}125\\right)\\right\\}=1"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Aplicamos la definición de logaritmo: el argumento debe ser $3^1=3$.",
+          "expresion_latex": "2\\log_{4}2+\\log_{\\sqrt{7}}\\left(\\log_{3}\\sqrt{9}+2\\log_{-x}125\\right)=3"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Calculamos $\\log_{4}2=\\dfrac{1}{2}$, por lo que $2\\log_{4}2=1$.",
+          "expresion_latex": "2\\log_{4}2=1"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Calculamos $\\log_{3}\\sqrt{9}=\\log_{3}3=1$.",
+          "expresion_latex": "\\log_{3}\\sqrt{9}=1"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Sustituimos y simplificamos.",
+          "expresion_latex": "1+\\log_{\\sqrt{7}}\\left(1+2\\log_{-x}125\\right)=3"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Despejamos el logaritmo en base $\\sqrt{7}$.",
+          "expresion_latex": "\\log_{\\sqrt{7}}\\left(1+2\\log_{-x}125\\right)=2"
+        },
+        {
+          "paso": 11,
+          "nota_teorica": "Aplicamos la definición de logaritmo: $1+2\\log_{-x}125=(\\sqrt{7})^2=7$.",
+          "expresion_latex": "1+2\\log_{-x}125=7"
+        },
+        {
+          "paso": 12,
+          "nota_teorica": "Despejamos $\\log_{-x}125$.",
+          "expresion_latex": "2\\log_{-x}125=6\\;\\Rightarrow\\;\\log_{-x}125=3"
+        },
+        {
+          "paso": 13,
+          "nota_teorica": "Aplicamos la definición de logaritmo: $(-x)^3=125$.",
+          "expresion_latex": "(-x)^3=125"
+        },
+        {
+          "paso": 14,
+          "nota_teorica": "Como $125=5^3$, se tiene $-x=5$, por lo que $x=-5$.",
+          "expresion_latex": "x=-5"
+        },
+        {
+          "paso": 15,
+          "nota_teorica": "Verificamos el dominio: $x=-5<0$ y $-x=5\\neq 1$. La solución es válida.",
+          "expresion_latex": "x=-5"
+        }
+      ],
+      "resultado_final": "x=-5",
+      "observaciones": "La ecuación se simplifica de afuera hacia adentro usando la definición de logaritmo. La base variable $-x$ exige $x<0$ y $x\\neq -1$, condiciones que cumple $x=-5$. Dificultad estimada: media."
+    },
+    {
+      "id_pregunta": "PSA-2012-14",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2012",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "media",
+        "problema": "PROBLEMA N°14"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver el sistema",
+        "ecuacion_latex": "\\begin{cases} \\log_{a}x+\\dfrac{1}{2}\\log_{a}y=a^{\\log_{a}\\left(\\frac{3}{2}\\right)}+\\log_{b}(\\ln e) \\\\ \\dfrac{1}{2}\\log_{b}x+\\log_{b}y=\\log_{a}\\left(\\log 10\\right)+\\log_{b}b^{\\left(\\frac{3}{2}\\right)} \\end{cases}",
+        "condicion": "a>0,\\ a\\neq 1,\\ b>0,\\ b\\neq 1,\\ x>0,\\ y>0;\\ \\log\\ denota logaritmo decimal."
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=\\dfrac{a^2}{b};\\ y=\\dfrac{b^2}{a}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se impone el dominio: las bases de los logaritmos deben ser positivas y distintas de 1, y los argumentos deben ser positivos.",
+          "expresion_latex": "a>0,\\ a\\neq 1,\\ b>0,\\ b\\neq 1,\\ x>0,\\ y>0"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Simplificamos el lado derecho de la primera ecuación. Como $a^{\\log_a(3/2)}=\\dfrac{3}{2}$ y $\\ln e=1$, se tiene $\\log_b(\\ln e)=\\log_b 1=0$.",
+          "expresion_latex": "a^{\\log_a(3/2)}+\\log_b(\\ln e)=\\dfrac{3}{2}+0=\\dfrac{3}{2}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Simplificamos el lado derecho de la segunda ecuación. Si $\\log$ es decimal, $\\log 10=1$, luego $\\log_a(\\log 10)=\\log_a 1=0$. Además, $\\log_b b^{3/2}=\\dfrac{3}{2}$.",
+          "expresion_latex": "\\log_a(\\log 10)+\\log_b b^{3/2}=0+\\dfrac{3}{2}=\\dfrac{3}{2}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "El sistema se reduce a:",
+          "expresion_latex": "\\begin{cases} \\log_a x+\\dfrac{1}{2}\\log_a y=\\dfrac{3}{2} \\\\ \\dfrac{1}{2}\\log_b x+\\log_b y=\\dfrac{3}{2} \\end{cases}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Hacemos los cambios de variable $u=\\log_a x$, $v=\\log_a y$ y $t=\\log_a b$.",
+          "expresion_latex": "u=\\log_a x,\\quad v=\\log_a y,\\quad t=\\log_a b"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "La primera ecuación se convierte en:",
+          "expresion_latex": "u+\\dfrac{v}{2}=\\dfrac{3}{2}\\;\\Rightarrow\\;2u+v=3"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Para la segunda ecuación, usamos cambio de base: $\\log_b x=\\dfrac{\\log_a x}{\\log_a b}=\\dfrac{u}{t}$ y $\\log_b y=\\dfrac{v}{t}$.",
+          "expresion_latex": "\\dfrac{u}{2t}+\\dfrac{v}{t}=\\dfrac{3}{2}\\;\\Rightarrow\\;\\dfrac{u}{2}+v=\\dfrac{3t}{2}"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "De $2u+v=3$ despejamos $v=3-2u$ y sustituimos en $\\dfrac{u}{2}+v=\\dfrac{3t}{2}$.",
+          "expresion_latex": "\\dfrac{u}{2}+3-2u=\\dfrac{3t}{2}"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Resolvemos para $u$.",
+          "expresion_latex": "3-\\dfrac{3u}{2}=\\dfrac{3t}{2}\\;\\Rightarrow\\;6-3u=3t\\;\\Rightarrow\\;u=2-t"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Calculamos $v$.",
+          "expresion_latex": "v=3-2(2-t)=3-4+2t=-1+2t"
+        },
+        {
+          "paso": 11,
+          "nota_teorica": "Volvemos a las variables originales. $x=a^u=a^{2-t}=\\dfrac{a^2}{a^t}=\\dfrac{a^2}{b}$.",
+          "expresion_latex": "x=\\dfrac{a^2}{b}"
+        },
+        {
+          "paso": 12,
+          "nota_teorica": "Análogamente, $y=a^v=a^{-1+2t}=\\dfrac{a^{2t}}{a}=\\dfrac{(a^t)^2}{a}=\\dfrac{b^2}{a}$.",
+          "expresion_latex": "y=\\dfrac{b^2}{a}"
+        }
+      ],
+      "resultado_final": "x=\\dfrac{a^2}{b};\\ y=\\dfrac{b^2}{a}",
+      "observaciones": "La solución se obtiene simplificando los lados derechos y aplicando un cambio de variable logarítmico. Se asume que $\\log$ denota logaritmo decimal para que $\\log 10=1$. Dificultad estimada: media."
+    },
+    {
+      "id_pregunta": "PSA-2020-15",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2020",
+        "examen": "Prueba de suficiencia académica",
+        "dificultad": "baja",
+        "problema": "PROBLEMA N°15"
+      },
+      "enunciado": {
+        "texto_markdown": "Hallar el valor de $x$ en:",
+        "ecuacion_latex": "\\log_{\\sqrt[15]{27}}\\left(3\\cdot\\sqrt[5]{9}\\right)=\\sqrt{47+\\sqrt[4]{14+\\sqrt[5]{29+\\sqrt[3]{x}}}}",
+        "condicion": "x\\in\\mathbb{R}; las raíces de índice par requieren radicandos no negativos."
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=27",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se interpreta que el argumento del logaritmo es el producto $3\\cdot\\sqrt[5]{9}$, debido a la notación del enunciado.",
+          "expresion_latex": "\\log_{\\sqrt[15]{27}}\\left(3\\cdot\\sqrt[5]{9}\\right)"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Simplificamos la base del logaritmo: $\\sqrt[15]{27}=27^{1/15}=(3^3)^{1/15}=3^{3/15}=3^{1/5}$.",
+          "expresion_latex": "\\sqrt[15]{27}=3^{1/5}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Simplificamos el argumento: $3\\cdot\\sqrt[5]{9}=3\\cdot 9^{1/5}=3\\cdot(3^2)^{1/5}=3^{1}\\cdot3^{2/5}=3^{7/5}$.",
+          "expresion_latex": "3\\cdot\\sqrt[5]{9}=3^{7/5}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Aplicamos la propiedad del logaritmo: $\\log_{3^{1/5}}3^{7/5}=\\dfrac{7/5}{1/5}=7$.",
+          "expresion_latex": "\\log_{\\sqrt[15]{27}}\\left(3\\cdot\\sqrt[5]{9}\\right)=7"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "La ecuación original queda entonces:",
+          "expresion_latex": "7=\\sqrt{47+\\sqrt[4]{14+\\sqrt[5]{29+\\sqrt[3]{x}}}}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Elevamos al cuadrado ambos miembros.",
+          "expresion_latex": "49=47+\\sqrt[4]{14+\\sqrt[5]{29+\\sqrt[3]{x}}}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Restamos $47$.",
+          "expresion_latex": "\\sqrt[4]{14+\\sqrt[5]{29+\\sqrt[3]{x}}}=2"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Elevamos a la cuarta potencia.",
+          "expresion_latex": "14+\\sqrt[5]{29+\\sqrt[3]{x}}=16"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Restamos $14$.",
+          "expresion_latex": "\\sqrt[5]{29+\\sqrt[3]{x}}=2"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Elevamos a la quinta potencia.",
+          "expresion_latex": "29+\\sqrt[3]{x}=32"
+        },
+        {
+          "paso": 11,
+          "nota_teorica": "Restamos $29$.",
+          "expresion_latex": "\\sqrt[3]{x}=3"
+        },
+        {
+          "paso": 12,
+          "nota_teorica": "Elevamos al cubo.",
+          "expresion_latex": "x=27"
+        }
+      ],
+      "resultado_final": "x=27",
+      "observaciones": "La notación original puede ser ambigua: se asume que $3\\cdot\\sqrt[5]{9}$ forma parte del argumento del logaritmo. Con esa interpretación, el lado izquierdo vale $7$, y al resolver los radicales anidados se obtiene $x=27$. Dificultad estimada: baja."
+    },
+    {
+      "id_pregunta": "PSA-2016-16",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2016",
+        "examen": "Dispensación",
+        "dificultad": "baja",
+        "problema": "PROBLEMA N°16"
+      },
+      "enunciado": {
+        "texto_markdown": "Expresar sin logaritmos",
+        "ecuacion_latex": "2\\ln a-3=3\\ln a-n",
+        "condicion": "a>0"
+      },
+      "opciones": [],
+      "respuesta_correcta": "a=e^{n-3}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se impone el dominio del logaritmo neperiano: $a>0$.",
+          "expresion_latex": "a>0"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Agrupamos los términos con $\\ln a$ en un miembro y los términos constantes en el otro.",
+          "expresion_latex": "2\\ln a-3=3\\ln a-n"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Restamos $2\\ln a$ y sumamos $n$ a ambos miembros.",
+          "expresion_latex": "n-3=3\\ln a-2\\ln a"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Reducimos términos semejantes.",
+          "expresion_latex": "n-3=\\ln a"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Aplicamos la función exponencial a ambos miembros para eliminar el logaritmo.",
+          "expresion_latex": "e^{n-3}=a"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "La solución cumple el dominio $a>0$ porque $e^{n-3}>0$ para todo $n$ real.",
+          "expresion_latex": "a=e^{n-3}"
+        }
+      ],
+      "resultado_final": "a=e^{n-3}",
+      "observaciones": "La ecuación se resuelve despejando $\\ln a$ y aplicando la exponencial. Dificultad estimada: baja."
+    },
+    {
+      "id_pregunta": "PSA-2017-17",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2017",
+        "examen": "Dispensación",
+        "dificultad": "baja",
+        "problema": "PROBLEMA N°17"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver",
+        "ecuacion_latex": "\\begin{cases} \\log_{a}x+\\log_{a}y=2 \\\\ \\log_{b}x-\\log_{b}y=4 \\end{cases}",
+        "condicion": "a>0,\\ a\\neq 1,\\ b>0,\\ b\\neq 1,\\ x>0,\\ y>0"
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=ab^2;\\ y=\\dfrac{a}{b^2}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se impone el dominio: las bases de los logaritmos deben ser positivas y distintas de 1, y los argumentos deben ser positivos.",
+          "expresion_latex": "a>0,\\ a\\neq 1,\\ b>0,\\ b\\neq 1,\\ x>0,\\ y>0"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "En la primera ecuación aplicamos la propiedad $\\log_a M+\\log_a N=\\log_a(MN)$.",
+          "expresion_latex": "\\log_a(xy)=2"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Aplicamos la definición de logaritmo.",
+          "expresion_latex": "xy=a^2"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "En la segunda ecuación aplicamos la propiedad $\\log_b M-\\log_b N=\\log_b\\left(\\dfrac{M}{N}\\right)$.",
+          "expresion_latex": "\\log_b\\left(\\dfrac{x}{y}\\right)=4"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Aplicamos la definición de logaritmo.",
+          "expresion_latex": "\\dfrac{x}{y}=b^4"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Multiplicamos miembro a miembro las ecuaciones $xy=a^2$ y $\\dfrac{x}{y}=b^4$.",
+          "expresion_latex": "\\left(xy\\right)\\left(\\dfrac{x}{y}\\right)=a^2b^4"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Simplificamos para despejar $x$.",
+          "expresion_latex": "x^2=a^2b^4\\;\\Rightarrow\\;x=ab^2"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Sustituimos $x=ab^2$ en $xy=a^2$ para hallar $y$.",
+          "expresion_latex": "\\left(ab^2\\right)y=a^2\\;\\Rightarrow\\;y=\\dfrac{a^2}{ab^2}=\\dfrac{a}{b^2}"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Verificamos que las soluciones cumplen el dominio $x>0$ y $y>0$, pues $a>0$ y $b>0$.",
+          "expresion_latex": "x=ab^2>0,\\quad y=\\dfrac{a}{b^2}>0"
+        }
+      ],
+      "resultado_final": "x=ab^2;\\ y=\\dfrac{a}{b^2}",
+      "observaciones": "El sistema se resuelve aplicando propiedades de logaritmos y resolviendo las ecuaciones resultantes. Dificultad estimada: baja."
+    },
+    {
+      "id_pregunta": "PSA-2017-18",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2017",
+        "examen": "Dispensación",
+        "dificultad": "baja",
+        "problema": "PROBLEMA N°18"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar al máximo la expresión",
+        "ecuacion_latex": "E=\\log_{4}\\left(\\dfrac{39}{12}\\right)+\\log_{4}\\left(\\dfrac{5}{78}\\right)-\\log_{4}\\left(\\dfrac{5}{96}\\right)",
+        "condicion": "Los argumentos de los logaritmos son positivos."
+      },
+      "opciones": [],
+      "respuesta_correcta": "E=1",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Aplicamos la propiedad $\\log_b M+\\log_b N=\\log_b(MN)$ para los dos primeros términos.",
+          "expresion_latex": "\\log_{4}\\left(\\dfrac{39}{12}\\right)+\\log_{4}\\left(\\dfrac{5}{78}\\right)=\\log_{4}\\left(\\dfrac{39}{12}\\cdot\\dfrac{5}{78}\\right)"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Ahora restamos el tercer logaritmo usando $\\log_b M-\\log_b N=\\log_b\\left(\\dfrac{M}{N}\\right)$.",
+          "expresion_latex": "E=\\log_{4}\\left(\\dfrac{\\dfrac{39}{12}\\cdot\\dfrac{5}{78}}{\\dfrac{5}{96}}\\right)"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Simplificamos la fracción interna. Multiplicamos en cruz:",
+          "expresion_latex": "\\dfrac{39}{12}\\cdot\\dfrac{5}{78}\\cdot\\dfrac{96}{5}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Cancelamos el factor $5$ y simplificamos $\\dfrac{96}{12}=8$.",
+          "expresion_latex": "\\dfrac{39}{78}\\cdot 8"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Como $\\dfrac{39}{78}=\\dfrac{1}{2}$, resulta:",
+          "expresion_latex": "\\dfrac{1}{2}\\cdot 8=4"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Por lo tanto, la expresión queda:",
+          "expresion_latex": "E=\\log_{4}4"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Aplicamos $\\log_b b=1$.",
+          "expresion_latex": "E=1"
+        }
+      ],
+      "resultado_final": "E=1",
+      "observaciones": "La expresión se simplifica directamente aplicando las propiedades de suma y resta de logaritmos. Dificultad estimada: baja."
+    },
+    {
+      "id_pregunta": "PSA-2017-19",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2017",
+        "examen": "Dispensación",
+        "dificultad": "baja",
+        "problema": "PROBLEMA N°19"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver el sistema",
+        "ecuacion_latex": "\\begin{cases} 3^x\\cdot2^y=576 \\\\ \\log_{\\sqrt{2}}(y-x)=4 \\end{cases}",
+        "condicion": "y-x>0;\\ \\sqrt{2}>0,\\ \\sqrt{2}\\neq 1"
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=2;\\ y=6",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se impone el dominio: el argumento del logaritmo debe ser positivo, es decir, $y-x>0$. La base $\\sqrt{2}$ es positiva y distinta de $1$.",
+          "expresion_latex": "y-x>0"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Resolvemos la ecuación logarítmica aplicando la definición de logaritmo.",
+          "expresion_latex": "\\log_{\\sqrt{2}}(y-x)=4\\;\\Rightarrow\\;y-x=(\\sqrt{2})^4"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Calculamos $(\\sqrt{2})^4=2^2=4$.",
+          "expresion_latex": "y-x=4\\;\\Rightarrow\\;y=x+4"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Sustituimos $y=x+4$ en la primera ecuación.",
+          "expresion_latex": "3^x\\cdot2^{x+4}=576"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Separamos la potencia $2^{x+4}=2^x\\cdot2^4$.",
+          "expresion_latex": "3^x\\cdot2^x\\cdot2^4=576"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Como $3^x\\cdot2^x=(3\\cdot2)^x=6^x$, y $2^4=16$.",
+          "expresion_latex": "6^x\\cdot16=576"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Despejamos $6^x$.",
+          "expresion_latex": "6^x=\\dfrac{576}{16}=36"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Escribimos $36=6^2$ e igualamos exponentes.",
+          "expresion_latex": "6^x=6^2\\;\\Rightarrow\\;x=2"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Calculamos $y$ usando $y=x+4$.",
+          "expresion_latex": "y=2+4=6"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Verificamos el dominio: $y-x=6-2=4>0$. La solución es válida.",
+          "expresion_latex": "x=2,\\quad y=6"
+        }
+      ],
+      "resultado_final": "x=2;\\ y=6",
+      "observaciones": "El sistema se resuelve despejando la relación lineal entre $x$ e $y$ a partir del logaritmo y sustituyendo en la ecuación exponencial. Dificultad estimada: baja."
+    },
+    {
+      "id_pregunta": "PSA-2017-20",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Logaritmos",
+        "anio": "2017",
+        "examen": "Dispensación",
+        "dificultad": "media",
+        "problema": "PROBLEMA N°20"
+      },
+      "enunciado": {
+        "texto_markdown": "Resolver el sistema",
+        "ecuacion_latex": "\\begin{cases} \\log_{a^2}x+\\log_{a}y=\\dfrac{3}{2} \\\\ \\log_{b}x+\\log_{b^2}y=\\dfrac{3}{2} \\end{cases}",
+        "condicion": "a>0,\\ a\\neq 1,\\ b>0,\\ b\\neq 1,\\ x>0,\\ y>0"
+      },
+      "opciones": [],
+      "respuesta_correcta": "x=\\dfrac{b^2}{a};\\ y=\\dfrac{a^2}{b}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se impone el dominio: las bases de los logaritmos deben ser positivas y distintas de 1, y los argumentos deben ser positivos.",
+          "expresion_latex": "a>0,\\ a\\neq 1,\\ b>0,\\ b\\neq 1,\\ x>0,\\ y>0"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Hacemos los cambios de variable $u=\\log_a x$, $v=\\log_a y$ y $t=\\log_a b$.",
+          "expresion_latex": "u=\\log_a x,\\quad v=\\log_a y,\\quad t=\\log_a b"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "En la primera ecuación, $\\log_{a^2}x=\\dfrac{\\log_a x}{2}=\\dfrac{u}{2}$. Por tanto:",
+          "expresion_latex": "\\dfrac{u}{2}+v=\\dfrac{3}{2}\\;\\Rightarrow\\;u+2v=3"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "En la segunda ecuación, usamos cambio de base: $\\log_b x=\\dfrac{u}{t}$ y $\\log_{b^2}y=\\dfrac{v}{2t}$.",
+          "expresion_latex": "\\dfrac{u}{t}+\\dfrac{v}{2t}=\\dfrac{3}{2}\\;\\Rightarrow\\;2u+v=3t"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Resolvemos el sistema lineal formado por $u+2v=3$ y $2u+v=3t$.",
+          "expresion_latex": "\\begin{cases} u+2v=3 \\\\ 2u+v=3t \\end{cases}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "De la primera ecuación, $u=3-2v$. Sustituimos en la segunda.",
+          "expresion_latex": "2(3-2v)+v=3t\\;\\Rightarrow\\;6-3v=3t\\;\\Rightarrow\\;v=2-t"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Calculamos $u$.",
+          "expresion_latex": "u=3-2(2-t)=2t-1"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "Volvemos a las variables originales. Como $x=a^u$:",
+          "expresion_latex": "x=a^{2t-1}=\\dfrac{a^{2t}}{a}=\\dfrac{(a^t)^2}{a}=\\dfrac{b^2}{a}"
+        },
+        {
+          "paso": 9,
+          "nota_teorica": "Análogamente, como $y=a^v$:",
+          "expresion_latex": "y=a^{2-t}=\\dfrac{a^2}{a^t}=\\dfrac{a^2}{b}"
+        },
+        {
+          "paso": 10,
+          "nota_teorica": "Verificamos que las soluciones cumplen el dominio $x>0$, $y>0$, pues $a>0$ y $b>0$.",
+          "expresion_latex": "x=\\dfrac{b^2}{a}>0,\\quad y=\\dfrac{a^2}{b}>0"
+        }
+      ],
+      "resultado_final": "x=\\dfrac{b^2}{a};\\ y=\\dfrac{a^2}{b}",
+      "observaciones": "El sistema se resuelve mediante cambios de variable logarítmicos y cambio de base a base $a$. La solución obtenida coincide con la respuesta oficial. Dificultad estimada: media."
+    }
+  ]
+}

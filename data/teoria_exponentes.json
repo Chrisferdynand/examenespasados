@@ -1,0 +1,1808 @@
+{
+  "metadata": {
+    "institucion": "Universidad Mayor de San Andrés (UMSA)",
+    "facultad": "Ciencias Económicas y Financieras",
+    "tema": "Teoría de exponentes y radicales",
+    "total_preguntas": 36,
+    "descripcion": "Colección unificada de problemas UMSA de exponentes y radicales"
+  },
+  "preguntas": [
+    {
+      "id_pregunta": "UMSA-CF-MAT-2012-01",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Ciencias Financieras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2012",
+        "problema": "PROBLEMA N°1",
+        "dificultad": "Alta"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "E = \\sqrt[3^{-2^{-2}}]{ b^{3^{-2^{-2^{3^{-2^{-1}}}}}} }^{3^{-2^{-2}} \\cdot 3^{2^{-2^{3^{-2^{-1}}}}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E = b",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Se identifican los exponentes anidados y se propone un cambio de variable para simplificar la expresión.",
+          "expresion_latex": "n = 3^{-2^{-2}} \\quad ; \\quad m = 2^{-2^{3^{-2^{-1}}}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Sustituyendo en la expresión original, el radical y el exponente exterior se reescriben en términos de n y m.",
+          "expresion_latex": "E = \\sqrt[n]{ b^{3^{-m}} }^{\\,n \\cdot 3^m}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Se convierte el radical a potencia: $\\sqrt[n]{A} = A^{1/n}$.",
+          "expresion_latex": "E = \\left( \\left( b^{3^{-m}} \\right)^{1/n} \\right)^{n \\cdot 3^m} = \\left( b^{\\frac{3^{-m}}{n}} \\right)^{n \\cdot 3^m}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Se aplica potencia de potencia: $(x^a)^b = x^{a \\cdot b}$.",
+          "expresion_latex": "E = b^{\\frac{3^{-m}}{n} \\cdot n \\cdot 3^m} = b^{3^{-m} \\cdot 3^m}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Producto de potencias de igual base: $3^{-m} \\cdot 3^m = 3^{-m+m} = 3^0 = 1$.",
+          "expresion_latex": "E = b^1 = b"
+        }
+      ],
+      "resultado_final": "E = b",
+      "observaciones": "Se corrigió la transcripción del enunciado: donde decía 3^{-2-1} debe ser 3^{-2^{-1}}, y 2^{-2\\cdot 3^{-2-1}} debe ser 2^{-2^{3^{-2^{-1}}}}."
+    },
+    {
+      "id_pregunta": "CONTA-2012-02",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Contaduría Pública",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2012",
+        "problema": "PROBLEMA N°2",
+        "dificultad": "Media"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar al máximo:",
+        "ecuacion_latex": "A = \\sqrt{\\frac{(1+x)\\sqrt[3]{1+x}}{3x}} \\cdot \\sqrt[3]{\\frac{\\sqrt{3}}{9+18x^{-1}+9x^{-2}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "A = \\frac{\\sqrt[6]{x}}{3}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Para multiplicar radicales con diferente índice, se busca el mínimo común índice (MCM de 2 y 3 es 6). Se eleva el radicando a la potencia necesaria para que el índice sea 6.",
+          "expresion_latex": "A = \\sqrt[6]{\\left[ \\frac{(1+x)\\sqrt[3]{1+x}}{3x} \\right]^3} \\cdot \\sqrt[6]{\\left( \\frac{\\sqrt{3}}{9+18x^{-1}+9x^{-2}} \\right)^2}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Trabajamos en el radicando del segundo factor. Se factoriza el denominador: $9+18x^{-1}+9x^{-2} = 9(1 + 2x^{-1} + x^{-2}) = 3^2(1 + x^{-1})^2$.",
+          "expresion_latex": "\\frac{\\sqrt{3}}{9+18x^{-1}+9x^{-2}} = \\frac{\\sqrt{3}}{9\\left(1+\\frac{2}{x}+\\frac{1}{x^2}\\right)} = \\frac{\\sqrt{3}}{3^2\\left(1+\\frac{1}{x}\\right)^2} = \\frac{\\sqrt{3}x^2}{3^2(1+x)^2}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Sustituyendo el radicando simplificado en la expresión de $A$ y elevando al cuadrado según el índice común.",
+          "expresion_latex": "A = \\sqrt[6]{\\frac{(1+x)^3(\\sqrt[3]{1+x})^3}{(3x)^3} \\cdot \\left( \\frac{\\sqrt{3}x^2}{3^2(1+x)^2} \\right)^2}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Simplificando potencias internas: $(\\sqrt[3]{1+x})^3 = 1+x$, $(3x)^3 = 3^3x^3$, y elevando al cuadrado el segundo factor.",
+          "expresion_latex": "A = \\sqrt[6]{\\frac{(1+x)^3(1+x)}{3^3x^3} \\cdot \\frac{3x^4}{3^4(1+x)^4}}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Simplificando la expresión dentro del radical. Se cancelan los factores $(1+x)^4$, se simplifica $x^4 / x^3 = x$, y se reducen las potencias de 3: $3 / (3^3 \\cdot 3^4) = 1/3^6$.",
+          "expresion_latex": "A = \\sqrt[6]{\\frac{(1+x)^4 \\cdot x}{3^6 \\cdot (1+x)^4}} = \\sqrt[6]{\\frac{x}{3^6}}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Extrayendo el factor del radical. La raíz sexta de $3^6$ es $3$.",
+          "expresion_latex": "A = \\frac{\\sqrt[6]{x}}{3}"
+        }
+      ],
+      "resultado_final": "A = \\frac{\\sqrt[6]{x}}{3}",
+      "observaciones": "Se asume que $x > 0$ para que las raíces y potencias con exponentes negativos estén bien definidas en los números reales. El problema corresponde a la gestión CONTA-2012."
+    },
+    {
+      "id_pregunta": "PREFAC-2009-03",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2009",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°3"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "E = \\frac{8^{-3^{-3^0}} + (9^{-1})^{2^{-2^0}}}{(125^{-3^5})^{3^{-6}} - 36^{-0.5}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E = 25",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Simplificamos los exponentes anidados. Recordemos que $a^0 = 1$. En el numerador: $3^0 = 1$, entonces $-3^{-3^0} = -3^{-1} = -\\frac{1}{3}$. En el denominador: $2^0 = 1$, entonces $2^{-2^0} = 2^{-1} = \\frac{1}{2}$. Además, aplicamos potencia de potencia en $(125^{-3^5})^{3^{-6}}$.",
+          "expresion_latex": "E = \\frac{8^{-\\frac{1}{3}} + (9^{-1})^{\\frac{1}{2}}}{125^{-3^5 \\cdot 3^{-6}} - 36^{-\\frac{1}{2}}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Simplificamos el exponente del denominador: $-3^5 \\cdot 3^{-6} = -3^{5-6} = -3^{-1} = -\\frac{1}{3}$. Reescribimos las potencias negativas fraccionarias como radicales: $a^{-\\frac{m}{n}} = \\frac{1}{\\sqrt[n]{a^m}}$.",
+          "expresion_latex": "E = \\frac{\\frac{1}{\\sqrt[3]{8}} + \\frac{1}{\\sqrt{9}}}{\\frac{1}{\\sqrt[3]{125}} - \\frac{1}{\\sqrt{36}}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Evaluamos los radicales. Recordemos que $\\sqrt[3]{8} = 2$, $\\sqrt{9} = 3$, $\\sqrt[3]{125} = 5$ y $\\sqrt{36} = 6$.",
+          "expresion_latex": "E = \\frac{\\frac{1}{2} + \\frac{1}{3}}{\\frac{1}{5} - \\frac{1}{6}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Resolvemos las sumas y restas en el numerador y denominador. En el numerador: $\\frac{1}{2} + \\frac{1}{3} = \\frac{3+2}{6} = \\frac{5}{6}$. En el denominador: $\\frac{1}{5} - \\frac{1}{6} = \\frac{6-5}{30} = \\frac{1}{30}$.",
+          "expresion_latex": "E = \\frac{\\frac{5}{6}}{\\frac{1}{30}}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Dividimos las fracciones y obtenemos el resultado final: $\\frac{5}{6} \\div \\frac{1}{30} = \\frac{5}{6} \\cdot 30 = 25$.",
+          "expresion_latex": "E = 25"
+        }
+      ],
+      "resultado_final": "E = 25",
+      "observaciones": "El enunciado original usa la letra $R$ para la expresión, pero la solución y la respuesta final usan $E$. Se unificó a $E$ para evitar confusiones. El problema está etiquetado como PREFAC 2009 (Curso Pre-facultativo)."
+    },
+    {
+      "id_pregunta": "DISPE-2014-04",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2014",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°4"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "E = \\sqrt[n]{\\frac{4^{n+\\frac{1}{4}} \\cdot \\sqrt{2^{n-2}}}{2^{-\\frac{1}{2}} \\cdot \\sqrt{2^n}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E = 4",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Expresamos todas las bases como potencias de 2. Recordemos que $4 = 2^2$ y que un radical se puede expresar como exponente fraccionario: $\\sqrt[n]{a^m} = a^{\\frac{m}{n}}$.",
+          "expresion_latex": "E = \\sqrt[n]{\\frac{(2^2)^{n+\\frac{1}{4}} \\cdot 2^{\\frac{n-2}{2}}}{2^{-\\frac{1}{2}} \\cdot 2^{\\frac{n}{2}}}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Aplicamos las propiedades de potencias. En el numerador, potencia de potencia: $(2^2)^{n+\\frac{1}{4}} = 2^{2n+\\frac{1}{2}}$. Luego, multiplicación de potencias de igual base en el numerador y denominador, y finalmente división (resta de exponentes).",
+          "expresion_latex": "E = \\sqrt[n]{2^{2n + \\frac{1}{2} + \\frac{n-2}{2} + \\frac{1}{2} - \\frac{n}{2}}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Simplificamos el exponente dentro del radical. Agrupamos los términos con $n$ y los términos independientes: $2n + \\frac{n}{2} - \\frac{n}{2} = 2n$. Por otro lado, $\\frac{1}{2} - 1 + \\frac{1}{2} = 0$. Por lo tanto, el exponente se reduce a $2n$.",
+          "expresion_latex": "E = \\sqrt[n]{2^{2n}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Simplificamos el radical aplicando la propiedad $\\sqrt[n]{a^{m}} = a^{\\frac{m}{n}}$. En este caso, $\\sqrt[n]{2^{2n}} = 2^{\\frac{2n}{n}} = 2^2$.",
+          "expresion_latex": "E = 2^2"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Calculamos el valor final.",
+          "expresion_latex": "E = 4"
+        }
+      ],
+      "resultado_final": "E = 4",
+      "observaciones": "En la imagen original, los radicales internos del numerador y denominador no tienen índice visible, pero la solución escrita a mano confirma que son raíces cuadradas ($\\sqrt{2^{n-2}}$ y $\\sqrt{2^n}$). Se asumió esta interpretación."
+    },
+    {
+      "id_pregunta": "ECO-2009-05",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Economía",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2009",
+        "dificultad": "Alta",
+        "problema": "PROBLEMA N°5"
+      },
+      "enunciado": {
+        "texto_markdown": "Calcular:",
+        "ecuacion_latex": "A = b^{b^{1+b^{-1}} + b^{b^{-1}}}",
+        "condicion_latex": "b\\sqrt[b]{b} = \\frac{1}{2}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "A = \\frac{\\sqrt{2}}{2}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Trabajamos en la condición. Despejamos la raíz enésima: si $b\\sqrt[b]{b} = \\frac{1}{2}$, entonces $\\sqrt[b]{b} = \\frac{1}{2b}$.",
+          "expresion_latex": "\\sqrt[b]{b} = \\frac{1}{2b}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Simplificamos los exponentes internos de la expresión original. Recordemos que $b^{1+b^{-1}} = b^{1+1/b} = b \\cdot b^{1/b} = b\\sqrt[b]{b}$ y $b^{b^{-1}} = b^{1/b} = \\sqrt[b]{b}$.",
+          "expresion_latex": "A = b^{b^{1+1/b} + b^{1/b}} = b^{b\\sqrt[b]{b} + \\sqrt[b]{b}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Separamos la potencia en un producto de potencias de igual base: $b^{m+n} = b^m \\cdot b^n$.",
+          "expresion_latex": "A = b^{b\\sqrt[b]{b}} \\cdot b^{\\sqrt[b]{b}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Sustituimos los valores de la condición en los exponentes. Sabemos que $b\\sqrt[b]{b} = \\frac{1}{2}$ y $\\sqrt[b]{b} = \\frac{1}{2b}$.",
+          "expresion_latex": "A = b^{\\frac{1}{2}} \\cdot b^{\\frac{1}{2b}}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Agrupamos las potencias aplicando la propiedad $x^a \\cdot y^a = (xy)^a$. Observa que $b^{\\frac{1}{2b}} = (b^{\\frac{1}{b}})^{\\frac{1}{2}} = (\\sqrt[b]{b})^{\\frac{1}{2}}$.",
+          "expresion_latex": "A = b^{\\frac{1}{2}} \\cdot (b^{\\frac{1}{b}})^{\\frac{1}{2}} = (b \\cdot b^{\\frac{1}{b}})^{\\frac{1}{2}} = (b\\sqrt[b]{b})^{\\frac{1}{2}}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Volvemos a reemplazar la condición original: $b\\sqrt[b]{b} = \\frac{1}{2}$.",
+          "expresion_latex": "A = \\left(\\frac{1}{2}\\right)^{\\frac{1}{2}}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Calculamos el valor final y racionalizamos: $\\sqrt{\\frac{1}{2}} = \\frac{1}{\\sqrt{2}} \\cdot \\frac{\\sqrt{2}}{\\sqrt{2}} = \\frac{\\sqrt{2}}{2}$.",
+          "expresion_latex": "A = \\frac{\\sqrt{2}}{2}"
+        }
+      ],
+      "resultado_final": "A = \\frac{\\sqrt{2}}{2}",
+      "observaciones": "La condición $b\\sqrt[b]{b} = \\frac{1}{2}$ se utiliza dos veces: primero para obtener $\\sqrt[b]{b} = \\frac{1}{2b}$, y luego para sustituir $b\\sqrt[b]{b}$ en la expresión final. Se asume que $b > 0$ para que la raíz enésima esté bien definida en los números reales."
+    },
+    {
+      "id_pregunta": "CONTA-2009-06",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Contaduría Pública",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2009",
+        "dificultad": "Alta",
+        "problema": "PROBLEMA N°6"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "M = \\left\\{ \\sqrt[9]{\\frac{\\overbrace{\\sqrt[5]{x^2} \\sqrt[5]{x^2} \\cdots \\sqrt[5]{x^2}}^{100 \\text{ veces}}}{\\left( \\underbrace{\\sqrt[4]{x} \\sqrt[4]{x} \\cdots \\sqrt[4]{x}}_{328 \\text{ veces}} \\right)^{-1}}} \\right\\}^{81^{4^{-2^{-1}}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "M = x^{122}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Aplicando la propiedad de multiplicación de factores iguales: $\\underbrace{x \\cdot x \\cdots x}_{n \\text{ veces}} = x^n$.",
+          "expresion_latex": "M = \\left( \\sqrt[9]{\\frac{(\\sqrt[5]{x^2})^{100}}{(\\left(\\sqrt[4]{x}\\right)^{328})^{-1}}} \\right)^{81^{4^{-2^{-1}}}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Llamando al exponente superior $A$ y simplificando de arriba hacia abajo: $A = 81^{4^{-2^{-1}}} = 81^{4^{-\\frac{1}{2}}} = 81^{(\\sqrt{4})^{-1}} = 81^{2^{-1}} = 81^{\\frac{1}{2}} = 9$.",
+          "expresion_latex": "A = 81^{4^{-2^{-1}}} = 81^{4^{-\\frac{1}{2}}} = 81^{(\\sqrt{4})^{-1}} = 81^{2^{-1}} = 81^{\\frac{1}{2}} = 9"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Sustituyendo el exponente $A = 9$ y simplificando potencias y radicales internos: $(\\sqrt[5]{x^2})^{100} = x^{\\frac{200}{5}} = x^{40}$ y $(\\sqrt[4]{x})^{328} = x^{\\frac{328}{4}} = x^{82}$.",
+          "expresion_latex": "M = \\left( \\sqrt[9]{\\frac{x^{40}}{x^{-82}}} \\right)^9"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Simplificando la fracción dentro del radical: $\\frac{x^{40}}{x^{-82}} = x^{40 - (-82)} = x^{40+82} = x^{122}$.",
+          "expresion_latex": "M = \\left( \\sqrt[9]{x^{122}} \\right)^9"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Aplicando la propiedad $\\left(\\sqrt[n]{a^m}\\right)^n = a^m$. En este caso, $\\left(\\sqrt[9]{x^{122}}\\right)^9 = x^{122}$.",
+          "expresion_latex": "M = x^{122}"
+        }
+      ],
+      "resultado_final": "M = x^{122}",
+      "observaciones": "En la imagen original, la respuesta final se denota como $E = x^{122}$, pero el enunciado pide simplificar $M$. Se unificó la notación a $M$ para evitar confusiones. Se asume que $x > 0$ para que las raíces y potencias estén bien definidas en los números reales."
+    },
+    {
+      "id_pregunta": "ADMI-2009-07",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2009",
+        "dificultad": "Alta",
+        "problema": "PROBLEMA N°7"
+      },
+      "enunciado": {
+        "texto_markdown": "Calcular el valor de:",
+        "ecuacion_latex": "E = \\sqrt[n]{\\frac{a^{3n} + \\sqrt[n]{\\frac{a^{4n^2} + a^{3n^2}}{a^{2n^2} + a^{n^2}}}}{a^n + 1}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E = a^2",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Primero simplificamos el factor interno del numerador. Llamemos $A$ a este radical interno.",
+          "expresion_latex": "A = \\sqrt[n]{\\frac{a^{4n^2} + a^{3n^2}}{a^{2n^2} + a^{n^2}}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Extraemos factor común en el numerador y denominador. En el numerador: $a^{4n^2} + a^{3n^2} = a^{3n^2}(a^{n^2} + 1)$. En el denominador: $a^{2n^2} + a^{n^2} = a^{n^2}(a^{n^2} + 1)$.",
+          "expresion_latex": "A = \\sqrt[n]{\\frac{a^{3n^2}(a^{n^2} + 1)}{a^{n^2}(a^{n^2} + 1)}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Cancelamos el factor común $(a^{n^2} + 1)$ y simplificamos las potencias de $a$: $\\frac{a^{3n^2}}{a^{n^2}} = a^{3n^2 - n^2} = a^{2n^2}$.",
+          "expresion_latex": "A = \\sqrt[n]{a^{2n^2}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Simplificamos el radical: $\\sqrt[n]{a^{2n^2}} = a^{\\frac{2n^2}{n}} = a^{2n}$. Por lo tanto, $A = a^{2n}$.",
+          "expresion_latex": "A = a^{2n}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Reemplazamos el valor de $A = a^{2n}$ en la expresión original de $E$.",
+          "expresion_latex": "E = \\sqrt[n]{\\frac{a^{3n} + a^{2n}}{a^n + 1}}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Extraemos factor común $a^{2n}$ en el numerador: $a^{3n} + a^{2n} = a^{2n}(a^n + 1)$.",
+          "expresion_latex": "E = \\sqrt[n]{\\frac{a^{2n}(a^n + 1)}{a^n + 1}}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Cancelamos el factor común $(a^n + 1)$ y simplificamos el radical final.",
+          "expresion_latex": "E = \\sqrt[n]{a^{2n}} = a^{\\frac{2n}{n}} = a^2"
+        }
+      ],
+      "resultado_final": "E = a^2",
+      "observaciones": "Se asume que $a > 0$ para que las raíces y potencias estén bien definidas en los números reales. El problema está etiquetado como ADMI-2009 (Examen de Admisión). En la imagen, la variable se lee claramente como $a$, no como $n$."
+    },
+    {
+      "id_pregunta": "ECO-2009-08",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Economía",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2009",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°8"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "E = \\left[\\sqrt[3]{3^{\\sqrt{2}} \\cdot \\sqrt[\\sqrt{2}]{4}}\\right]^{2\\sqrt{2} - \\frac{1}{\\sqrt{2}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E = 6",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Llamamos $A$ al exponente de la expresión y lo simplificamos. Para ello, expresamos $2\\sqrt{2}$ con denominador $\\sqrt{2}$: $2\\sqrt{2} = \\frac{2\\sqrt{2} \\cdot \\sqrt{2}}{\\sqrt{2}} = \\frac{2 \\cdot 2}{\\sqrt{2}} = \\frac{4}{\\sqrt{2}}$.",
+          "expresion_latex": "A = 2\\sqrt{2} - \\frac{1}{\\sqrt{2}} = \\frac{2(\\sqrt{2})^2 - 1}{\\sqrt{2}} = \\frac{4 - 1}{\\sqrt{2}} = \\frac{3}{\\sqrt{2}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Reemplazamos el exponente $A = \\frac{3}{\\sqrt{2}}$ en la expresión original de $E$.",
+          "expresion_latex": "E = \\left[\\sqrt[3]{3^{\\sqrt{2}} \\cdot \\sqrt[\\sqrt{2}]{4}}\\right]^{\\frac{3}{\\sqrt{2}}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Simplificamos el segundo factor dentro del radical. Recordemos que $\\sqrt[\\sqrt{2}]{4} = 4^{\\frac{1}{\\sqrt{2}}} = (2^2)^{\\frac{1}{\\sqrt{2}}} = 2^{\\frac{2}{\\sqrt{2}}} = 2^{\\sqrt{2}}$.",
+          "expresion_latex": "\\sqrt[\\sqrt{2}]{4} = 2^{\\sqrt{2}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Sustituimos en el radicando y aplicamos la propiedad de producto de potencias con el mismo exponente: $3^{\\sqrt{2}} \\cdot 2^{\\sqrt{2}} = (3 \\cdot 2)^{\\sqrt{2}} = 6^{\\sqrt{2}}$.",
+          "expresion_latex": "\\sqrt[3]{3^{\\sqrt{2}} \\cdot 2^{\\sqrt{2}}} = \\sqrt[3]{6^{\\sqrt{2}}} = 6^{\\frac{\\sqrt{2}}{3}}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Sustituimos el radical simplificado en $E$ y aplicamos potencia de potencia: $\\left(a^m\\right)^n = a^{m \\cdot n}$.",
+          "expresion_latex": "E = \\left(6^{\\frac{\\sqrt{2}}{3}}\\right)^{\\frac{3}{\\sqrt{2}}} = 6^{\\frac{\\sqrt{2}}{3} \\cdot \\frac{3}{\\sqrt{2}}}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Simplificamos el exponente: $\\frac{\\sqrt{2}}{3} \\cdot \\frac{3}{\\sqrt{2}} = 1$. Por lo tanto, $E = 6^1 = 6$.",
+          "expresion_latex": "E = 6^1 = 6"
+        }
+      ],
+      "resultado_final": "E = 6",
+      "observaciones": "En la imagen original, el segundo factor dentro del radical parece estar escrito como $3^{\\frac{2}{\\sqrt{2}}}$ en lugar de $2^{\\frac{2}{\\sqrt{2}}}$, lo cual sería un error de tipeo, ya que $\\sqrt[\\sqrt{2}]{4}$ es una potencia de 2, no de 3. La solución correcta utiliza $2^{\\sqrt{2}}$, lo que conduce al resultado $E = 6$. Se asume que $x > 0$ para que las raíces estén bien definidas."
+    },
+    {
+      "id_pregunta": "ADMI-2011-09",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2011",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°9"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplifique:",
+        "ecuacion_latex": "D = \\sqrt[AB]{\\frac{(B^A \\cdot A^{-B})^{-C}}{(A^B)^{C-A} \\cdot (B^A)^{B-C}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "D = \\frac{A}{B}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Simplificamos el numerador y el denominador aplicando la propiedad de potencia de potencia: $(x^m)^n = x^{m \\cdot n}$. En el numerador: $(B^A \\cdot A^{-B})^{-C} = B^{-AC} \\cdot A^{BC}$. En el denominador: $(A^B)^{C-A} \\cdot (B^A)^{B-C} = A^{BC-AB} \\cdot B^{AB-AC}$.",
+          "expresion_latex": "D = \\sqrt[AB]{\\frac{B^{-AC} \\cdot A^{BC}}{A^{BC-AB} \\cdot B^{AB-AC}}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Simplificamos la fracción interna restando los exponentes de las bases iguales. Para la base $A$: $BC - (BC - AB) = AB$. Para la base $B$: $-AC - (AB - AC) = -AB$. Por lo tanto, la fracción se reduce a $B^{-AB} \\cdot A^{AB}$.",
+          "expresion_latex": "D = \\sqrt[AB]{B^{-AC-AB+AC} \\cdot A^{BC-BC+AB}} = \\sqrt[AB]{B^{-AB} \\cdot A^{AB}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Agrupamos los factores dentro del radical aplicando la propiedad $x^m \\cdot y^m = (xy)^m$. En este caso, el exponente común es $AB$.",
+          "expresion_latex": "D = \\sqrt[AB]{(B^{-1} \\cdot A)^{AB}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Simplificamos el radical aplicando la propiedad $\\sqrt[n]{x^n} = x$. Finalmente, expresamos el resultado como una fracción.",
+          "expresion_latex": "D = B^{-1} \\cdot A = \\frac{A}{B}"
+        }
+      ],
+      "resultado_final": "D = \\frac{A}{B}",
+      "observaciones": "Se asume que $A > 0$ y $B > 0$ (con $B \\neq 0$) para que las raíces y potencias estén bien definidas en los números reales. El problema está etiquetado como ADMI-2011 (Examen de Admisión)."
+    },
+    {
+      "id_pregunta": "ADMI-2011-2016-10",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2011-2016",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°10"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "M = \\sqrt[n]{\\frac{2^n + 3^n + 4^n}{6^{-n} + 8^{-n} + 12^{-n}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "M = 24",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Reescribimos las potencias negativas del denominador como fracciones: $6^{-n} = \\frac{1}{6^n}$, $8^{-n} = \\frac{1}{8^n}$ y $12^{-n} = \\frac{1}{12^n}$.",
+          "expresion_latex": "M = \\sqrt[n]{\\frac{2^n + 3^n + 4^n}{\\frac{1}{6^n} + \\frac{1}{8^n} + \\frac{1}{12^n}}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Sumamos las fracciones del denominador. El mínimo común múltiplo de $6^n$, $8^n$ y $12^n$ es $24^n$, ya que $24 = \\text{mcm}(6, 8, 12)$. Entonces: $\\frac{1}{6^n} + \\frac{1}{8^n} + \\frac{1}{12^n} = \\frac{4^n + 3^n + 2^n}{24^n}$.",
+          "expresion_latex": "\\frac{1}{6^n} + \\frac{1}{8^n} + \\frac{1}{12^n} = \\frac{4^n}{24^n} + \\frac{3^n}{24^n} + \\frac{2^n}{24^n} = \\frac{4^n + 3^n + 2^n}{24^n}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Sustituimos el denominador simplificado en la expresión original. Observa que el numerador $2^n + 3^n + 4^n$ es idéntico al numerador del denominador $4^n + 3^n + 2^n$.",
+          "expresion_latex": "M = \\sqrt[n]{\\frac{2^n + 3^n + 4^n}{\\frac{4^n + 3^n + 2^n}{24^n}}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Simplificamos la fracción de fracciones: $\\frac{a}{\\frac{b}{c}} = \\frac{a \\cdot c}{b}$. Como $a = b$, se cancelan, quedando $24^n$ dentro del radical.",
+          "expresion_latex": "M = \\sqrt[n]{24^n}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Simplificamos el radical aplicando la propiedad $\\sqrt[n]{a^n} = a$.",
+          "expresion_latex": "M = 24"
+        }
+      ],
+      "resultado_final": "M = 24",
+      "observaciones": "El problema está etiquetado como ADMI-2011-2016 (Examen de Admisión). Se asume que $n > 0$ para que las potencias y raíces estén bien definidas en los números reales."
+    },
+    {
+      "id_pregunta": "DISPE-2010-11",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2010",
+        "dificultad": "Alta",
+        "problema": "PROBLEMA N°11"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "M = \\left\\{ (-8a^6)^{-3^{-1}} \\cdot \\frac{1}{(a^2)^{-2^{-1}}} - (4^{-1}a^{-4})^{2^{-1}} \\cdot \\frac{1}{(a^{-2})^{2^{-1}}} \\right\\}^{-1}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "M = -a",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Simplificamos los exponentes negativos y fraccionarios. Recordemos que $a^{-n} = \\frac{1}{a^n}$ y $a^{\\frac{m}{n}} = \\sqrt[n]{a^m}$. Entonces: $-3^{-1} = -\\frac{1}{3}$, $-2^{-1} = -\\frac{1}{2}$ y $2^{-1} = \\frac{1}{2}$.",
+          "expresion_latex": "M = \\left\\{ (-8a^6)^{-\\frac{1}{3}} \\cdot \\frac{1}{(a^2)^{-\\frac{1}{2}}} - (4^{-1}a^{-4})^{\\frac{1}{2}} \\cdot \\frac{1}{(a^{-2})^{\\frac{1}{2}}} \\right\\}^{-1}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Aplicamos las propiedades de potencias para simplificar cada factor. En el primer término: $(-8a^6)^{-\\frac{1}{3}} = \\frac{1}{(-8a^6)^{\\frac{1}{3}}} = \\frac{1}{-2a^2} = -\\frac{1}{2a^2}$. Además, $\\frac{1}{(a^2)^{-\\frac{1}{2}}} = (a^2)^{\\frac{1}{2}} = a$.",
+          "expresion_latex": "M = \\left\\{ -\\frac{1}{2a^2} \\cdot a - \\frac{1}{2a^2} \\cdot a \\right\\}^{-1}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Simplificamos el segundo término: $(4^{-1}a^{-4})^{\\frac{1}{2}} = \\left(\\frac{1}{4a^4}\\right)^{\\frac{1}{2}} = \\frac{1}{2a^2}$ y $\\frac{1}{(a^{-2})^{\\frac{1}{2}}} = \\frac{1}{a^{-1}} = a$.",
+          "expresion_latex": "M = \\left\\{ -\\frac{1}{2a^2} \\cdot a - \\frac{1}{2a^2} \\cdot a \\right\\}^{-1}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Multiplicamos y simplificamos cada término. En el primero: $-\\frac{1}{2a^2} \\cdot a = -\\frac{a}{2a^2} = -\\frac{1}{2a}$. En el segundo: $-\\frac{1}{2a^2} \\cdot a = -\\frac{a}{2a^2} = -\\frac{1}{2a}$.",
+          "expresion_latex": "M = \\left\\{ -\\frac{1}{2a} - \\frac{1}{2a} \\right\\}^{-1}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Sumamos las fracciones dentro de las llaves: $-\\frac{1}{2a} - \\frac{1}{2a} = -\\frac{2}{2a} = -\\frac{1}{a}$.",
+          "expresion_latex": "M = \\left( -\\frac{1}{a} \\right)^{-1}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Aplicamos la propiedad de exponente negativo: $\\left(-\\frac{1}{a}\\right)^{-1} = -a$.",
+          "expresion_latex": "M = -a"
+        }
+      ],
+      "resultado_final": "M = -a",
+      "observaciones": "Se asume que $a \\neq 0$ para que las fracciones y potencias negativas estén bien definidas. En la imagen original, la solución muestra un paso intermedio donde parece escribirse $\\frac{1}{a}$ en lugar de $a$ en el segundo término, pero el resultado final $M = -a$ es consistente con la simplificación correcta."
+    },
+    {
+      "id_pregunta": "DISPE-2010-12",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2010",
+        "dificultad": "Alta",
+        "problema": "PROBLEMA N°12"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "E = \\sqrt[\\sqrt{\\sqrt{\\sqrt{\\sqrt{3}}}}]{\\sqrt[\\sqrt{\\sqrt{\\sqrt{3}}}]{\\sqrt[\\sqrt{\\sqrt{3}}]{\\sqrt[\\sqrt{3}]{3^{\\sqrt{3}\\cdot\\sqrt{\\sqrt{3}}\\cdot\\sqrt{\\sqrt{\\sqrt{3}}}\\cdot\\sqrt{\\sqrt{\\sqrt{\\sqrt{3}}}}}}}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E = 3",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Expresamos los radicales que aparecen como índices en forma de potencias de 3. Recordemos que $\\sqrt{3} = 3^{1/2}$, $\\sqrt{\\sqrt{3}} = 3^{1/4}$, $\\sqrt{\\sqrt{\\sqrt{3}}} = 3^{1/8}$ y $\\sqrt{\\sqrt{\\sqrt{\\sqrt{3}}}} = 3^{1/16}$.",
+          "expresion_latex": "i_1 = 3^{\\frac{1}{2}}, \\quad i_2 = 3^{\\frac{1}{4}}, \\quad i_3 = 3^{\\frac{1}{8}}, \\quad i_4 = 3^{\\frac{1}{16}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Simplificamos el exponente $P$ que está en el radicando más interno: $P = \\sqrt{3} \\cdot \\sqrt{\\sqrt{3}} \\cdot \\sqrt{\\sqrt{\\sqrt{3}}} \\cdot \\sqrt{\\sqrt{\\sqrt{\\sqrt{3}}}}$.",
+          "expresion_latex": "P = 3^{\\frac{1}{2}} \\cdot 3^{\\frac{1}{4}} \\cdot 3^{\\frac{1}{8}} \\cdot 3^{\\frac{1}{16}} = 3^{\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}+\\frac{1}{16}} = 3^{\\frac{15}{16}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Multiplicamos los índices de los radicales: $i_1 \\cdot i_2 \\cdot i_3 \\cdot i_4$.",
+          "expresion_latex": "i_1 \\cdot i_2 \\cdot i_3 \\cdot i_4 = 3^{\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}+\\frac{1}{16}} = 3^{\\frac{15}{16}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "La expresión anidada se puede escribir como una sola potencia de 3: $E = 3^{\\frac{P}{i_1 i_2 i_3 i_4}}$.",
+          "expresion_latex": "E = 3^{\\frac{3^{15/16}}{3^{15/16}}}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Simplificamos el exponente: $\\frac{3^{15/16}}{3^{15/16}} = 1$. Por lo tanto, $E = 3^1 = 3$.",
+          "expresion_latex": "E = 3^1 = 3"
+        }
+      ],
+      "resultado_final": "E = 3",
+      "observaciones": "Se utilizó la versión LaTeX proporcionada por el usuario, ya que la notación de la imagen original es ambigua. Se asume que $3 > 0$ para que las raíces estén bien definidas en los números reales."
+    },
+    {
+      "id_pregunta": "DISPE-2011-13",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2011",
+        "dificultad": "Alta",
+        "problema": "PROBLEMA N°13"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "E = \\frac{2 \\cdot \\sqrt[7^n-7]{n^{2 \\cdot 7^n}} - n^2 \\cdot \\sqrt[7^n-7]{n^{14}}}{\\sqrt[7^n-7]{n^{7^n+7}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E = n",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Desdoblamos la fracción en dos términos separados.",
+          "expresion_latex": "E = \\frac{2 \\cdot \\sqrt[7^n-7]{n^{2 \\cdot 7^n}}}{\\sqrt[7^n-7]{n^{7^n+7}}} - \\frac{n^2 \\cdot \\sqrt[7^n-7]{n^{14}}}{\\sqrt[7^n-7]{n^{7^n+7}}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Aplicamos la propiedad de división de radicales con el mismo índice: $\\frac{\\sqrt[k]{a}}{\\sqrt[k]{b}} = \\sqrt[k]{\\frac{a}{b}} = a^{1/k} \\cdot b^{-1/k}$.",
+          "expresion_latex": "E = 2 \\cdot n^{\\frac{2 \\cdot 7^n}{7^n-7} - \\frac{7^n+7}{7^n-7}} - n^2 \\cdot n^{\\frac{14}{7^n-7} - \\frac{7^n+7}{7^n-7}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Simplificamos los exponentes del primer término: $\\frac{2 \\cdot 7^n - (7^n + 7)}{7^n-7} = \\frac{7^n - 7}{7^n-7} = 1$.",
+          "expresion_latex": "2 \\cdot n^{\\frac{2 \\cdot 7^n - 7^n - 7}{7^n-7}} = 2 \\cdot n^{\\frac{7^n - 7}{7^n-7}} = 2 \\cdot n^1 = 2n"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Simplificamos los exponentes del segundo término: $\\frac{14 - (7^n + 7)}{7^n-7} = \\frac{7 - 7^n}{7^n-7} = -1$.",
+          "expresion_latex": "n^2 \\cdot n^{\\frac{14 - 7^n - 7}{7^n-7}} = n^2 \\cdot n^{\\frac{7 - 7^n}{7^n-7}} = n^2 \\cdot n^{-1} = \\frac{n^2}{n} = n"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Restamos ambos términos: $E = 2n - n = n$.",
+          "expresion_latex": "E = 2n - n = n"
+        }
+      ],
+      "resultado_final": "E = n",
+      "observaciones": "Se corrigió la expresión del enunciado: en el LaTeX proporcionado la resta estaba dentro del primer radical, pero en la imagen son dos radicales separados en el numerador. Se asume que $n > 0$ y $n \\neq 1$ para que el índice $7^n - 7$ sea positivo y las raíces estén bien definidas."
+    },
+    {
+      "id_pregunta": "DISPE-2011-14",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2011",
+        "dificultad": "Alta",
+        "problema": "PROBLEMA N°14"
+      },
+      "enunciado": {
+        "texto_markdown": "Siendo: $x^y = y^x$\\n\\nHallar:",
+        "ecuacion_latex": "E = \\sqrt[2xy^{-x}]{(x^{-y})^{-x^{-y}} \\cdot (y^{-x})^{-y^{-x}}}",
+        "condicion_latex": "x^y = y^x"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E = y",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Reescribimos los exponentes negativos. Recordemos que $y^{-x} = (y^x)^{-1}$ y $x^{-y} = (x^y)^{-1}$. Entonces, el índice se convierte en $2x(y^x)^{-1}$ y los factores internos se simplifican aplicando potencia de potencia.",
+          "expresion_latex": "E = \\sqrt[2x(y^x)^{-1}]{(x^y)^{(x^y)^{-1}} \\cdot (y^x)^{(y^x)^{-1}}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Aplicamos la condición $x^y = y^x$. Realizamos el cambio de variable $y^x = m$, entonces $x^y = m$.",
+          "expresion_latex": "E = \\sqrt[2x m^{-1}]{m^{m^{-1}} \\cdot m^{m^{-1}}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Multiplicamos las potencias de igual base dentro del radical: $m^{m^{-1}} \\cdot m^{m^{-1}} = m^{2m^{-1}}$.",
+          "expresion_latex": "E = \\sqrt[2x m^{-1}]{m^{2m^{-1}}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Simplificamos el radical aplicando la propiedad $\\sqrt[n]{a^p} = a^{\\frac{p}{n}}$. En este caso, el exponente del radicando es $2m^{-1}$ y el índice es $2x m^{-1}$.",
+          "expresion_latex": "E = m^{\\frac{2m^{-1}}{2x m^{-1}}} = m^{\\frac{1}{x}}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Reemplazamos $m = y^x$ y simplificamos: $m^{\\frac{1}{x}} = (y^x)^{\\frac{1}{x}} = y$.",
+          "expresion_latex": "E = y"
+        }
+      ],
+      "resultado_final": "E = y",
+      "observaciones": "Se asume que $x > 0$, $y > 0$ y $x \\neq 0$ para que las potencias y raíces estén bien definidas en los números reales. El problema está etiquetado como DISPE-2011 (Curso Pre-facultativo)."
+    },
+    {
+      "id_pregunta": "DISPE-2013-15",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2013",
+        "dificultad": "Alta",
+        "problema": "PROBLEMA N°15"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "E = (a^{-a})^{a^{-(a^a)^{a^{-a}}}} \\cdot \\sqrt[a^{\\sqrt[a^a]{a^a}}]{a^a}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E = 1",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Simplificamos el exponente interno del primer factor. Definimos $X = (a^a)^{a^{-a}}$ y aplicamos potencia de potencia: $X = a^{a \\cdot a^{-a}} = a^{a^{1-a}}$.",
+          "expresion_latex": "X = (a^a)^{a^{-a}} = a^{a^{1-a}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Reescribimos el primer factor en términos de $X$: $(a^{-a})^{a^{-X}} = a^{-a \\cdot a^{-X}} = a^{-a^{1-X}}$.",
+          "expresion_latex": "a^{-a^{1-X}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Simplificamos el segundo factor. Primero, el radical interno: $\\sqrt[a^a]{a^a} = (a^a)^{\\frac{1}{a^a}} = a^{a \\cdot a^{-a}} = a^{a^{1-a}} = X$. Luego, el segundo factor completo es $\\sqrt[a^X]{a^a} = (a^a)^{\\frac{1}{a^X}} = a^{a \\cdot a^{-X}} = a^{a^{1-X}}$.",
+          "expresion_latex": "\\sqrt[a^{\\sqrt[a^a]{a^a}}]{a^a} = a^{a^{1-X}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Multiplicamos ambos factores simplificados: $E = a^{-a^{1-X}} \\cdot a^{a^{1-X}}$.",
+          "expresion_latex": "E = a^{-a^{1-X}} \\cdot a^{a^{1-X}}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Sumamos los exponentes. Como son términos opuestos, se cancelan: $-a^{1-X} + a^{1-X} = 0$. Por lo tanto, $E = a^0 = 1$.",
+          "expresion_latex": "E = a^0 = 1"
+        }
+      ],
+      "resultado_final": "E = 1",
+      "observaciones": "El enunciado original de la imagen contenía un error de signo: decía $a - (a^a)^{a^{-a}}$ en lugar de $a^{-(a^a)^{a^{-a}}}$. Con la corrección proporcionada, la simplificación es exacta y el resultado $E = 1$ se obtiene de forma natural al cancelarse los exponentes. Se asume que $a > 0$ y $a \\neq 1$ para que las potencias y raíces estén bien definidas."
+    },
+    {
+      "id_pregunta": "CONTA-2008-16",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Contaduría Pública",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2008",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°16"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar la expresión:",
+        "ecuacion_latex": "J = \\sqrt[m]{\\frac{3^m \\cdot b \\cdot \\sqrt[m]{a}}{\\sqrt{ab \\cdot \\sqrt[m]{a^2}}} \\cdot \\sqrt{\\frac{a}{b}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "J = 3",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Expresamos todos los radicales como potencias fraccionarias. Recordemos que $\\sqrt[m]{a} = a^{\\frac{1}{m}}$, $\\sqrt[m]{a^2} = a^{\\frac{2}{m}}$ y $\\sqrt{\\frac{a}{b}} = a^{\\frac{1}{2}} b^{-\\frac{1}{2}}$.",
+          "expresion_latex": "J = \\sqrt[m]{ \\frac{3^m \\cdot b \\cdot a^{\\frac{1}{m}}}{(a b a^{\\frac{2}{m}})^{\\frac{1}{2}}} \\cdot a^{\\frac{1}{2}} b^{-\\frac{1}{2}} }"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Simplificamos el denominador: $(a b a^{\\frac{2}{m}})^{\\frac{1}{2}} = a^{\\frac{1}{2} + \\frac{1}{m}} b^{\\frac{1}{2}}$.",
+          "expresion_latex": "(a b a^{\\frac{2}{m}})^{\\frac{1}{2}} = a^{\\frac{1}{2} + \\frac{1}{m}} b^{\\frac{1}{2}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Sustituimos el denominador simplificado y multiplicamos las potencias de igual base. Los exponentes de $a$ se cancelan: $\\frac{1}{m} - \\left(\\frac{1}{2} + \\frac{1}{m}\\right) + \\frac{1}{2} = 0$. Los exponentes de $b$ también se cancelan: $1 - \\frac{1}{2} - \\frac{1}{2} = 0$. Por lo tanto, toda la fracción interna se reduce a $3^m$.",
+          "expresion_latex": "\\frac{3^m \\cdot b \\cdot a^{\\frac{1}{m}}}{a^{\\frac{1}{2} + \\frac{1}{m}} b^{\\frac{1}{2}}} \\cdot a^{\\frac{1}{2}} b^{-\\frac{1}{2}} = 3^m"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Reemplazamos el resultado dentro del radical y simplificamos: $\\sqrt[m]{3^m} = 3$.",
+          "expresion_latex": "J = \\sqrt[m]{3^m} = 3"
+        }
+      ],
+      "resultado_final": "J = 3",
+      "observaciones": "Se asume que $a > 0$, $b > 0$ y $m \\neq 0$ para que las raíces y potencias estén bien definidas en los números reales. El problema está etiquetado como CONTA-2008."
+    },
+    {
+      "id_pregunta": "PREFAC-2012-17",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2012",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°17"
+      },
+      "enunciado": {
+        "texto_markdown": "Hallar el valor de:",
+        "ecuacion_latex": "Q = \\sqrt[2n]{\\frac{18^n + 45^n}{2^n + 5^n}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "Q = 3",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Factorizamos el numerador. Expresamos $18^n$ y $45^n$ como productos de potencias: $18^n = (2 \\cdot 9)^n = 2^n \\cdot 9^n$ y $45^n = (5 \\cdot 9)^n = 5^n \\cdot 9^n$. Entonces: $18^n + 45^n = 2^n \\cdot 9^n + 5^n \\cdot 9^n = 9^n(2^n + 5^n)$.",
+          "expresion_latex": "Q = \\sqrt[2n]{\\frac{9^n(2^n + 5^n)}{2^n + 5^n}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Cancelamos el factor común $(2^n + 5^n)$ en el numerador y denominador.",
+          "expresion_latex": "Q = \\sqrt[2n]{9^n}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Aplicamos la propiedad $\\sqrt[k]{a^m} = a^{\\frac{m}{k}}$. En este caso: $\\sqrt[2n]{9^n} = 9^{\\frac{n}{2n}} = 9^{\\frac{1}{2}} = \\sqrt{9} = 3$.",
+          "expresion_latex": "Q = 9^{\\frac{1}{2}} = 3"
+        }
+      ],
+      "resultado_final": "Q = 3",
+      "observaciones": "Se asume que $n \\neq 0$ para que el índice del radical esté bien definido, y que $2^n + 5^n \\neq 0$ (lo cual se cumple para todo $n$ real). El problema está etiquetado como PREFAC-2012 (Curso Pre-facultativo)."
+    },
+    {
+      "id_pregunta": "PREFAC-2012-18",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2012",
+        "dificultad": "Alta",
+        "problema": "PROBLEMA N°18"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar al máximo:",
+        "ecuacion_latex": "E = \\sqrt[8^{2^n}]{\\left( \\sqrt{81^{2^{2^{n+1}}}} \\right)^{2^{2^n}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E = 9",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Realizamos el cambio de variable $2^{2^n} = m$ para simplificar los exponentes anidados.",
+          "expresion_latex": "m = 2^{2^n}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Expresamos el índice del radical en términos de $m$: $8^{2^n} = (2^3)^{2^n} = 2^{3 \\cdot 2^n} = (2^{2^n})^3 = m^3$.",
+          "expresion_latex": "8^{2^n} = m^3"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Simplificamos el exponente $2^{2^{n+1}}$ en términos de $m$: $2^{2^{n+1}} = 2^{2^n \\cdot 2} = (2^{2^n})^2 = m^2$.",
+          "expresion_latex": "2^{2^{n+1}} = m^2"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Sustituimos los cambios en la expresión original de $E$.",
+          "expresion_latex": "E = \\sqrt[m^3]{\\left( \\sqrt{81^{m^2}} \\right)^m}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Simplificamos el radical interno: $\\sqrt{81^{m^2}} = (81^{m^2})^{\\frac{1}{2}} = 81^{\\frac{m^2}{2}}$. Luego elevamos a la potencia $m$: $\\left(81^{\\frac{m^2}{2}}\\right)^m = 81^{\\frac{m^3}{2}}$.",
+          "expresion_latex": "E = \\sqrt[m^3]{81^{\\frac{m^3}{2}}}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Aplicamos la propiedad $\\sqrt[k]{a^p} = a^{\\frac{p}{k}}$. En este caso: $E = 81^{\\frac{m^3/2}{m^3}} = 81^{\\frac{1}{2}} = \\sqrt{81} = 9$.",
+          "expresion_latex": "E = 81^{\\frac{1}{2}} = 9"
+        }
+      ],
+      "resultado_final": "E = 9",
+      "observaciones": "Se asume que $n$ es un número real tal que los exponentes están bien definidos. El problema está etiquetado como PREFAC-2012 (Curso Pre-facultativo). El cambio de variable $m = 2^{2^n}$ es la clave para deshacer los exponentes anidados."
+    },
+    {
+      "id_pregunta": "PREFAC-2009-19",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2009",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°19"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "S = \\sqrt[n]{\\frac{3^{n+1}}{\\sqrt[n+2]{9 \\cdot \\sqrt{9^n}}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "S = 3",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Expresamos $9$ como $3^2$ y simplificamos el radical interno $\\sqrt{9^n} = (9^n)^{\\frac{1}{2}} = 9^{\\frac{n}{2}} = (3^2)^{\\frac{n}{2}} = 3^n$.",
+          "expresion_latex": "S = \\sqrt[n]{\\frac{3^{n+1}}{\\sqrt[n+2]{3^2 \\cdot 3^n}}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Simplificamos el radicando del denominador aplicando producto de potencias de igual base: $3^2 \\cdot 3^n = 3^{n+2}$.",
+          "expresion_latex": "S = \\sqrt[n]{\\frac{3^{n+1}}{\\sqrt[n+2]{3^{n+2}}}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Simplificamos el radical del denominador: $\\sqrt[n+2]{3^{n+2}} = 3$.",
+          "expresion_latex": "S = \\sqrt[n]{\\frac{3^{n+1}}{3}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Simplificamos la fracción aplicando división de potencias de igual base: $\\frac{3^{n+1}}{3} = 3^{n+1-1} = 3^n$.",
+          "expresion_latex": "S = \\sqrt[n]{3^n}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Simplificamos el radical: $\\sqrt[n]{3^n} = 3$.",
+          "expresion_latex": "S = 3"
+        }
+      ],
+      "resultado_final": "S = 3",
+      "observaciones": "Se asume que $n > 0$ para que el radical esté bien definido. El problema está etiquetado como PREFAC-2009 (Curso Pre-facultativo). En la imagen, el índice del radical interno podría confundirse con $n+2$, pero la solución confirma que es $2$."
+    },
+    {
+      "id_pregunta": "PREFAC-2009-20",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2009",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°20"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "A = \\sqrt[n]{\\frac{4^{n+\\frac{1}{4}} \\cdot \\sqrt{2^{n-2}}}{\\sqrt{\\frac{1}{2}} \\cdot \\sqrt{2^n}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "A = 4",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Expresamos todas las bases como potencias de 2. Recordemos que $4 = 2^2$, $\\sqrt{2^{n-2}} = 2^{\\frac{n-2}{2}}$, $\\sqrt{\\frac{1}{2}} = 2^{-\\frac{1}{2}}$ y $\\sqrt{2^n} = 2^{\\frac{n}{2}}$.",
+          "expresion_latex": "A = \\sqrt[n]{\\frac{(2^2)^{n+\\frac{1}{4}} \\cdot 2^{\\frac{n-2}{2}}}{2^{-\\frac{1}{2}} \\cdot 2^{\\frac{n}{2}}}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Aplicamos potencia de potencia en el numerador: $(2^2)^{n+\\frac{1}{4}} = 2^{2n+\\frac{1}{2}} = 2^{\\frac{4n+1}{2}}$.",
+          "expresion_latex": "A = \\sqrt[n]{\\frac{2^{\\frac{4n+1}{2}} \\cdot 2^{\\frac{n-2}{2}}}{2^{-\\frac{1}{2}} \\cdot 2^{\\frac{n}{2}}}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Sumamos exponentes en el numerador y denominador por separado. Numerador: $\\frac{4n+1}{2} + \\frac{n-2}{2} = \\frac{5n-1}{2}$. Denominador: $-\\frac{1}{2} + \\frac{n}{2} = \\frac{n-1}{2}$.",
+          "expresion_latex": "A = \\sqrt[n]{\\frac{2^{\\frac{5n-1}{2}}}{2^{\\frac{n-1}{2}}}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Dividimos potencias de igual base restando exponentes: $\\frac{5n-1}{2} - \\frac{n-1}{2} = \\frac{4n}{2} = 2n$.",
+          "expresion_latex": "A = \\sqrt[n]{2^{2n}}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Simplificamos el radical: $\\sqrt[n]{2^{2n}} = 2^{\\frac{2n}{n}} = 2^2 = 4$.",
+          "expresion_latex": "A = 4"
+        }
+      ],
+      "resultado_final": "A = 4",
+      "observaciones": "Se asume que $n > 0$ para que el radical esté bien definido. El problema está etiquetado como PREFAC-2009 (Curso Pre-facultativo)."
+    },
+    {
+      "id_pregunta": "PREFAC-2012-21",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2012",
+        "dificultad": "Alta",
+        "problema": "PROBLEMA N°21"
+      },
+      "enunciado": {
+        "texto_markdown": "Reducir:",
+        "ecuacion_latex": "M = \\left\\{ \\frac{\\sqrt[3^{-1}]{x \\cdot \\sqrt[4^{-1}]{x \\cdot \\sqrt[5^{-1}]{x}}}}{\\underbrace{\\sqrt[3]{x} \\cdot \\sqrt[3]{x} \\cdots \\sqrt[3]{x}}_{30 \\text{ factores}}} \\right\\}^{5^{-1}} \\div \\frac{\\left(\\sqrt[4]{x^3 \\cdot \\sqrt{x^3}}\\right)^{-1}}{\\sqrt[-2]{\\sqrt[-2]{\\sqrt[-2]{x}}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "M = x^{14}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Simplificamos el numerador de la primera fracción. Los radicales anidados tienen índices $3^{-1} = \\frac{1}{3}$, $4^{-1} = \\frac{1}{4}$ y $5^{-1} = \\frac{1}{5}$. Resolviendo de adentro hacia afuera: $\\sqrt[1/5]{x} = x^5$, luego $\\sqrt[1/4]{x \\cdot x^5} = \\sqrt[1/4]{x^6} = x^{24}$, y finalmente $\\sqrt[1/3]{x \\cdot x^{24}} = \\sqrt[1/3]{x^{25}} = x^{75}$.",
+          "expresion_latex": "\\sqrt[3^{-1}]{x \\cdot \\sqrt[4^{-1}]{x \\cdot \\sqrt[5^{-1}]{x}}} = x^{75}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Simplificamos el denominador de la primera fracción: $(\\sqrt[3]{x})^{30} = (x^{1/3})^{30} = x^{10}$.",
+          "expresion_latex": "(\\sqrt[3]{x})^{30} = x^{10}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Simplificamos la primera fracción: $\\frac{x^{75}}{x^{10}} = x^{65}$. Luego elevamos a $5^{-1} = \\frac{1}{5}$: $(x^{65})^{1/5} = x^{13}$.",
+          "expresion_latex": "\\left( \\frac{x^{75}}{x^{10}} \\right)^{\\frac{1}{5}} = x^{13}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Simplificamos el numerador de la segunda fracción. Primero el radical interno: $\\sqrt{x^3} = x^{3/2}$. Luego $x^3 \\cdot x^{3/2} = x^{9/2}$. Después $\\sqrt[4]{x^{9/2}} = x^{9/8}$. Finalmente, elevamos a $-1$: $(x^{9/8})^{-1} = x^{-9/8}$.",
+          "expresion_latex": "\\left(\\sqrt[4]{x^3 \\cdot \\sqrt{x^3}}\\right)^{-1} = x^{-\\frac{9}{8}}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Simplificamos el denominador de la segunda fracción. Resolviendo los radicales con índice $-2$ de adentro hacia afuera: $\\sqrt[-2]{x} = x^{-1/2}$, luego $\\sqrt[-2]{x^{-1/2}} = (x^{-1/2})^{-1/2} = x^{1/4}$, y finalmente $\\sqrt[-2]{x^{1/4}} = (x^{1/4})^{-1/2} = x^{-1/8}$.",
+          "expresion_latex": "\\sqrt[-2]{\\sqrt[-2]{\\sqrt[-2]{x}}} = x^{-\\frac{1}{8}}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Simplificamos la segunda fracción: $\\frac{x^{-9/8}}{x^{-1/8}} = x^{-9/8 + 1/8} = x^{-1}$.",
+          "expresion_latex": "\\frac{x^{-\\frac{9}{8}}}{x^{-\\frac{1}{8}}} = x^{-1}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Finalmente, realizamos la división: $M = x^{13} \\div x^{-1} = x^{13} \\cdot x = x^{14}$.",
+          "expresion_latex": "M = x^{13} \\cdot x = x^{14}"
+        }
+      ],
+      "resultado_final": "M = x^{14}",
+      "observaciones": "El numerador de la primera fracción presenta radicales anidados con índices fraccionarios que simplifican a $x^{75}$. En la solución de la imagen, este término se escribe como $x^3 \\cdot x^{12} \\cdot x^{60}$, que es una descomposición equivalente. La división por la segunda fracción implica multiplicar por su recíproco, lo que introduce el factor $x$ que lleva el resultado final a $x^{14}$. Se asume que $x > 0$ para que las raíces y potencias estén bien definidas."
+    },
+    {
+      "id_pregunta": "PREFAC-2012-22",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2012",
+        "dificultad": "Alta",
+        "problema": "PROBLEMA N°22"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "P = \\sqrt[a+2]{\\left\\{ \\sqrt[a]{27 \\cdot \\sqrt[a]{729}} \\right\\}^{a^{\\sqrt[7]{7}+1} \\cdot \\sqrt[{\\sqrt[7]{7}}]{a^{\\sqrt[7]{7}-\\sqrt[7]{49}}}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "P = 27",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Definimos $r = \\sqrt[7]{7}$. Observa que $\\sqrt[7]{49} = (7^2)^{1/7} = 7^{2/7} = r^2$. El exponente de la expresión es $E = a^{r+1} \\cdot \\sqrt[r]{a^{r-r^2}}$. Simplificamos el radical: $\\sqrt[r]{a^{r-r^2}} = a^{\\frac{r-r^2}{r}} = a^{1-r}$. Por lo tanto, $E = a^{r+1} \\cdot a^{1-r} = a^{r+1+1-r} = a^2$.",
+          "expresion_latex": "E = a^{r+1} \\cdot \\sqrt[r]{a^{r-r^2}} = a^{r+1} \\cdot a^{1-r} = a^2"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Reemplazamos el exponente simplificado $E = a^2$ en la expresión original de $P$.",
+          "expresion_latex": "P = \\sqrt[a+2]{\\left( \\sqrt[a]{27 \\cdot \\sqrt[a]{729}} \\right)^{a^2}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Simplificamos la base interna. Como $729 = 27^2$, tenemos $\\sqrt[a]{729} = (27^2)^{1/a} = 27^{2/a}$. Entonces $27 \\cdot 27^{2/a} = 27^{1+2/a} = 27^{\\frac{a+2}{a}}$. Luego, $\\sqrt[a]{27^{\\frac{a+2}{a}}} = \\left(27^{\\frac{a+2}{a}}\\right)^{1/a} = 27^{\\frac{a+2}{a^2}}$.",
+          "expresion_latex": "\\sqrt[a]{27 \\cdot \\sqrt[a]{729}} = 27^{\\frac{a+2}{a^2}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Elevamos la base simplificada al exponente $a^2$: $\\left(27^{\\frac{a+2}{a^2}}\\right)^{a^2} = 27^{a+2}$. Finalmente, simplificamos el radical exterior: $\\sqrt[a+2]{27^{a+2}} = 27$.",
+          "expresion_latex": "P = \\sqrt[a+2]{27^{a+2}} = 27"
+        }
+      ],
+      "resultado_final": "P = 27",
+      "observaciones": "Se asume que $a > 0$ y $a \\neq -2$ para que los radicales y potencias estén bien definidos en los números reales. El problema corresponde a PREFAC-2012."
+    },
+    {
+      "id_pregunta": "ADMI-2009-2016-23",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2009 y 2016",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°23"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "M = \\sqrt[n-1]{\\frac{10^{n-1} + 6^{n-1} + 15^{n-1}}{(2^{n-1})^{-1} + (3^{n-1})^{-1} + (5^{n-1})^{-1}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "M = 30",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Sea $k = n-1$. Reescribimos los exponentes negativos del denominador: $2^{-k} = \\frac{1}{2^k}$, $3^{-k} = \\frac{1}{3^k}$ y $5^{-k} = \\frac{1}{5^k}$.",
+          "expresion_latex": "M = \\sqrt[k]{\\frac{10^k + 6^k + 15^k}{\\frac{1}{2^k} + \\frac{1}{3^k} + \\frac{1}{5^k}}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Sumamos las fracciones del denominador. El mínimo común denominador es $2^k 3^k 5^k = 30^k$.",
+          "expresion_latex": "\\frac{1}{2^k} + \\frac{1}{3^k} + \\frac{1}{5^k} = \\frac{3^k 5^k + 2^k 5^k + 2^k 3^k}{30^k} = \\frac{15^k + 10^k + 6^k}{30^k}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Observamos que el numerador $10^k + 6^k + 15^k$ es idéntico al numerador del denominador. Sustituimos en la expresión original.",
+          "expresion_latex": "M = \\sqrt[k]{\\frac{10^k + 6^k + 15^k}{\\frac{10^k + 6^k + 15^k}{30^k}}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Simplificamos la fracción interna: $\\frac{a}{\\frac{a}{30^k}} = 30^k$.",
+          "expresion_latex": "M = \\sqrt[k]{30^k}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Simplificamos el radical aplicando $\\sqrt[k]{a^k} = a$.",
+          "expresion_latex": "M = 30"
+        }
+      ],
+      "resultado_final": "M = 30",
+      "observaciones": "Se asume que $k = n-1 \\neq 0$, es decir, $n \\neq 1$, para que el radical esté bien definido. El problema está etiquetado como ADMI-2009-2016 (Examen de Admisión)."
+    },
+    {
+      "id_pregunta": "DISPE-2010-24",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2010",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°24"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "E = \\sqrt[a^{2a}]{\\sqrt[a^a+b]{a^{a^{4a}}} \\cdot \\sqrt[a^a]{\\sqrt[a^a+b]{a^{b \\cdot a^{4a}}}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E = a^{a^a}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Expresamos cada radical como potencia fraccionaria. Recordemos que $\\sqrt[k]{a^m} = a^{\\frac{m}{k}}$.",
+          "expresion_latex": "E = \\left[ \\left(a^{a^{4a}}\\right)^{\\frac{1}{a^a+b}} \\cdot \\left( \\left(a^{b \\cdot a^{4a}}\\right)^{\\frac{1}{a^a+b}} \\right)^{\\frac{1}{a^a}} \\right]^{\\frac{1}{a^{2a}}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Aplicamos potencia de potencia en cada factor para dejar todo como potencias de base $a$.",
+          "expresion_latex": "E = \\left[ a^{\\frac{a^{4a}}{a^a+b}} \\cdot a^{\\frac{b \\cdot a^{4a}}{a^a \\cdot (a^a+b)}} \\right]^{\\frac{1}{a^{2a}}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Sumamos los exponentes del producto (potencias de igual base). Factor común $\\frac{a^{4a}}{a^a+b}$:",
+          "expresion_latex": "\\frac{a^{4a}}{a^a+b} + \\frac{b \\cdot a^{4a}}{a^a(a^a+b)} = \\frac{a^{4a}}{a^a+b} \\left( 1 + \\frac{b}{a^a} \\right) = \\frac{a^{4a}}{a^a+b} \\cdot \\frac{a^a+b}{a^a} = \\frac{a^{4a}}{a^a} = a^{3a}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Por lo tanto, la expresión dentro del radical exterior se reduce a $a^{a^{3a}}$.",
+          "expresion_latex": "E = \\left( a^{a^{3a}} \\right)^{\\frac{1}{a^{2a}}}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Aplicamos potencia de potencia y simplificamos: $\\frac{a^{3a}}{a^{2a}} = a^{3a-2a} = a^a$.",
+          "expresion_latex": "E = a^{\\frac{a^{3a}}{a^{2a}}} = a^{a^a}"
+        }
+      ],
+      "resultado_final": "E = a^{a^a}",
+      "observaciones": "Se asume que $a > 0$ y $a \\neq 1$ para que los radicales y las potencias estén bien definidas en los números reales. Además, se requiere $a^a + b \\neq 0$. El problema corresponde a DISPE-2010 (Dispensatorio). La simplificación del exponente interno es la clave: el factor $(a^a + b)$ se cancela de forma elegante dejando $a^{3a}$."
+    },
+    {
+      "id_pregunta": "DISPE-2008-25",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2008",
+        "dificultad": "Alta",
+        "problema": "PROBLEMA N°25"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "E = \\dfrac{\\sqrt{\\sqrt{\\dfrac{32^n+8}{2^{5n-3}+1}+\\dfrac{16}{5}\\cdot\\sqrt[n]{\\dfrac{90^n}{6^{2n}}}}}-\\sqrt[n]{\\dfrac{32^{n}+16^{n}}{8^n+4^n}}}{\\sqrt[n+1]{\\dfrac{2^{3n+2}}{8^{n+1}-2^{3n+2}}}-\\sqrt[1-n]{\\dfrac{3^{1-n}+1}{3^{n-1}+1}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E = 1",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Simplificamos el primer término del radicando interior: $\\dfrac{32^n+8}{2^{5n-3}+1}$. Como $32^n=2^{5n}$ y $2^{5n-3}=\\dfrac{2^{5n}}{8}$, el denominador es $\\dfrac{2^{5n}}{8}+1=\\dfrac{2^{5n}+8}{8}$. Entonces: $\\dfrac{2^{5n}+8}{\\frac{2^{5n}+8}{8}}=8$.",
+          "expresion_latex": "\\dfrac{32^n+8}{2^{5n-3}+1} = 8"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Simplificamos el segundo término del radicando interior: $\\dfrac{16}{5}\\cdot\\sqrt[n]{\\dfrac{90^n}{6^{2n}}}$. Como $90^n=2^n\\cdot3^{2n}\\cdot5^n$ y $6^{2n}=2^{2n}\\cdot3^{2n}$, la fracción es $\\left(\\dfrac{5}{2}\\right)^n$ y su raíz $n$-ésima es $\\dfrac{5}{2}$. Entonces: $\\dfrac{16}{5}\\cdot\\dfrac{5}{2}=8$.",
+          "expresion_latex": "\\dfrac{16}{5}\\cdot\\sqrt[n]{\\dfrac{90^n}{6^{2n}}} = 8"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Sumamos los dos términos del radicando interior: $8+8=16$. Calculamos la raíz cuadrada: $\\sqrt{16}=4$, y luego la raíz exterior: $\\sqrt{4}=2$.",
+          "expresion_latex": "\\sqrt{\\sqrt{16}} = \\sqrt{4} = 2"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Simplificamos el término que se resta: $\\sqrt[n]{\\dfrac{32^n+16^n}{8^n+4^n}}$. Expresando todo en base 2: $32^n=2^{5n}$, $16^n=2^{4n}$, $8^n=2^{3n}$, $4^n=2^{2n}$. El numerador es $2^{4n}(2^n+1)$ y el denominador $2^{2n}(2^n+1)$. La fracción es $2^{2n}=4^n$ y su raíz $n$-ésima es $4$.",
+          "expresion_latex": "\\sqrt[n]{\\dfrac{32^n+16^n}{8^n+4^n}} = 4"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "El numerador completo es $2-4=-2$.",
+          "expresion_latex": "\\text{Numerador} = 2-4 = -2"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Simplificamos el primer término del denominador: $\\sqrt[n+1]{\\dfrac{2^{3n+2}}{8^{n+1}-2^{3n+2}}}$. Como $8^{n+1}=2^{3n+3}$, el denominador es $2^{3n+3}-2^{3n+2}=2^{3n+2}(2-1)=2^{3n+2}$. La fracción es $1$ y su raíz $(n+1)$-ésima es $1$.",
+          "expresion_latex": "\\sqrt[n+1]{\\dfrac{2^{3n+2}}{8^{n+1}-2^{3n+2}}} = 1"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Simplificamos el segundo término del denominador: $\\sqrt[1-n]{\\dfrac{3^{1-n}+1}{3^{n-1}+1}}$. Como $3^{1-n}=\\dfrac{1}{3^{n-1}}$, el numerador es $\\dfrac{1+3^{n-1}}{3^{n-1}}$, y la fracción se reduce a $\\dfrac{1}{3^{n-1}}=3^{1-n}$. Entonces $\\sqrt[1-n]{3^{1-n}}=3$.",
+          "expresion_latex": "\\sqrt[1-n]{\\dfrac{3^{1-n}+1}{3^{n-1}+1}} = 3"
+        },
+        {
+          "paso": 8,
+          "nota_teorica": "El denominador completo es $1-3=-2$. Finalmente: $E=\\dfrac{-2}{-2}=1$.",
+          "expresion_latex": "E = \\dfrac{-2}{-2} = 1"
+        }
+      ],
+      "resultado_final": "E = 1",
+      "observaciones": "La clave está en respetar la agrupación: el primer radical exterior cubre solo $\\sqrt{\\frac{32^n+8}{2^{5n-3}+1}+\\frac{16}{5}\\sqrt[n]{\\frac{90^n}{6^{2n}}}}$, y luego se resta $\\sqrt[n]{\\frac{32^n+16^n}{8^n+4^n}}$. Con esa lectura, el numerador es $2-4=-2$ y el denominador es $1-3=-2$, por lo que $E=1$. Dificultad estimada por el asistente: Alta."
+    },
+    {
+      "id_pregunta": "PREFAC-2016-26",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2016",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°26"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "A = \\sqrt[m-2n]{\\dfrac{15^{2n}\\cdot3^m\\cdot\\sqrt[4]{3^{mn+2}}}{3^{2m+1}\\cdot5^m\\cdot\\sqrt[4]{3^{mn-2}}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "A = \\frac{1}{15}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Expresamos $15^{2n}$ como $(3 \\cdot 5)^{2n} = 3^{2n}5^{2n}$ y convertimos los radicales a exponentes fraccionarios: $\\sqrt[4]{3^{mn+2}} = 3^{\\frac{mn+2}{4}}$ y $\\sqrt[4]{3^{mn-2}} = 3^{\\frac{mn-2}{4}}$.",
+          "expresion_latex": "A = \\sqrt[m-2n]{\\frac{3^{2n}5^{2n} \\cdot 3^m \\cdot 3^{\\frac{mn+2}{4}}}{3^{2m+1} \\cdot 5^m \\cdot 3^{\\frac{mn-2}{4}}}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Agrupamos las potencias de 3 y de 5. En el numerador los exponentes de 3 se suman; en el denominador también. Luego restamos los exponentes de las bases iguales.",
+          "expresion_latex": "A = \\sqrt[m-2n]{5^{2n-m} \\cdot 3^{2n+m+\\frac{mn+2}{4} - \\left(2m+1+\\frac{mn-2}{4}\\right)}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Simplificamos el exponente de 3: $2n+m+\\frac{mn+2}{4}-2m-1-\\frac{mn-2}{4} = 2n-m-1 + \\frac{4}{4} = 2n-m$.",
+          "expresion_latex": "2n+m+\\frac{mn+2}{4}-2m-1-\\frac{mn-2}{4} = 2n-m"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Por lo tanto, el radicando se reduce a $5^{2n-m} \\cdot 3^{2n-m} = (15)^{2n-m}$.",
+          "expresion_latex": "A = \\sqrt[m-2n]{(15)^{2n-m}}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Aplicamos la propiedad $\\sqrt[k]{a^p} = a^{\\frac{p}{k}}$. Como el índice es $m-2n$ y el exponente es $2n-m = -(m-2n)$, se tiene $A = 15^{\\frac{2n-m}{m-2n}} = 15^{-1}$.",
+          "expresion_latex": "A = 15^{\\frac{2n-m}{m-2n}} = 15^{-1}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Finalmente, $15^{-1} = \\frac{1}{15}$.",
+          "expresion_latex": "A = \\frac{1}{15}"
+        }
+      ],
+      "resultado_final": "A = \\frac{1}{15}",
+      "observaciones": "Se asume que $m - 2n \\neq 0$ para que el radical esté bien definido. El problema corresponde a PREFAC-2016 (Curso Pre-facultativo). Dificultad estimada por el asistente: Media."
+    },
+    {
+      "id_pregunta": "PREFAC-2013-27",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2013",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°27"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar al máximo la expresión:",
+        "ecuacion_latex": "E = \\left[\\dfrac{2^{x+1}+3\\cdot2^{x+2}+5\\cdot2^{x+3}+10\\cdot2^x}{4^{x-1}+28\\cdot4^{x-2}}\\right]^{-1}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E = 2^{x-5}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Factorizamos $2^x$ en el numerador. Recordemos que $2^{x+k}=2^k\\cdot2^x$.",
+          "expresion_latex": "2^{x+1}+3\\cdot2^{x+2}+5\\cdot2^{x+3}+10\\cdot2^x = 2^x(2 + 3\\cdot4 + 5\\cdot8 + 10)"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Calculamos la suma dentro del paréntesis: $2 + 12 + 40 + 10 = 64$. Por lo tanto, el numerador es $64\\cdot2^x = 2^6\\cdot2^x = 2^{x+6}$.",
+          "expresion_latex": "\\text{Numerador} = 2^{x+6}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Factorizamos $4^{x-2}$ en el denominador. Como $4^{x-1}=4\\cdot4^{x-2}$, se tiene:",
+          "expresion_latex": "4^{x-1}+28\\cdot4^{x-2} = 4^{x-2}(4+28) = 32\\cdot4^{x-2}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Expresamos el denominador como potencia de 2: $32 = 2^5$ y $4^{x-2}=(2^2)^{x-2}=2^{2x-4}$. Entonces:",
+          "expresion_latex": "\\text{Denominador} = 2^5\\cdot2^{2x-4} = 2^{2x+1}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Dividimos numerador entre denominador: $\\dfrac{2^{x+6}}{2^{2x+1}} = 2^{x+6-(2x+1)} = 2^{5-x}$.",
+          "expresion_latex": "\\dfrac{2^{x+6}}{2^{2x+1}} = 2^{5-x}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Finalmente, aplicamos el exponente $-1$: $\\left(2^{5-x}\\right)^{-1} = 2^{x-5}$.",
+          "expresion_latex": "E = 2^{x-5}"
+        }
+      ],
+      "resultado_final": "E = 2^{x-5}",
+      "observaciones": "No se requieren condiciones adicionales, ya que el denominador $2^{2x+1}$ nunca se anula. El problema corresponde a PREFAC-2013 (Curso Pre-facultativo). Dificultad estimada por el asistente: Media."
+    },
+    {
+      "id_pregunta": "PREFAC-2013-28",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2013",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°28"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "E = \\left\\{\\dfrac{\\left[\\left(\\dfrac{1}{a}\\right)^{2013}\\right]^{1+a^{2013}}+\\left[\\left(\\dfrac{1}{a}\\right)^{2013}\\right]^{1-a^{2013}}}{\\left(\\dfrac{1}{a}\\right)^{2013}+\\left[\\left(\\dfrac{1}{a}\\right)^{2013}\\right]^{1-2a^{2013}}}\\right\\}^{\\dfrac{a^{-2013}}{2013}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E = \\dfrac{1}{a}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Realizamos el cambio de variable $t = \\left(\\dfrac{1}{a}\\right)^{2013} = a^{-2013}$. Entonces $a^{2013} = \\dfrac{1}{t}$.",
+          "expresion_latex": "t = a^{-2013} \\quad ; \\quad a^{2013} = \\frac{1}{t}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Reescribimos el numerador en términos de $t$: $t^{1+\\frac{1}{t}} + t^{1-\\frac{1}{t}} = t\\left(t^{\\frac{1}{t}} + t^{-\\frac{1}{t}}\\right)$.",
+          "expresion_latex": "t^{1+\\frac{1}{t}} + t^{1-\\frac{1}{t}} = t\\left(t^{\\frac{1}{t}} + t^{-\\frac{1}{t}}\\right)"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Reescribimos el denominador en términos de $t$: $t + t^{1-\\frac{2}{t}} = t\\left(1 + t^{-\\frac{2}{t}}\\right)$.",
+          "expresion_latex": "t + t^{1-\\frac{2}{t}} = t\\left(1 + t^{-\\frac{2}{t}}\\right)"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Sea $u = t^{\\frac{1}{t}}$. Entonces $t^{-\\frac{1}{t}} = \\dfrac{1}{u}$. El cociente dentro de las llaves es:",
+          "expresion_latex": "\\dfrac{t\\left(u + \\frac{1}{u}\\right)}{t\\left(1 + \\frac{1}{u^2}\\right)} = \\dfrac{u + \\frac{1}{u}}{1 + \\frac{1}{u^2}} = u"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Por lo tanto, la expresión dentro de las llaves es $u = t^{\\frac{1}{t}}$.",
+          "expresion_latex": "\\left\\{\\cdots\\right\\} = t^{\\frac{1}{t}}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Sustituimos en $E$ y simplificamos el exponente exterior: $\\dfrac{a^{-2013}}{2013} = \\dfrac{t}{2013}$.",
+          "expresion_latex": "E = \\left(t^{\\frac{1}{t}}\\right)^{\\frac{t}{2013}} = t^{\\frac{1}{2013}}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Volvemos a la variable original: $t = a^{-2013}$. Entonces $E = \\left(a^{-2013}\\right)^{\\frac{1}{2013}} = a^{-1} = \\dfrac{1}{a}$.",
+          "expresion_latex": "E = a^{-1} = \\frac{1}{a}"
+        }
+      ],
+      "resultado_final": "E = \\dfrac{1}{a}",
+      "observaciones": "Se asume $a > 0$ para que las potencias con exponentes reales estén bien definidas. Dificultad estimada por el asistente: Media."
+    },
+    {
+      "id_pregunta": "DISPE-2011-29",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2011",
+        "dificultad": "Alta",
+        "problema": "PROBLEMA N°29"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "E = \\left[\\sqrt[{13\\cdot\\sqrt[{\\sqrt{13}}]{13}}]{\\sqrt[\\sqrt{\\sqrt{13}}]{\\sqrt[13]{13}^{\\sqrt[13]{13}^{\\sqrt{13}}}}}\\right]^{\\dfrac{169\\cdot\\sqrt{\\sqrt{\\sqrt{13}}}}{\\sqrt[-2]{\\sqrt[-2]{\\sqrt[-2]{13}}}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E = 13",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Sea $a = 13$. Simplificamos el radicando interno $R = \\sqrt[13]{13}^{\\sqrt[13]{13}^{\\sqrt{13}}}$. Escribimos $\\sqrt[13]{13} = a^{1/a}$. Entonces $R = \\left(a^{1/a}\\right)^{\\left(a^{1/a}\\right)^{\\sqrt{a}}} = a^{\\frac{1}{a}\\cdot a^{\\frac{\\sqrt{a}}{a}}} = a^{a^{\\frac{1}{\\sqrt{a}}-1}}$. Con $a=13$: $R = 13^{13^{\\frac{1}{\\sqrt{13}}-1}}$.",
+          "expresion_latex": "R = \\sqrt[13]{13}^{\\sqrt[13]{13}^{\\sqrt{13}}} = 13^{13^{\\frac{1}{\\sqrt{13}}-1}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Simplificamos los índices de los radicales. El índice exterior es $I_1 = 13 \\cdot \\sqrt[\\sqrt{13}]{13} = 13 \\cdot 13^{\\frac{1}{\\sqrt{13}}} = 13^{1+\\frac{1}{\\sqrt{13}}}$. El índice interior es $I_2 = \\sqrt{\\sqrt{13}} = 13^{\\frac{1}{4}}$. El producto es $I_1 I_2 = 13^{1+\\frac{1}{\\sqrt{13}}+\\frac{1}{4}} = 13^{\\frac{5}{4}+\\frac{1}{\\sqrt{13}}}$.",
+          "expresion_latex": "I_1 I_2 = 13^{\\frac{5}{4}+\\frac{1}{\\sqrt{13}}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "El radical exterior (corchete) es $R^{\\frac{1}{I_1 I_2}} = \\left(13^{13^{\\frac{1}{\\sqrt{13}}-1}}\\right)^{13^{-\\left(\\frac{5}{4}+\\frac{1}{\\sqrt{13}}\\right)}} = 13^{13^{\\frac{1}{\\sqrt{13}}-1} \\cdot 13^{-\\frac{5}{4}-\\frac{1}{\\sqrt{13}}}} = 13^{13^{-\\frac{9}{4}}}$.",
+          "expresion_latex": "\\left[\\sqrt[{I_1}]{R}\\right] = 13^{13^{-\\frac{9}{4}}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Simplificamos el exponente exterior: $\\dfrac{169 \\cdot \\sqrt{\\sqrt{\\sqrt{13}}}}{\\sqrt[-2]{\\sqrt[-2]{\\sqrt[-2]{13}}}} = \\dfrac{13^2 \\cdot 13^{\\frac{1}{8}}}{13^{-\\frac{1}{8}}} = \\dfrac{13^{\\frac{17}{8}}}{13^{-\\frac{1}{8}}} = 13^{\\frac{18}{8}} = 13^{\\frac{9}{4}}$.",
+          "expresion_latex": "\\text{Exponente exterior} = 13^{\\frac{9}{4}}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Finalmente, elevamos la base al exponente exterior: $E = \\left(13^{13^{-\\frac{9}{4}}}\\right)^{13^{\\frac{9}{4}}} = 13^{13^{-\\frac{9}{4}} \\cdot 13^{\\frac{9}{4}}} = 13^{13^0} = 13^1 = 13$.",
+          "expresion_latex": "E = 13"
+        }
+      ],
+      "resultado_final": "E = 13",
+      "observaciones": "La clave está en el cambio de variable $a=13$ y en simplificar por separado los índices y el exponente exterior. Se asume $13 > 0$ para que las potencias y raíces estén bien definidas. Dificultad estimada por el asistente: Alta."
+    },
+    {
+      "id_pregunta": "DISPE-2011-30",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2011",
+        "dificultad": "Alta",
+        "problema": "PROBLEMA N°30"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "E = \\left(\\dfrac{x^{x^{x^{x+1}+1}+1}}{nx}\\right)^{(n^n-1)^{-1}}",
+        "condicion_latex": "x^x = n"
+      },
+      "opciones": [],
+      "respuesta_correcta": "E = n",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Partimos de la condición $x^x = n$. Simplificamos el exponente interno $x^{x+1}$:",
+          "expresion_latex": "x^{x+1} = x^x \\cdot x = nx"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Sustituimos en el siguiente nivel del exponente: $x^{x^{x+1}+1} = x^{nx+1}$.",
+          "expresion_latex": "x^{nx+1} = x \\cdot x^{nx} = x \\cdot (x^x)^n = x \\cdot n^n"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Ahora simplificamos el numerador completo: $x^{x^{x^{x+1}+1}+1} = x^{(x n^n)+1}$.",
+          "expresion_latex": "x^{(x n^n)+1} = x \\cdot x^{x n^n} = x \\cdot (x^x)^{n^n} = x \\cdot n^{n^n}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Reemplazamos el numerador en la fracción original: $\\dfrac{x \\cdot n^{n^n}}{nx}$.",
+          "expresion_latex": "\\dfrac{x \\cdot n^{n^n}}{nx} = n^{n^n - 1}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Finalmente, elevamos al exponente $(n^n - 1)^{-1}$:",
+          "expresion_latex": "E = \\left(n^{n^n - 1}\\right)^{(n^n - 1)^{-1}} = n^{(n^n - 1) \\cdot (n^n - 1)^{-1}} = n^1 = n"
+        }
+      ],
+      "resultado_final": "E = n",
+      "observaciones": "Se asume $x > 0$ y $n > 0$ para que las potencias reales estén bien definidas. Además, $n \\neq 1$ para que el exponente $(n^n - 1)^{-1}$ no se indefina. Dificultad estimada por el asistente: Alta."
+    },
+    {
+      "id_pregunta": "PSA-2018-31",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2018",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°31"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "A = ab \\cdot \\sqrt[n]{a^{1-n}b^{-n} - a^{-n}b^{1-n}} \\cdot \\sqrt[n]{(a-b)^{-1}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "A = 1",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Combinamos los dos radicales de igual índice $n$ en uno solo: $\\sqrt[n]{X} \\cdot \\sqrt[n]{Y} = \\sqrt[n]{X \\cdot Y}$.",
+          "expresion_latex": "A = ab \\cdot \\sqrt[n]{\\left(a^{1-n}b^{-n} - a^{-n}b^{1-n}\\right) \\cdot (a-b)^{-1}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Simplificamos cada término dentro del radical. Recordemos que $a^{1-n} = \\frac{a}{a^n}$ y $b^{-n} = \\frac{1}{b^n}$. Entonces: $a^{1-n}b^{-n} = \\frac{a}{a^n b^n}$. Análogamente, $a^{-n}b^{1-n} = \\frac{b}{a^n b^n}$.",
+          "expresion_latex": "a^{1-n}b^{-n} = \\frac{a}{a^n b^n}, \\quad a^{-n}b^{1-n} = \\frac{b}{a^n b^n}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Restamos ambos términos: $\\frac{a}{a^n b^n} - \\frac{b}{a^n b^n} = \\frac{a-b}{a^n b^n}$.",
+          "expresion_latex": "a^{1-n}b^{-n} - a^{-n}b^{1-n} = \\frac{a-b}{a^n b^n}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Multiplicamos por $(a-b)^{-1} = \\frac{1}{a-b}$: $\\frac{a-b}{a^n b^n} \\cdot \\frac{1}{a-b} = \\frac{1}{a^n b^n} = (ab)^{-n}$.",
+          "expresion_latex": "\\left(a^{1-n}b^{-n} - a^{-n}b^{1-n}\\right)(a-b)^{-1} = (ab)^{-n}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Sustituimos en el radical y simplificamos: $\\sqrt[n]{(ab)^{-n}} = (ab)^{-1} = \\frac{1}{ab}$.",
+          "expresion_latex": "\\sqrt[n]{(ab)^{-n}} = \\frac{1}{ab}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Finalmente, multiplicamos por el factor externo $ab$: $A = ab \\cdot \\frac{1}{ab} = 1$.",
+          "expresion_latex": "A = ab \\cdot \\frac{1}{ab} = 1"
+        }
+      ],
+      "resultado_final": "A = 1",
+      "observaciones": "Se asume que $a \\neq 0$, $b \\neq 0$, $a \\neq b$ y $n \\neq 0$ para que los radicales y denominadores estén bien definidos. Dificultad estimada por el asistente: Media."
+    },
+    {
+      "id_pregunta": "PSA-2019-32",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2019",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°32"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "M = \\left(41\\tfrac{23}{84} - 40\\tfrac{49}{60}\\right) \\left\\{ \\left[ 4 - 3\\tfrac{1}{2}\\left(2\\tfrac{1}{7} - 1\\tfrac{1}{5}\\right) \\right] \\div 0.16 \\right\\}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "M = 2",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Convertimos los números mixtos a fracciones impropias. $41\\tfrac{23}{84} = \\dfrac{41 \\cdot 84 + 23}{84} = \\dfrac{3467}{84}$ y $40\\tfrac{49}{60} = \\dfrac{40 \\cdot 60 + 49}{60} = \\dfrac{2449}{60}$. También: $3\\tfrac{1}{2} = \\dfrac{7}{2}$, $2\\tfrac{1}{7} = \\dfrac{15}{7}$ y $1\\tfrac{1}{5} = \\dfrac{6}{5}$.",
+          "expresion_latex": "41\\tfrac{23}{84} = \\frac{3467}{84}, \\quad 40\\tfrac{49}{60} = \\frac{2449}{60}, \\quad 3\\tfrac{1}{2} = \\frac{7}{2}, \\quad 2\\tfrac{1}{7} = \\frac{15}{7}, \\quad 1\\tfrac{1}{5} = \\frac{6}{5}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Resolvemos el primer paréntesis: $\\dfrac{3467}{84} - \\dfrac{2449}{60}$. El MCM de $84$ y $60$ es $420$. Entonces: $\\dfrac{3467 \\cdot 5}{420} - \\dfrac{2449 \\cdot 7}{420} = \\dfrac{17335 - 17143}{420} = \\dfrac{192}{420} = \\dfrac{16}{35}$.",
+          "expresion_latex": "\\frac{3467}{84} - \\frac{2449}{60} = \\frac{192}{420} = \\frac{16}{35}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Resolvemos la resta interna $2\\tfrac{1}{7} - 1\\tfrac{1}{5} = \\dfrac{15}{7} - \\dfrac{6}{5} = \\dfrac{75 - 42}{35} = \\dfrac{33}{35}$.",
+          "expresion_latex": "\\frac{15}{7} - \\frac{6}{5} = \\frac{33}{35}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Multiplicamos por $3\\tfrac{1}{2} = \\dfrac{7}{2}$: $\\dfrac{7}{2} \\cdot \\dfrac{33}{35} = \\dfrac{231}{70} = \\dfrac{33}{10}$.",
+          "expresion_latex": "\\frac{7}{2} \\cdot \\frac{33}{35} = \\frac{33}{10}"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Restamos de 4: $4 - \\dfrac{33}{10} = \\dfrac{40 - 33}{10} = \\dfrac{7}{10}$.",
+          "expresion_latex": "4 - \\frac{33}{10} = \\frac{7}{10}"
+        },
+        {
+          "paso": 6,
+          "nota_teorica": "Convertimos $0.16$ a fracción: $0.16 = \\dfrac{16}{100} = \\dfrac{4}{25}$. Dividimos: $\\dfrac{7}{10} \\div \\dfrac{4}{25} = \\dfrac{7}{10} \\cdot \\dfrac{25}{4} = \\dfrac{175}{40} = \\dfrac{35}{8}$.",
+          "expresion_latex": "\\frac{7}{10} \\div 0.16 = \\frac{7}{10} \\cdot \\frac{25}{4} = \\frac{35}{8}"
+        },
+        {
+          "paso": 7,
+          "nota_teorica": "Finalmente multiplicamos los dos factores: $M = \\dfrac{16}{35} \\cdot \\dfrac{35}{8} = \\dfrac{16}{8} = 2$.",
+          "expresion_latex": "M = \\frac{16}{35} \\cdot \\frac{35}{8} = 2"
+        }
+      ],
+      "resultado_final": "M = 2",
+      "observaciones": "En el enunciado original se usó la notación \\texttt{scalerel} para los números mixtos; aquí se reescribieron en notación estándar $a\\tfrac{b}{c}$. No se requieren condiciones adicionales. Dificultad estimada por el asistente: Media."
+    },
+    {
+      "id_pregunta": "PREFAC-2019-33",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2019",
+        "dificultad": "Media",
+        "problema": "PROBLEMA N°33"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "M = a b^{a b^{a b}}",
+        "condicion_latex": "a b = b^{b^2} = 3"
+      },
+      "opciones": [],
+      "respuesta_correcta": "M = 27a",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "De la condición $ab=3$ despejamos $a = \\dfrac{3}{b}$.",
+          "expresion_latex": "a = \\frac{3}{b}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Simplificamos el exponente interno $a b^{a b}$. Como $ab=3$, se tiene $a b^{a b} = a b^3$.",
+          "expresion_latex": "a b^{a b} = a b^3"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Sustituimos $a = \\dfrac{3}{b}$ en la expresión anterior:",
+          "expresion_latex": "a b^3 = \\frac{3}{b} \\cdot b^3 = 3 b^2"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Reemplazamos en la expresión original de $M$:",
+          "expresion_latex": "M = a b^{3 b^2} = a \\left(b^{b^2}\\right)^3"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Usamos la condición $b^{b^2} = 3$:",
+          "expresion_latex": "M = a \\cdot 3^3 = 27a"
+        }
+      ],
+      "resultado_final": "M = 27a",
+      "observaciones": "Se asume $b > 0$ y $b \\neq 0$ para que las potencias y la división estén bien definidas. El problema corresponde a PREFAC-2019 (Curso Pre-facultativo). Dificultad estimada por el asistente: Media."
+    },
+    {
+      "id_pregunta": "PSA-2021-34",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2021",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°34"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "M = \\left(\\sqrt{27^{-\\frac{1}{3}} + 36^{-\\frac{1}{2}}}\\right)^{-1}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "M = \\sqrt{2}",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Calculamos cada potencia negativa fraccionaria. Recordemos que $a^{-\\frac{m}{n}} = \\frac{1}{\\sqrt[n]{a^m}}$.",
+          "expresion_latex": "27^{-\\frac{1}{3}} = \\frac{1}{\\sqrt[3]{27}} = \\frac{1}{3}, \\quad 36^{-\\frac{1}{2}} = \\frac{1}{\\sqrt{36}} = \\frac{1}{6}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Sumamos los valores obtenidos dentro del radical.",
+          "expresion_latex": "\\frac{1}{3} + \\frac{1}{6} = \\frac{2}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Sustituimos en la expresión original.",
+          "expresion_latex": "M = \\left(\\sqrt{\\frac{1}{2}}\\right)^{-1}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Simplificamos la raíz cuadrada y aplicamos el exponente $-1$.",
+          "expresion_latex": "\\sqrt{\\frac{1}{2}} = \\frac{1}{\\sqrt{2}}, \\quad \\left(\\frac{1}{\\sqrt{2}}\\right)^{-1} = \\sqrt{2}"
+        }
+      ],
+      "resultado_final": "M = \\sqrt{2}",
+      "observaciones": "No se requieren condiciones adicionales. Dificultad estimada por el asistente: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2021-35",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2021",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°35"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "R = \\dfrac{\\sqrt[4]{m^3n^5} \\cdot \\sqrt[5]{mn^2}}{\\sqrt[20]{m^{19}n^{13}}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "R = n",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Expresamos todos los radicales como potencias de exponente fraccionario: $\\sqrt[4]{m^3n^5} = m^{\\frac{3}{4}}n^{\\frac{5}{4}}$, $\\sqrt[5]{mn^2} = m^{\\frac{1}{5}}n^{\\frac{2}{5}}$ y $\\sqrt[20]{m^{19}n^{13}} = m^{\\frac{19}{20}}n^{\\frac{13}{20}}$.",
+          "expresion_latex": "R = \\dfrac{m^{\\frac{3}{4}}n^{\\frac{5}{4}} \\cdot m^{\\frac{1}{5}}n^{\\frac{2}{5}}}{m^{\\frac{19}{20}}n^{\\frac{13}{20}}}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Agrupamos las potencias de $m$ y de $n$ por separado.",
+          "expresion_latex": "R = m^{\\frac{3}{4}+\\frac{1}{5}-\\frac{19}{20}} \\cdot n^{\\frac{5}{4}+\\frac{2}{5}-\\frac{13}{20}}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Simplificamos el exponente de $m$: $\\frac{3}{4}+\\frac{1}{5}-\\frac{19}{20} = \\frac{15}{20}+\\frac{4}{20}-\\frac{19}{20} = 0$.",
+          "expresion_latex": "m^{0} = 1"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Simplificamos el exponente de $n$: $\\frac{5}{4}+\\frac{2}{5}-\\frac{13}{20} = \\frac{25}{20}+\\frac{8}{20}-\\frac{13}{20} = \\frac{20}{20} = 1$.",
+          "expresion_latex": "n^{1} = n"
+        },
+        {
+          "paso": 5,
+          "nota_teorica": "Por lo tanto, $R = 1 \\cdot n = n$.",
+          "expresion_latex": "R = n"
+        }
+      ],
+      "resultado_final": "R = n",
+      "observaciones": "Se asume que $m > 0$ y $n > 0$ para que los radicales estén bien definidos. Dificultad estimada por el asistente: Baja."
+    },
+    {
+      "id_pregunta": "PSA-2021-36",
+      "metadata": {
+        "institucion": "Universidad Mayor de San Andrés (UMSA)",
+        "facultad": "Ciencias Económicas y Financieras",
+        "carrera": "Todas las carreras",
+        "materia": "Matemáticas",
+        "tema": "Teoría de exponentes y radicales",
+        "anio": "2021",
+        "dificultad": "Baja",
+        "problema": "PROBLEMA N°36"
+      },
+      "enunciado": {
+        "texto_markdown": "Simplificar:",
+        "ecuacion_latex": "S = \\sqrt[b+1]{\\dfrac{7^{b+1}+7^{b+1}}{2}}"
+      },
+      "opciones": [],
+      "respuesta_correcta": "S = 7",
+      "solucionario_paso_a_paso": [
+        {
+          "paso": 1,
+          "nota_teorica": "Sumamos los dos términos iguales del numerador: $7^{b+1}+7^{b+1} = 2 \\cdot 7^{b+1}$.",
+          "expresion_latex": "7^{b+1}+7^{b+1} = 2 \\cdot 7^{b+1}"
+        },
+        {
+          "paso": 2,
+          "nota_teorica": "Dividimos entre $2$: $\\dfrac{2 \\cdot 7^{b+1}}{2} = 7^{b+1}$.",
+          "expresion_latex": "\\dfrac{2 \\cdot 7^{b+1}}{2} = 7^{b+1}"
+        },
+        {
+          "paso": 3,
+          "nota_teorica": "Sustituimos dentro del radical: $S = \\sqrt[b+1]{7^{b+1}}$.",
+          "expresion_latex": "S = \\sqrt[b+1]{7^{b+1}}"
+        },
+        {
+          "paso": 4,
+          "nota_teorica": "Aplicamos la propiedad $\\sqrt[k]{a^k} = a$. Por lo tanto, $S = 7$.",
+          "expresion_latex": "S = 7"
+        }
+      ],
+      "resultado_final": "S = 7",
+      "observaciones": "Se asume que $b+1 \\neq 0$ para que el radical esté bien definido. No se requieren condiciones adicionales. Dificultad estimada por el asistente: Baja."
+    }
+  ]
+}
